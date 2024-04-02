@@ -1,0 +1,302 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model DivisaranaViewModel
+
+<head>
+
+    <link rel="stylesheet" href="~/css/CompentionceStyle.css">
+    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <script src="~/js/compentioncescript.js"></script>
+    <title>DiviSarana Compensation</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">DiviSarana Compensation</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Home" asp-action="Index" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+                    <form asp-controller="Divisarana" asp-action="DivisaranaCompensation" method="post">
+                        <div class="V_div01">
+                            <label class="Reason_lbl">Reason</label>
+                            <select asp-for="Reason" name="Reason" id="Reason" class="ReasonDropdown textbox">
+                                <option value="" disabled></option>
+                                <option value="death" id="">For death</option>
+                                <option value="hospital" id="">For hospitalization</option>
+                                <option value="surgery" id="">For surgery</option>
+
+
+
+                            </select>
+                        </div>
+
+                        <label id="TopicDeceased" class="TopicDeceased">Compensation for death</label>
+                    
+                        <div class="content_div2">
+
+                            <div class="V_div01">
+
+                                <div class="V_div Coman" id="Coman">
+                                    <label class="NameD_lbl" id="NameB_lbl">Name of</label>
+                                    <label class="NameD_lbl" id="NameB_lbl">beneficiary</label>
+                                    <input asp-for="Fullname" class="NameD_txt textbox" type="text" id="fullname">
+                                    <input asp-for="CusPolicyNo" type="hidden" class="" id="policyno">
+                                </div>
+
+
+                                <div class="V_div Coman" id="Coman">
+                                    <label class="NumberD_lbl" id="number_lbl">Insurance</label>
+                                    <label class="Number_lbl" id="number_lbl">number</label>
+                                    <input asp-for="DivisaranaNo" class="Number_txt textbox" type="text">
+                                </div>
+
+                                <div class="V_div Coman" id="Coman">
+                                    <label class="BranchD_lbl">Branch</label>
+                                    <input class="BranchD_txt textbox" type="text" id="branchInput">
+                                    <input type="hidden" id="branchId" name="BranchId">
+                                </div>
+
+                               
+
+                                @* ///////////////////////////////////////////////////////////////////////////////////Deth *@
+
+                                <div class="V_div Deth" id="Deth1">
+                                    <label id="" class="DeceasedName_lbl">Name of <br /><label id="Deth" class="DeceasedNameD_lbl">deceased person</label> </label>
+                                    <input asp-for="DeathPersonName" id="" class="DeceasedName_txt textbox Deth" type="text">
+                                </div>
+
+                                <div class="V_div Deth top" id="Deth2">
+                                    <label id="" class="Date_lbl">Date of death</label>
+                                    <input asp-for="DeathDate" id="" class="DateD_txt textbox" type="date">
+                                </div>
+
+                                <div class="V_div Deth top" id="Deth3">
+                                    <label id="" class="Relation_lbl">Relationship</label>
+                                    <input asp-for="Relation" id="" class="RelationD_txt textbox" type="text">
+                                </div>
+                                @* ///////////////////////////////////////////////////////////////////////////////////Hospitalization *@
+
+                                <div class="V_div Hospitalization top" id="Hospitalization1">
+                                    <label id="" class="PersonD_lbl">Hospitalized <br /><label id="" class="Person_lbl">person</label></label>
+                                    <input asp-for="HospitalizedPerson" id="" class="Person_txt textbox" type="text">
+                                </div>
+
+                                <div class="V_div Hospitalization top" id="Hospitalization2">
+                                    <label id="" class="Hospital_lbl">Hospital name</label>
+                                    <input asp-for="Hospital" id="" class="Hospital_txt textbox" type="text">
+                                </div>
+
+                                <div class="V_div Hospitalization top2" id="Hospitalization3">
+                                    <label id="" class="DateD_lbl">Discharge date</label>
+                                    <input asp-for="DischargeDate" id="" class="DateD2_txt textbox" type="date">
+                                </div>
+
+                                <div class="V_div Hospitalization top2" id="Hospitalization4">
+                                    <label id="" class="Disease_lbl">Disease</label>
+                                    <input asp-for="Disese" id="" class="Disease_txt textbox" type="text">
+                                </div>
+                                @* ///////////////////////////////////////////////////////////////////////////////////Surgery *@
+
+                                <div class="V_div Surgery top2" id="Surgery1">
+                                    <label id="" class="Surgery_lbl">Type of surgery</label>
+                                    <input id="" asp-for="Surgery" class="Surgery_txt textbox" type="text">
+                                </div>
+
+                                @* /////////////////////////////////////////////////////////////////////////////////// *@
+
+                                <div class="V_div Coman top2" id="Coman">
+                                    <label id="" class="Amount_lbl">Compensation Value</label>
+                                    <input asp-for="Compensationvalue" id="" class="Amount_txt textbox" type="number" min="0" oninput="validity.valid||(value='');">
+                                </div>
+                                
+                                <label class="Comment_txt hidden" type="text" id="Comment_txt"></label>
+
+                            </div>
+
+                            
+
+                            <div class="button_div">
+
+                                <div class="submit_div_2"><button type="button" class="submit" id="saveButton">Submit</button></div>
+                            </div>
+                            <div id="confirmationModal" class="modal">
+                                <div class="modal-content">
+                                   
+                                    <p>Are you sure you want to Submit?</p>
+                                    <button class="PopUpYes" type="submit" id="confirmSave">Yes</button>
+                                    <button class="PopUpNo" type="button" id="cancelSave">No</button>
+                                </div>
+                            </div>
+                    </form>
+                    @* <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+                </div>
+            </div>
+
+        </div>
+</body>
+
+<script>
+    document.getElementById("saveButton").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "block";
+    });
+
+    document.getElementById("cancelSave").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    document.getElementById("confirmSave").addEventListener("click", function () {
+        
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+</script>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Get branch names from ViewBag and convert them to an array
+            var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
+
+            // Modify branches to remove dots
+            var branchNamesWithoutDots = branches.map(function (branch) {
+                return branch.text.replace('.', ''); // Remove dot from each branch name
+            });
+
+            // Initialize autocomplete on the input field
+            $("#branchInput").autocomplete({
+                source: branchNamesWithoutDots, // Provide the modified array of branch names as the source of suggestions
+                minLength: 1, // Minimum characters to trigger autocomplete
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    // Find the corresponding branch object based on the selected branch name
+                    var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
+
+                    // Set the selected branch's ID in the hidden field
+                    $("#branchId").val(selectedBranch.value);
+
+                    return true; // Allow default behavior of the input field (form submission)
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+
+            // Get members from ViewBag and convert them to an array
+            var members = @Html.Raw(Json.Serialize(ViewBag.Member));
+
+            // Modify branches to remove dots
+            var memberNamesWithoutDots = members.map(function (member) {
+                return member.text.replace('.', ''); // Remove dot from each branch name
+            });
+
+            // Initialize autocomplete on the input field
+            $("#fullname").autocomplete({
+                source: memberNamesWithoutDots, // Provide the modified array of branch names as the source of suggestions
+                minLength: 1, // Minimum characters to trigger autocomplete
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    // Find the corresponding branch object based on the selected branch name
+                    var selectedMember = members.find(function (member) {
+                        return member.text === ui.item.value;
+                    });
+
+                    // Set the selected branch's ID and policy number in the hidden fields
+                    //$("#memberNo").val(selectedMember.value);
+                    //$("#policyno").val(selectedMember.CustomerPolicyNo);
+                    $("#policyno").val(selectedMember.value);
+
+                    return true; // Allow default behavior of the input field (form submission)
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+        });
+    </script>
+}
+
+
+    <script>
+
+        const dropdown = document.getElementById('Reason');
+
+
+        const selectedOptionLabel = document.getElementById('TopicDeceased');
+
+
+        dropdown.addEventListener('change', function () {
+
+            const selectedOptionText = dropdown.options[dropdown.selectedIndex].text;
+
+            if (selectedOptionText == "For death") {
+                selectedOptionLabel.textContent = 'Compensation for Death';
+                document.getElementById('Hospitalization1').style.display = 'none';
+                document.getElementById('Hospitalization2').style.display = 'none';
+                document.getElementById('Hospitalization3').style.display = 'none';
+                document.getElementById('Hospitalization4').style.display = 'none';
+                document.getElementById('Surgery1').style.display = 'none';
+                
+                document.getElementById('Deth1').style.display = 'block';
+                document.getElementById('Deth2').style.display = 'block';
+                document.getElementById('Deth3').style.display = 'block';
+
+            }
+            if (selectedOptionText == "For hospitalization") {
+                selectedOptionLabel.textContent = 'Compensation for Hospitalization';
+                document.getElementById('Surgery1').style.display = 'none';
+                
+                document.getElementById('Deth1').style.display = 'none';
+                document.getElementById('Deth2').style.display = 'none';
+                document.getElementById('Deth3').style.display = 'none';
+                document.getElementById('Hospitalization1').style.display = 'block';
+                document.getElementById('Hospitalization2').style.display = 'block';
+                document.getElementById('Hospitalization3').style.display = 'block';
+                document.getElementById('Hospitalization4').style.display = 'block';
+
+            }
+            if (selectedOptionText == "For surgery") {
+                selectedOptionLabel.textContent = 'Compensation for Surgery';
+                document.getElementById('Deth1').style.display = 'none';
+                document.getElementById('Deth2').style.display = 'none';
+                document.getElementById('Deth3').style.display = 'none';
+                document.getElementById('Hospitalization1').style.display = 'block';
+                document.getElementById('Hospitalization2').style.display = 'block';
+                document.getElementById('Hospitalization3').style.display = 'block';
+                document.getElementById('Hospitalization4').style.display = 'none';
+                document.getElementById('Surgery1').style.display = 'block';
+                
+            }
+
+        });
+    </script>
+} 

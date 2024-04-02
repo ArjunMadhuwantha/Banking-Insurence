@@ -1,0 +1,74 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model List<TreasuaryesCollection>
+
+@{
+    ViewData["Title"] = "Treasuary View";
+}
+
+<div class="p-4 container">
+    <div class="row p-4">
+        <div class="col-md-12">
+            <h3>Add Treasuary</h3>
+        </div>
+    </div>
+    <div class="row p-4">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label class="form-label fw-bold">Please choose Branch</label>
+                <select id="branchId" class="form-control" asp-items="ViewBag.Branches"></select> <!-- Changed ViewBag.Branches -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="p-4">All Treasuaryes</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 p-4">
+            <table id="treasuaryTable" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Treasuary name</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var treasuary in Model)
+                    {
+                        <tr>
+                            <td>@treasuary.TreasuaryName</td>
+                            <td>@treasuary.Date</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#branchId').change(function () {
+                var branchId = $(this).val();
+                $.ajax({
+                    url: '@Url.Action("TreasurayView", "InsuarancePayment")',
+                    type: 'GET',
+                    data: { name: { BranchId: branchId } }, // Pass branchId as part of name object
+                    success: function (result) {
+                        $('#treasuaryTable tbody').empty();
+                        $.each(result, function (index, item) {
+                            var row = '<tr>' +
+                                '<td>' + item.TreasuaryName + '</td>' +
+                                '<td>' + item.Date + '</td>' +
+                                '</tr>';
+                            $('#treasuaryTable tbody').append(row);
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,194 @@
+
+body {
+    background-color: #F6FFFD;
+    font-family: "Roboto Condensed";
+}
+
+label {
+    font-size: 15px;
+}
+
+.header {
+    margin: 5%;
+}
+
+
+
+.frame {
+    border-radius: 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.Gray {
+    color: gray;
+}
+
+
+.contentDiv_1 {
+    font-family: "Roboto Condensed";
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="password"]:focus {
+    outline: none;
+}
+
+.login_logo_div {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+
+.login_logo {
+    width: 230px;
+    height: 230px;
+}
+
+.Username_Psaaword_Div {
+    opacity: 100%;
+}
+
+.username_div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.username_label {
+    font-family: "Roboto Condensed";
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.username_input_div {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.username_input_txt {
+    border: none;
+    width: 70%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    margin-left: 1%;
+    margin-top: -2%;
+}
+    .username_input_txt:focus {
+        outline: none;
+        border: none;
+        /*border-color: transparent;*/
+    }
+
+    .username_input_txt::placeholder {
+        color: #05415C;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+input[type="text"]:focus::placeholder {
+    opacity: 0.5;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border:none;
+    /*border-color: transparent;*/
+}
+
+input[type="password"]:focus::placeholder {
+    opacity: 0.5;
+}
+
+input {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hr {
+    color: #05415C;
+    border-style: solid;
+    border-width: 3px;
+    width: 100%;
+    margin-top: -0.9%;
+}
+
+.password_div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: -1%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.password_label {
+    font-family: "Roboto Condensed";
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.password_input_div {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.password_input_txt {
+    border: none;
+    width: 70%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    margin-left: 1%;
+    margin-top: -2%;
+}
+
+.password_visibility_image {
+    position: absolute;
+    right: calc(4.3in - 10px);
+    cursor: pointer;
+}
+
+.ForgotPassword_label {
+    font-family: "Roboto Condensed";
+    position: absolute;
+    right: calc(4.3in - 10px);
+    cursor: pointer;
+}
+
+.login_btn_div {
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 10%;
+    
+}
+
+.login_btn {
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 32px;
+    background-color: #05415C;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+
+
+.copyright_div {
+    margin-left: 8%;
+    margin-top: 6%;
+}

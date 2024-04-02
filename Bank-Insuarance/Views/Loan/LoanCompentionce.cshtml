@@ -1,0 +1,170 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model SavingCompenstaionViewModel
+<head>
+    
+    <link rel="stylesheet" href="~/css/CompentionceStyle.css">
+    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <script src="~/js/compentioncescript.js"></script>
+    <title>Loan Compentionce</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">Loan Compentionce</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Home" asp-action="Index" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+
+                        <div class="V_div01">
+
+                            <div class="V_div">
+                                <label class="Branch_lbl">Branch</label>
+                                <input class="Branch_txt textbox" type="text" id="branchInput">
+                                <input type="hidden" id="branchId" name="BranchId">
+                            </div>
+
+                            <div class="V_div">
+                                <label class="Name_lbl">Name</label>
+                                <input class="Name_txt textbox" type="text">
+                            </div>
+
+                            <div class="V_div hidden">
+                                <label class="PolicyNo_lbl">Policy No</label>
+                                <input class="PolicyNo_txt" type="text">
+                            </div>
+
+                            <div class="V_div">
+                                <label class="Value_lbl">Loan Value</label>
+                                <input class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');">
+                            </div>
+
+                            <div class="V_div">
+                                <label class="Value_lbl">Compention Value</label>
+                                <input class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');">
+                            </div>
+
+                            <div class="V_div">
+                                <label class="Requirement_lbl">Requirement</label>
+                                
+                                <select name="zone" id="zone" class="RequirementDropdown textbox">
+                                    <option value="" disabled selected>Select Requirement</option>
+                                    <option value="" id="">Requirement_1</option>
+                                    <option value="" id="">Requirement_2</option>
+                                    <option value="" id="">Requirement_3</option>
+                                    
+
+
+                                </select>
+                            </div>
+
+                            <div class="V_div">
+                                <label class="Comment_lbl">Comment</label>
+                                <textarea class="Comment_txt textbox" type="text" id="Comment_txt"></textarea>
+                            </div>
+
+                            <div class="V_div D_div">
+                                <label class="Date_lbl">Incident Date</label>
+                                <input class="Date_txt textbox" type="date">
+                            </div>
+                            
+                        </div>
+
+                        <div class="button_div">
+
+                                <div class="submit_div_2"><button type="button" class="submit" id="saveButton">Submit</button></div>
+                        </div>
+                        <div id="confirmationModal" class="modal">
+                            <div class="modal-content">
+                                
+                                <p>Are you sure you want to Submit?</p>
+                                <button class="PopUpYes" type="submit" id="confirmSave">Yes</button>
+                                <button class="PopUpNo" type="button" id="cancelSave">No</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    @* <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+                </div>
+            </div>
+
+        </div>
+</body>
+
+<script>
+    document.getElementById("saveButton").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "block";
+    });
+
+    document.getElementById("cancelSave").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    document.getElementById("confirmSave").addEventListener("click", function () {
+        
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+</script>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Get branch names from ViewBag and convert them to an array
+            var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
+
+            // Modify branches to remove dots
+            var branchNamesWithoutDots = branches.map(function (branch) {
+                return branch.text.replace('.', ''); // Remove dot from each branch name
+            });
+
+            // Initialize autocomplete on the input field
+            $("#branchInput").autocomplete({
+                source: branchNamesWithoutDots, // Provide the modified array of branch names as the source of suggestions
+                minLength: 1, // Minimum characters to trigger autocomplete
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    // Find the corresponding branch object based on the selected branch name
+                    var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
+
+                    // Set the selected branch's ID in the hidden field
+                    $("#branchId").val(selectedBranch.value);
+
+                    return true; // Allow default behavior of the input field (form submission)
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+        });
+    </script>
+}

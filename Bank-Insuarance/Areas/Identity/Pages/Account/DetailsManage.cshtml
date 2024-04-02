@@ -1,0 +1,280 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using Bank_Insuarance.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@model Bank_Insurance.Areas.Identity.Pages.Account.DetailsManageModel
+@{
+    ViewData["Title"] = "Edit Account";
+}
+@{
+}
+
+
+
+<head>
+
+    <link rel="stylesheet" href="~/css/EditAccountStyle.css">
+    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <script src="~/js/EditZoneScript.js"></script>
+
+    <title>Edit Account</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <ul class="TopUl" id="HUI">
+                    <li class="TopLi Li_1"><a class="active">Account/<label class="Blue">Setting</label></a></li>
+
+                    <li class="TopLi Li_2"><a class="active"><img src="~/images/Line.png" class="searchWhite_img"></a></li>
+
+
+                    <li class="TopLi Li_3">
+
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        var user = await UserManager.GetUserAsync(User);
+
+                       <a class="active">@user.FullName!</a>
+
+                    }
+                    </li>
+                 
+                    
+
+
+                   @*  <li class="TopLi Li_3"><a class="active">Hi,Nimal</a></li> *@
+                    <li class="TopLi Li_4"><a class="active"><img src="~/images/account_circle.png" class="account_circle" onclick="togglePopup()"></a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+
+                    <ul class="LeftUl">
+                        <li class="LeftLi">
+                            <a class="active" id="DashboardButton">
+                                <img src="~/images/Dashboard.png" class="Dashboard_png">Dashboard
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+
+                            <a asp-page="/Account/DetailsManage" asp-area="Identity"  class="active white" id="AccountButton">
+                                    <img src="~/images/AccountBlue.png" class="Account_png">Account
+                                </a>
+
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-controller="Branch" asp-action="Branch" class="active" id="BranchButton">
+                                <img src="~/images/Branch_png.png" class="Branch_png">Branch
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-controller="Zone" asp-action="Zone" class="active" id="ZoneButton">
+                                <img src="~/images/ZoneWhite.png" class="Zone_png">Zone
+                            </a>
+                        </li>
+
+
+
+                        <li class="LeftLi">
+                            <a class="active" id="logoutButton">
+                                <img src="~/images/logout2.png" class="logout2_png">Log out
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                    <div id="confirmationModalLogOut" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Are you sure you want to Log out?</p>
+
+
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+
+                                <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                                    <button type="submit" class="PopUpLogOutYes" id="confirmLogOut">Yes</button>
+                                </form>
+
+
+                            }
+
+
+                            <button class="PopUpLogOutNo" type="button" id="cancelLogOut">No</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="Flex_div2">
+                        <div class="Flex_div2_line1">
+                            <label class="Users_label" id="Topic">Users Edit</label>
+
+                        </div>
+                        <div class="UsersInfo_div">
+                            <div class="MiddleNav_div">
+                                <div class="Middlenavigation" id="Leftnav">
+
+                                    <ul class="MiddleUl">
+
+
+                                        <li class="MiddleLi Bar">
+                                            <a asp-controller="User" asp-action="Account" class="Middleactive">
+                                                <img src="~/images/BasicUser.png" class="Basic_png">Basic Information
+                                            </a>
+                                        </li>
+
+                                        <li class="MiddleLi Bar">
+                                            <a class="Middleactive PinBlue" id="">
+                                                <img src="~/images/Security.png" class="Security_png">User Edit
+                                            </a>
+                                        </li>
+
+
+
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="MiddleContent_div">
+
+                                <div class="BasicInformationTopic_div"><label class="BasicInformation_label">Basic Information</label></div>
+
+                                <div class="BasicInformation_div">
+
+                                    <div class="left_div">
+                                        <label class="Name_label">Name</label>
+                                        <div>
+                                            <img src="~/images/Name.png" class="Name_png">
+                                            <input class="Name_txt textbox" type="text" name="Name" value="" placeholder="Name">
+                                        </div>
+
+                                        <label class="Profession_label">Profession</label>
+                                        <div>
+                                            <img src="~/images/Profession.png" class="Profession_png">
+                                            <input class="Profession_txt textbox" type="text" name="Profession" value="" placeholder="Profession">
+                                        </div>
+
+                                        <label class="NIC_label">NIC</label>
+                                        <div>
+                                            <img src="~/images/NIC.png" class="NIC_png">
+                                            <input class="NIC_txt textbox" type="text" name="NIC" value="" placeholder="NIC">
+                                        </div>
+
+                                        <label class="PasswordSecurity_label">Password & Security</label>
+                                        <div>
+                                            <img src="~/images/UserPassword.png" class="UserPassword_png">
+                                            <input class="CurrentPassword_txt textbox" type="password" name="Password" value="" id="password" placeholder="Enter Current Password">
+                                            <img src="~/images/Visible.png" class="Visible_png" onclick="togglePasswordVisibility()">
+                                        </div>
+                                        <div>
+                                            <img src="~/images/UserPassword.png" class="UserPassword_png">
+                                            <input class="newpassword_txt  textbox" type="password" name="newpassword" value="" id="password2" placeholder="Enter new Password">
+                                            <img src="~/images/Visible.png" class="Visible_png" onclick="togglePasswordVisibility2()">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="right_div">
+                                        <label class="Email_label">Email Address</label>
+                                        <div>
+                                            <img src="~/images/Email.png" class="Email_png">
+                                            <input class="Email_txt  textbox" type="email" name="Email" value="" placeholder="Gmail@com">
+                                        </div>
+
+                                        <label class="DOB_label">Date of Birth</label>
+                                        <div>
+                                            <img src="~/images/DOB.png" class="DOB_png">
+                                            <input class="DOB_txt textbox" type="date" name="DOB" value="" placeholder="">
+                                        </div>
+
+                                        <label class="Live_label">Live</label>
+                                        <div>
+                                            <img src="~/images/Live.png" class="Live_png">
+                                            <input class="Live_txt textbox" type="text" name="Live" value="" placeholder="Colombo, SriLanka">
+                                        </div>
+
+                                        <label class="Empty_label"> </label>
+                                        <div>
+                                            <img src="~/images/UserPassword.png" class="UserPassword_png">
+                                            <input class="Confirmnewpassword_txt  textbox" type="password" name="newpassword" value="" id="password3" placeholder="Confirm new password">
+                                            <img src="~/images/Visible.png" class="Visible_png" onclick="togglePasswordVisibility3()">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="Update_div"><button type="button" class="Update" id="saveButton">Update</button></div>
+                                <div id="confirmationModal" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p>Are you sure you want to Update?</p>
+                                        <button type="submit" id="confirmSave">Yes</button>
+                                        <button type="button" id="cancelSave">No</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+                    <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+<script>
+    document.getElementById("saveButton").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "block";
+    });
+
+    document.getElementById("cancelSave").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    document.getElementById("confirmSave").addEventListener("click", function () {
+
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    /////////////////////////////////
+
+    document.getElementById("logoutButton").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "block";
+    });
+
+    document.getElementById("cancelLogOut").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+
+    document.getElementById("confirmLogOut").addEventListener("click", function () {
+
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+</script>

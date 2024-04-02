@@ -1,0 +1,225 @@
+body {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.MainDiv {
+    margin-top: 1%;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: -1%;
+    margin-left: -0.6%;
+    margin-bottom: -1%;
+}
+
+
+
+.NavBarTop_div {
+    display: flex;
+    flex-direction: row;
+    background-color: #05415C;
+    width: 100.5%;
+    height: 111px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo_img_Home {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+
+
+.Topic {
+    font-family: "Roboto Condensed";
+    font-size: 32PX;
+    font-weight: bold;
+    margin-left: 6%;
+    margin-top: 2%;
+    color: #FBFBFB;
+}
+
+
+.content_div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+
+
+
+/*left Side*/
+
+.navigation {
+    padding-top: 5%;
+    width: 13%;
+    height: 150%;
+    text-align: left;
+    background-color: #05415C;
+    position: fixed;
+    margin-top: 5%;
+}
+
+
+.LeftUl {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    box-shadow: #000;
+    background-color: #05415C;
+    height: 150%;
+}
+
+
+.LeftLi {
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    margin-right: 6%;
+    font-size: 14px;
+}
+
+
+    .LeftLi a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-align: center;
+        width: 86%;
+    }
+
+
+        .LeftLi a:hover {
+            background-color: #11729D;
+            color: #FFFFFF;
+        }
+
+.active {
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+.white {
+    background-color: #ffffff;
+    color: #05415C;
+    font-weight: bold;
+    width: 83.5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+
+
+.LastLeftLi {
+}
+
+.Back_png {
+    position: absolute;
+    margin-left: -15%;
+    margin-top:;
+}
+
+
+
+
+
+.type_div {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 150%;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.content_div2 {
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 5%;
+    text-align:center;
+}
+
+
+
+div {
+    border-color: #000000;
+}
+
+.Home_div {
+    margin-left: 0%;
+    margin-top: 5%;
+}
+.Loan_div {
+    margin-left: 0%;
+    margin-top: 6%;
+}
+
+.Home, .Loan {
+    font-family: "Roboto Condensed";
+    border-radius: 10px;
+    border-color: #ffffff;
+    width: 403px;
+    height: 58px;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255);
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+    .Home:hover, .Loan:hover {
+        cursor: pointer;
+    }
+
+
+
+
+.copyright {
+    margin-left: 2%;
+    margin-top: 17%;
+    margin-bottom: 2%;
+}
+
+
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 10%;
+    background-color: #ffffff; /* Background color of autocomplete dropdown */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ui-menu-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style: none;
+}
+
+    .ui-menu-item:hover {
+        background-color: #82A0AD; /* Background color of hovered item */
+    }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    background-color: #82A0AD; /* Background color of selected item */
+    color: #ffffff; /* Text color of selected item */
+}

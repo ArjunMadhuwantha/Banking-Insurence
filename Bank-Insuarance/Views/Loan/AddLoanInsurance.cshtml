@@ -1,0 +1,239 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model LoanViewModel
+@{
+    ViewData["Title"] = "Add Loan Insuarance Payment";
+}
+
+<head>
+
+
+    <link href="~/css/loaninsurancestyle.css" rel="stylesheet" />
+    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <script src="~/js/loaninsurancescript.js"></script>
+    <script src="~/js/textfeildfocus.js"></script>
+    <title>Loan Insurance</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a class="Back" asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">Loan Insurance</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Loan" asp-action="LoanHome" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+                        <form asp-controller="Loan" asp-action="AddLoanInsurance" method="post">
+                            <div class="V_div01">
+
+                                <div class="V_div">
+                                    <label class="Branch_lbl">Branch</label>
+                                    <input class="Branch_txt textbox" type="text" id="branchInput">
+                                    <input type="hidden" id="branchId" name="BranchId">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Name_lbl">Name</label>
+                                    <input asp-for="Name" class="Name_txt textbox" type="text">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="ID_lbl">ID</label>
+                                    <input asp-for="ID" class="ID_txt textbox" type="text">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Address_lbl">Address</label>
+                                    <input asp-for="Address" class="Address_txt textbox" type="text">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Name_lbl">Project Name</label>
+
+                                    <select asp-for="ProjectName" name="Project" id="Project" class="ProjectDropdown textbox">
+                                        <option value="" disabled selected></option>
+                                        <option value="Cultivation" id="">Cultivation</option>
+                                        <option value="Self-Employment" id="">Self-Employment</option>
+                                        <option value="Retail Shop" id="">Retail Shop</option>
+                                    </select>
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Name_lbl">New Project Name</label>
+                                    <input asp-for="ProjectName" class="Name_txt textbox" type="text">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Date_lbl">Loan Start Date</label>
+                                    <input asp-for="LoanIssueDate" class="Date_txt textbox" type="date">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Date_lbl">Loan End Date</label>
+                                    <input asp-for="LoanEndDate" class="Date_txt textbox" type="date">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Value_lbl">Loan Value</label> @* BackEnd Ekata Danna one *@
+                                    <input class="Value_txt textbox" asp-for="LoanValue" type="number" min="0" oninput="validity.valid||(value='');">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Date_lbl">Payment Date</label>
+                                    <input asp-for="Paymentdate" class="Date_txt textbox" type="date">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Value_lbl">Payment</label>
+                                    <input asp-for="Payment" class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');">
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="button_div">
+                                <div class="Add_div"><button type="button" class="Add" id="saveButton">Add</button></div>
+
+                            </div>
+                            <div id="confirmationModal" class="modal">
+                                <div class="modal-content">
+                                    
+                                    <p>Are you sure you want to Add?</p>
+                                    <button class="PopUpYes" type="submit" id="confirmSave">Yes</button>
+                                    <button class="PopUpNo" type="button" id="cancelSave">No</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="tablediv">
+
+                            @* <table class="table" id="myTable">
+                                <thead>
+                                    <tr>
+                                        <th class="Col01">Form num</th>
+                                        <th class="Col02">Name</th>
+                                        <th class="Col03">Project name</th>
+                                        <th class="Col04">Loan Start Date</th>
+                                        <th class="Col05">Loan End Date</th>
+                                        <th class="Col06">Loan amount</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+
+
+                                        @foreach (var succssor in Model.CollectionModel)
+                                        {
+
+                                            <tr>
+                                                <td><input type="number" class="tableinput " id="Column1-01"></td>
+
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+
+                                            </tr>
+
+                                        }
+                                    }
+
+                                </tbody>
+                            </table> *@
+
+
+                        </div>
+
+
+                    </div>
+                    @* <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+                </div>
+            </div>
+
+        </div>
+
+     </div>
+
+</body>
+<script>
+    document.getElementById("saveButton").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "block";
+    });
+
+    document.getElementById("cancelSave").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    document.getElementById("confirmSave").addEventListener("click", function () {
+        
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+</script>
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Get branch names from ViewBag and convert them to an array
+            var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
+
+            // Modify branches to remove dots
+            var branchNamesWithoutDots = branches.map(function (branch) {
+                return branch.text.replace('.', ''); // Remove dot from each branch name
+            });
+
+            // Initialize autocomplete on the input field
+            $("#branchInput").autocomplete({
+                source: branchNamesWithoutDots, // Provide the modified array of branch names as the source of suggestions
+                minLength: 1, // Minimum characters to trigger autocomplete
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    // Find the corresponding branch object based on the selected branch name
+                    var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
+
+                    // Set the selected branch's ID in the hidden field
+                    $("#branchId").val(selectedBranch.value);
+
+                    return true; // Allow default behavior of the input field (form submission)
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+        });
+    </script>
+}
+

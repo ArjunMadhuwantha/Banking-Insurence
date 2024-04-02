@@ -1,0 +1,181 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeDivisaranaViewModel
+
+
+<head>
+
+
+    <link rel="stylesheet" href="~/css/DivisaranaPaymentStyle.css">
+    <script src="~/js/divisaranapaymentscript.js"></script>
+    <script src="~/js/valuesubmitscript.js"></script>
+    <title>Divisarana Insurence</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">Divisarana Insurence Payment</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Divisarana" asp-action="DivisaranaHome" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+                        <form asp-controller="Divisarana" asp-action="payment" method="post">
+                            <div class="V_div01">
+
+
+                                <div class="V_div">
+                                    @* <label class="Branch_lbl">Branch</label> *@
+                                    <input class="Branch_txt" type="text" id="branchInput" placeholder="Search Branch">
+                                    <img class="BranchSearchImage" src="~/images/search.png">
+                                    <input type="hidden" id="branchId" name="DivisaranaViewModel.BranchId">
+                                </div>
+
+
+                            </div>
+
+                            @* <div class="button_div">
+                                <div class="Add_div"><button type="submit" class="Add" onclick="ShowTable()">Search</button></div>
+                            </div> *@
+                        </form>
+                        @* <form asp-controller="Divisarana" asp-action="Customerpayment" method="post"> *@
+                        <div class="tablediv">
+
+                            <table class="table" id="myTable">
+
+                                <thead>
+                                    <tr>
+
+                                        <th class="Col01">Branch</th>
+                                        <th class="Col02">FullName</th>
+                                        <th class="Col03">Admition Fee</th>
+                                        <th class="Col04">Period</th>
+                                        <th class="Col05">Total Amount</th>
+                                        <th class="Col06">Due Amount</th>
+                                        <th class="Col07">Next Execute Date</th>
+                                        <th class="Col08">Recovery Amount</th>
+                                        <th class="Col09">Payment</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @if (Model != null)
+                                    {
+                                        
+
+                                        @foreach (var Member in Model.CollectionModel)
+                                        {
+
+                                            <tr>
+
+                                                <form asp-controller="Divisarana" asp-action="Customerpayment" method="post">
+
+                                                <td><input type="hidden" asp-for="DivisaranaViewModel.BranchId" value="@Member.BranchId" />@Member.BranchName</td>
+                                                <td>
+                                                    <input type="hidden" asp-for="DivisaranaViewModel.Fullname" value="@Member.Fullname" />
+                                                    <input type="hidden" asp-for="DivisaranaViewModel.CusPolicyNo" value="@Member.CusPolicyNo" />
+                                                    <input type="hidden" asp-for="DivisaranaViewModel.CircleId" value="@Member.CircleId" />
+                                                    <a href="/Summary/CustomerpaymentSummary?CusPolicyNo=@Member.CusPolicyNo">
+                                                            @Member.Fullname
+                                                    </a>
+                                                </td>
+                                                <td><input type="hidden" asp-for="DivisaranaViewModel.AddmissionFee" value="@Member.AddmissionFee" />@Member.AddmissionFee</td>
+                                                <td><input type="hidden" asp-for="DivisaranaViewModel.TimePeriod" value="@Member.TimePeriod" />@Member.TimePeriod</td>
+
+                                                <td>@Member.TotalAmount</td>
+                                                <td><input type="hidden" asp-for="DivisaranaViewModel.DueAmount" value="@Member.DueAmount" />@Member.DueAmount</td>
+                                                <td><input type="hidden" asp-for="DivisaranaViewModel.NextExecuteDate" value="@Member.NextExecuteDate" />@Member.NextExecuteDate</td>
+                                                <td>@Member.RecoveryAmount</td>
+                                                <td><input asp-for="DivisaranaViewModel.Paymentvalue" type="number" class="tableinput textbox" id="" min="0" oninput="validity.valid||(value='');" value="@Member.RecoveryAmount"></td>
+                                                <td class="buttonTD"><button class="PaymentEnter" type="submit" id=""></button></td>
+
+                                                </form>
+
+
+                                            </tr>
+                                            
+                                        }
+                                    }
+
+                                </tbody>
+                                @*  <button type="submit">Enter</button>
+                                </form> *@
+                            </table>
+
+
+                        </div>
+
+
+                    </div>
+                   @*  <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+                </div>
+            </div>
+
+        </div>
+        
+</body>
+
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
+
+
+            var branchNamesWithoutDots = branches.map(function (branch) {
+                return branch.text.replace('.', '');
+            });
+
+
+            $("#branchInput").autocomplete({
+                source: branchNamesWithoutDots,
+                minLength: 1,
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+
+                    var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
+
+
+                    $("input[name='DivisaranaViewModel.BranchId']").val(selectedBranch.value);
+                    return true;
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+        });
+    </script>
+}
+

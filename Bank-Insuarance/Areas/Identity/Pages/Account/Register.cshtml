@@ -1,0 +1,285 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using Bank_Insuarance.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<head>
+
+    <link rel="stylesheet" href="~/css/AccountStyle.css">
+    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <script src="~/js/EditZoneScript.js"></script>
+    <script src="~/js/textfeildfocus.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <ul class="TopUl" id="HUI">
+                    <li class="TopLi Li_1"><a class="active" href="#">User/<label class="Blue">Setting</label></a></li>
+
+                    <li class="TopLi Li_2_2"><a class="active" href="#"><img src="~/images/Line.png" class="searchWhite_img"></a></li>
+                    <li class="TopLi Li_3">
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            var user = await UserManager.GetUserAsync(User);
+
+
+                            <a class="active">@user.FullName!</a>
+
+
+                            @* <p>Welcome, @user.FullName!</p> *@
+                        }
+                    </li>
+
+                    <li class="TopLi Li_4"><a class="active" href="#"><img src="~/images/account_circle.png" class="account_circle" onclick="togglePopup()"></a></li>
+
+                </ul>
+
+
+
+
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+
+                    <ul class="LeftUl">
+                        <li class="LeftLi">
+                            <a asp-area="Identity" asp-page="/Account/Register" class="active white" id="AccountButton">
+                                Register New User
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-area="Identity" asp-page="/Account/ResetpasswordNew" class="active" id="BranchButton">
+                                Password Reset
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-controller="AppRole" asp-action="Create" class="active" id="AccountButton">
+                                Add Role
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-controller="Home" asp-action="Index" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+
+
+                        <li class="LeftLi">
+                            <a class="active" id="logoutButton">
+                                <img src="~/images/logout2.png" class="logout2_png">Log out
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                    <div id="confirmationModalLogOut" class="modal">
+                        <div class="modal-content">
+
+                            <p>Are you sure you want to Log out?</p>
+                            <div class="LogoutButton_Div">
+                                @if (SignInManager.IsSignedIn(User))
+                                {
+
+                                    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                                        <button type="submit" class="PopUpLogOutYes" id="confirmLogOut">Yes</button>
+                                    </form>
+
+
+                                }
+                                else
+                                {
+
+                                }
+
+                                <button class="PopUpLogOutNo" type="button" id="cancelLogOut">No</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="Flex_div2">
+                        <div class="Flex_div2_line1">
+                            <label class="Users_label" id="Topic">Register</label>
+
+                        </div>
+                        <div class="UsersInfo_divR">
+
+
+
+
+                            <div class="MiddleContent_divR">
+                                <div class="Register_div">
+                                        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                                            
+                                            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                                        <div class="left_divR">
+                                            <div class="DFeild">
+                                                <label class="labelP" asp-for="Input.FullName">Name</label>
+                                                <input asp-for="Input.FullName" class="txtP textbox" autocomplete="Name" aria-required="true" placeholder="Enter Your Full Name" />
+                                                
+                                                <span asp-validation-for="Input.FullName" class="text-danger"></span>
+                                            </div>
+
+                                            <div class="DFeild">
+                                                <label class="labelP" asp-for="Input.Profession">Profession</label>
+                                                <input asp-for="Input.Profession" class="txtP textbox" autocomplete="Profession" aria-required="true" placeholder="Enter Your Profession" />
+                                                
+                                                <span asp-validation-for="Input.Profession" class="text-danger"></span>
+                                            </div>
+
+                                            <div class="DFeild">
+                                                <label class="labelP" asp-for="Input.DOB">DOB</label>
+                                                <input asp-for="Input.DOB" class="txtP textbox" autocomplete="DOB" aria-required="true" placeholder="Enter your DOB" />
+                                                
+                                                <span asp-validation-for="Input.DOB" class="text-danger"></span>
+                                            </div>
+
+                                            <div class="DFeild">
+                                                <label class="labelP" asp-for="Input.NicNo">NicNo</label>
+                                                <input asp-for="Input.NicNo" class="txtP textbox" autocomplete="NicNo" aria-required="true" placeholder="Enter your NicNo" />
+                                                
+                                                <span asp-validation-for="Input.NicNo" class="text-danger"></span>
+                                            </div>
+
+                                            <div class="DFeild">
+                                                <label class="labelP" asp-for="Input.Address">Address</label>
+                                                <input asp-for="Input.Address" class="txtP textbox" autocomplete="Address" aria-required="true" placeholder="Enter your Address" />
+                                                
+                                                <span asp-validation-for="Input.Address" class="text-danger"></span>
+                                            </div>
+                                        @* </div>
+                                        <div class="right_divR"> *@
+                                            <div class="DFeild">
+                                                <label class="labelP" asp-for="Input.Email">Email</label>
+                                                <input asp-for="Input.Email" class="txtP textbox" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                                                
+                                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                            </div>
+
+                                            <div class="DFeild">
+                                                <label class="labelP" asp-for="Input.Password">Password</label>
+                                                <input asp-for="Input.Password" class="txtP textbox" autocomplete="new-password" aria-required="true" placeholder="password" />
+                                                
+                                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                            </div>
+
+                                            <div class="DFeild">
+                                                <label class="labelP" asp-for="Input.ConfirmPassword">Confirm Password</label>
+                                                <input asp-for="Input.ConfirmPassword" class="txtP textbox" autocomplete="new-password" aria-required="true" placeholder="password" />
+                                                
+                                                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                                            </div>
+
+
+                                            <div class="DFeild">
+                                                <label class="labelP" asp-for="Input.ConfirmPassword">Select Role</label>
+                                                <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="DropdP textbox" aria-required="true">
+                                                    <option selected>Select Role</option>
+                                                </select>
+                                                <span asp-validation-for="Input.Role" class="text-danger"></span>
+                                            </div> 
+
+                                            <div class="Save_divR">
+                                                <button id="registerSubmit" type="submit" class="SaveA">Register</button>
+                                            </div>
+                                        </div>
+
+
+
+                                            
+                                        </form>
+                                </div>
+                                    <div class="col-md-6 col-md-offset-2">
+                                        <section>
+                                           
+                                            @{
+                                                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                                                {
+                                                    <div>
+                                                        
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                                                        <div>
+                                                            <p>
+                                                                @foreach (var provider in Model.ExternalLogins!)
+                                                                {
+                                                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                                                }
+                                                            </p>
+                                                        </div>
+                                                    </form>
+                                                }
+                                            }
+                                        </section>
+                                    </div>
+                            </div>
+                        </div>
+
+                                @section Scripts {
+                                    <partial name="_ValidationScriptsPartial" />
+                                }
+
+
+                            
+
+
+
+
+
+
+                    </div>
+
+                </div>
+                    @* <label class="copyrightR" id="target-div-id">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script>
+
+    document.getElementById("logoutButton").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "block";
+    });
+
+    document.getElementById("cancelLogOut").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+
+    document.getElementById("confirmLogOut").addEventListener("click", function () {
+        // Add your save functionality here
+        // Placeholder for actual save operation
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+</script>
+
+

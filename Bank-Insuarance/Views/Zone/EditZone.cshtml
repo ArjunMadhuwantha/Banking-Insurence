@@ -1,0 +1,242 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@using Bank_Insuarance.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@model ZoneViewModel
+
+<head>
+    <link href="~/css/editzonestyle.css" rel="stylesheet" />
+    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <script src="~/js/EditZoneScript.js"></script>
+
+    <title>Edit Zone</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <ul class="TopUl" id="HUI">
+                    <li class="TopLi Li_1"><a class="active" href="#">Zone/<label class="Blue">Setting</label></a></li>
+
+                    <li class="TopLi Li_2"><a class="active" href="#"><img src="~/images/Line.png" class="searchWhite_img"></a></li>
+                    <li class="TopLi Li_3">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            var user = await UserManager.GetUserAsync(User);
+
+
+                            <a class="active">@user.FullName!</a>
+
+
+                            @* <p>Welcome, @user.FullName!</p> *@
+                        }
+                    </li>
+                    <li class="TopLi Li_4"><a class="active" href="#"><img src="~/images/account_circle.png" class="account_circle" onclick="togglePopup()"></a></li>
+
+                </ul>
+
+
+
+
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+
+                    <ul class="LeftUl">
+                        @* <li class="LeftLi">
+                            <a class="active" href="" id="DashboardButton">
+                                <img src="~/images/Dashboard.png" class="Dashboard_png">Dashboard
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-page="/Account/DetailsManage" asp-area="Identity" class="active" id="AccountButton">
+                                <img src="~/images/Account.png" class="Account_png">Account
+                            </a>
+                        </li> *@
+
+                        <li class="LeftLi">
+                            <a asp-controller="Branch" asp-action="Branch" class="active" id="BranchButton">
+                                <img src="~/images/Branch_png.png" class="Branch_png">Branch
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-controller="Zone" asp-action="Zone" class="active white" id="ZoneButton">
+                                <img src="~/images/Zone.png" class="Zone_png">Zone
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-controller="Home" asp-action="Index" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a class="active" id="logoutButton">
+                                <img src="~/images/logout2.png" class="logout2_png">Log out
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                    <div id="confirmationModalLogOut" class="modal">
+                        <div class="modal-content">
+
+                            <p>Are you sure you want to Log out?</p>
+                            <div class="LogoutButton_Div">
+                                @if (SignInManager.IsSignedIn(User))
+                                {
+
+                                    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                                        <button type="submit" class="PopUpLogOutYes" id="confirmLogOut">Yes</button>
+                                    </form>
+
+
+                                }
+                                else
+                                {
+
+                                }
+
+                                <button class="PopUpLogOutNo" type="button" id="cancelLogOut">No</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="Flex_div2">
+                        <div class="Flex_div2_line1">
+                            <label class="Zone_label" id="Topic">Zone Edit</label>
+
+                        </div>
+                        <div class="ZoneInfo_div">
+                            <div class="MiddleNav_div">
+                                <div class="Middlenavigation" id="Leftnav">
+
+                                    <ul class="MiddleUl">
+
+
+                                        <li class="MiddleLi Bar">
+                                            <a asp-controller="Zone" asp-action="Zone" class="Middleactive" onclick="" id="">
+                                                <img src="~/images/Zone.png" class="Basic_png">Basic Information
+                                            </a>
+                                        </li>
+
+                                        <li class="MiddleLi Bar">
+                                            <a class="Middleactive PinBlue" onclick="" id="">
+                                                <img src="~/images/AddZone.png" class="AddZone_png">Edit Zone
+                                            </a>
+                                        </li>
+
+                                        <li class="MiddleLi Bar">
+                                            <a asp-controller="Zone" asp-action="AddZone" class="Middleactive" onclick="" id="">
+                                                <img src="~/images/AddZone.png" class="AddZone_png">Add Zone
+                                            </a>
+                                        </li>
+
+
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="Flex_div">
+                                <div class="MiddleContent_div">
+
+                                    <div class="BasicInformationTopic_div"><label class="BasicInformation_label">Edit Zone</label></div>
+                                    <form asp-action="EditZone" asp-controller="zone" method="post">
+                                        <div class="BasicInformation_div">
+
+                                            <div class="left_div">
+                                                <label class="ZoneID_label">Zone ID</label>
+                                                <div><input asp-for="ZoneId" class="ZoneID_txt textbox" type="text" name="ZoneId"  ><img src="~/images/edit.png" class="edit_png"></div>
+
+                                                <label class="ZoneName_label">Zone Name</label>
+                                                <div><input asp-for="Zone_name" class="ZoneName_txt  textbox" type="text" name="Zone_name" ><img src="~/images/edit.png" class="edit_png"></div>
+
+
+                                                <label class="ZoneStatus_label">Zone Status</label>
+                                                <select asp-for="Status" name="Status" id="" class="Dropdown_ZoneStatus  textbox">
+                                                    <option asp-for="" value="Active" id="Active">Active</option>
+                                                    <option asp-for="" value="InActive" id="InActive">InActive</option>
+                                                </select>
+
+                                            </div>
+
+                                       
+
+                                        </div>
+                                        <div class="AddZone_div"><button type="button" class="AddZone" id="saveButton">Update</button></div>
+                                        <div id="confirmationModal" class="modal">
+                                            <div class="modal-content">
+                                                <span class="close">&times;</span>
+                                                <p>Are you sure you want to Update?</p>
+                                                <button type="submit" id="confirmSave">Yes</button>
+                                                <button type="button" id="cancelSave">No</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                
+                           </div>
+
+
+                        </div>
+
+                    </div>
+                    <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label>
+                </div>
+            </div>
+
+        </div>
+
+       
+</body>
+
+<script>
+    document.getElementById("saveButton").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "block";
+    });
+
+    document.getElementById("cancelSave").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    document.getElementById("confirmSave").addEventListener("click", function () {
+        
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    /////////////////////////////////
+
+    document.getElementById("logoutButton").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "block";
+    });
+
+    document.getElementById("cancelLogOut").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+
+    document.getElementById("confirmLogOut").addEventListener("click", function () {
+        
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+</script>

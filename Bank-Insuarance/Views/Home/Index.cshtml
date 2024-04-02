@@ -1,0 +1,200 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Bank_Insuarance.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<head>
+    <link rel="stylesheet" href="~/css/HomeStyle.css">
+    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <script src="~/js/HomeScript.js"></script>
+
+    <title>Home</title>
+
+</head>
+
+<body>
+    <div class="MainDiv">
+        <img class="BGIMG" src="~/images/Background.png">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <img class="logo_img_Home" src="~/images/Homelogo.png" onmouseover="togglePopupremove()">
+                <ul class="TopUl" id="HUI">
+                    <li class="TopLi Li_1"></li>
+                    <li class="TopLi Li_2"></li>
+                    <li class="TopLi Li_3"></li>
+                    <li class="TopLi Li_4"></li>
+                    <li class="TopLi Li_5" onmouseover="togglePopupremove()">
+                        <a class="active" href="#">
+                            <div class="Nav">
+                                <button class="Navbtn">Parithoshitha<img class="expandpng" src="~/images/expandpng.png"></button>
+                                <div class="Nav-content">
+                                    <a class="DropdownElement" asp-action="AddDivisaranaParithoshitha" asp-controller="Parithoshitha">Divisarana Parithoshitha</a>
+                                    <a class="DropdownElement" asp-action="AddSavingReliefParithoshitha" asp-controller="Parithoshitha">Saving Reilef Parithoshitha</a>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="TopLi Li_6" onmouseover="togglePopupremove()">
+                        <a class="active" href="#">
+                            <div class="Nav">
+                                <button class="Navbtn">Compensations<img class="expandpng" src="~/images/expandpng.png"></button>
+                                <div class="Nav-content">
+                                    <a class="DropdownElement" asp-action="AddBankingCompensation" asp-controller="Compensation">Banking Compensation</a>
+                                    <a class="DropdownElement" asp-action="AddBuildingCompensation" asp-controller="Compensation">Building Compensation</a>
+                                    <a class="DropdownElement" asp-action="AddHealthCompensation" asp-controller="Compensation">Health Compensation</a>
+                                    <a class="DropdownElement" asp-action="AddTreasuraryCompensation" asp-controller="Compensation">Treasuary Compensation</a>
+                                    <a class="DropdownElement" asp-action="LoanCompentionce" asp-controller="Loan">Loan Compensation</a>
+                                    <a class="DropdownElement" asp-action="HouseLoanCompentionce" asp-controller="Loan">HouseLoan Compensation</a>
+                                    <a class="DropdownElement" asp-action="DivisaranaCompensation" asp-controller="Divisarana">Divisarana Compensation</a>
+                                    <a class="DropdownElement" asp-action="AddSavingReilef" asp-controller="Compensation">Saving Reilef Compensation</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="TopLi Li_7" onmouseover="togglePopupremove()">
+                        <a class="active" href="#">
+                            <div class="Nav">
+                                <button class="Navbtn">Summary<img class="expandpng" src="~/images/expandpng.png"></button>
+                                <div class="Nav-content">
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="BankSummary">Bank Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="BuildingSummary">Building Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="HealthSummary">Health Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="TreasharySummary">Treashary Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="SavingRelifSummary">Saving Relif Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="LoanBranchSummary">Loan Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="DivisaranaSummary">Divisarana Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="DivisaranaCustomerDetails">Divisarana Customer Summary</a>
+
+                                    @* <a class="DropdownElement" asp-controller="Summary" asp-action="CustomerpaymentSummary">Customer Payment Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="BankCompensationSummary">Bank Compensation Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="BuildingCompensationSummary">Building Compensation Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="HealthCompensationSummary">Health Compensation Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="SavingRelifCompensationSummary">SavingRelif Compensation Summary</a>
+                                    <a class="DropdownElement" asp-controller="Summary" asp-action="TreasharyCompensationSummary">Treashary Compensation Summary</a> *@
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="TopLi Li_8"><a class="active" href="#"><img src="~/images/account_circle.png" class="account_circle" onmouseover="togglePopup()"></a></li>
+
+                </ul>
+
+                <div class="popup" id="popup">
+                    <div class="content">
+
+                        <div class="TopDiv">
+                            <label class="PersonLbl">Person</label>
+                            <div class="circle"><img class="UserDp" src="~/images/UserDp.png"></div>
+                            <img class="editWhitepng" src="~/images/editWhite.png">
+                        </div>
+
+                        <div class="NameLblDiv">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            var user = await UserManager.GetUserAsync(User);
+                            <label class="NameLbl">Welcome, @user.FullName!</label>
+                            @* <p>Welcome, @user.FullName!</p> *@
+                        }
+                        </div>
+        
+
+                        <div class="ManageDiv PopupElement"><a asp-area="Identity" asp-page="/Account/Manage/ShowPersonalData" class=""><img class="manage_accountsBlackpng" src="~/images/manage_accountsBlack.png"><label class="DetailLbl">Manage your Account</label></a></div>
+                        
+
+                        <div class="LogoutDiv PopupElement"><a id="logoutButton" class=""><img class="logoutBlackpng" src="~/images/logoutBlack.png"><label class="DetailLbl">Log out</label></a></div>
+
+                        <hr class="PersonHr">
+
+                        <div class="profilesDiv"><label class="profilesLbl">Other profiles<img class="settingsBlackpng" src="~/images/addBlack.png"></label></div>
+                       
+                        <div class="AdminLoginDiv PopupElement"><a asp-area="Identity" asp-page="/Account/Register" class=""><img class="admin_loginBlackpng" src="~/images/admin_loginBlack.png"><label class="DetailLbl">Admin Privileges</label></a></div>
+
+
+                        <div class="AddDiv PopupElement"><a asp-controller="Branch" asp-action="Branch" class=""><img class="addBlackpng" src="~/images/settingsBlack.png"><label class="DetailLbl">DetailsManage</label></a></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content_div" onmouseover="togglePopupremove()">
+
+
+                <div class="Divisaana_Div">
+                    <a asp-action="DiviSaranaHome" asp-controller="Divisarana">
+                        <label class="Divisaana_label">Divisarana Insurance</label>
+                    </a>
+                </div>
+
+                <div class="Loan_Div">
+                    <a asp-action="LoanHome" asp-controller="Loan">
+                        <label class="Loan_label">Home/Loan Insurance</label>
+                    </a>
+                </div>
+
+                <div class="Other_Div">
+                    <a asp-controller="InsuarancePayment" asp-action="Add">
+                        <label class="Other_label">Other <br />Insurance</label>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div id="confirmationModalLogOut" class="modal">
+                <div class="modal-content">
+                    
+                    <p>Are you sure you want to Log out?</p>
+                    <div class="LogoutButton_Div">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            
+                                <form  asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                                <button type="submit" class="PopUpLogOutYes" id="confirmLogOut">Yes</button>
+                                </form>
+
+                            
+                        }
+                        else
+                        {
+
+                        }
+
+                        <button class="PopUpLogOutNo" type="button" id="cancelLogOut">No</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script>
+
+    document.getElementById("logoutButton").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "block";
+    });
+
+    document.getElementById("cancelLogOut").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+
+    document.getElementById("confirmLogOut").addEventListener("click", function () {
+        // Add your save functionality here
+        // Placeholder for actual save operation
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+    
+</script>

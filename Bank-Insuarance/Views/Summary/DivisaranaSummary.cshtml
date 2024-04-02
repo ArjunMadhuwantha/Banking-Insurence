@@ -1,0 +1,158 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeSummaryViewModel
+
+
+<head>
+
+    
+    <link rel="stylesheet" href="~/css/SummaryStyle.css">
+    <script src="~/js/valuesubmitscript.js"></script>
+    <title>Divisarana Insuarance Insuarance</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">Divisarana Insuarance Summary</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Home" asp-action="Index" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+                    
+
+                    <div class="content_div2">
+                        <form asp-controller="Summary" asp-action="DivisaranaSummary" method="post">
+                            <div class="V_div01">
+
+
+                                <div class="V_div">
+                                    @*  <label class="Branch_lbl">Branch</label> *@
+                                    <input class="Branch_txt" type="text" id="branchInput" placeholder="Search Branch">
+                                    <img class="BranchSearchImage" src="~/images/search.png">
+                                    <input type="hidden" id="branchId" name="SummaryViewModel.BranchId">
+                                </div>
+
+                            </div>
+
+                            @* <div class="button_div">
+                                <div class="Add_div"><button type="submit" class="Add" onclick="ShowTable()">Search</button></div>
+                            </div> *@
+                        </form>
+
+
+
+
+                        <div class="tablediv">
+
+                            <table class="table" id="myTable">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th class="Col01_D">Branch</th>
+                                        <th class="Col02_D">FullName</th>
+                                        <th class="Col03_D">Divisarana no</th>
+                                        <th class="Col04_D">Death person name</th>
+                                        <th class="Col05_D">Hopitalized person</th>
+                                        <th class="Col06_D">Disease</th>
+                                        <th class="Col07_D">Surgary</th>
+                                        <th class="Col08_D">Compensation value</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+
+
+                                        @foreach (var Member in Model.CollectionSummaryModel)
+                                        {
+
+                                            <tr>
+                                                
+
+                                                <td>@Member.BranchName</td>
+                                                <th><a href="/Summary/DivisaranUserDetails?CusPolicyNo=@Member.CusPolicyNo">@Member.Fullname</a></th>
+                                                <td>@Member.DivisaranaNo</td>
+                                                <td>@Member.DeathPersonName</td>
+                                                <td>@Member.HospitalizedPerson</td>
+                                                <td></td>
+                                                <td>@Member.Surgery</td>
+                                                <td>@Member.Compensationvalue</td>
+                                               
+
+
+                                            </tr>
+
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+</body>
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
+
+            var branchNamesWithoutDots = branches.map(function (branch) {
+                return branch.text.replace('.', '');
+            });
+
+            $("#branchInput").autocomplete({
+                source: branchNamesWithoutDots,
+                minLength: 1,
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
+                    //$("#branchId").val(selectedBranch.value);
+                    $("input[name='SummaryViewModel.BranchId']").val(selectedBranch.value);
+                    return true;
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+        });
+    </script>
+}

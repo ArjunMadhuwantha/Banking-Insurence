@@ -1,0 +1,95 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeDivisaranaViewModel
+
+
+<head>
+
+
+    <link rel="stylesheet" href="~/css/SummaryStyle.css">
+    <script src="~/js/DivisaranaAddSuccScript.js"></script>
+    <title>Divisarana Customer Successors Summary</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">Divisarana Customer Successors Summary</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Summary" asp-action="DivisaranaCustomerDetails" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+
+
+
+
+
+                        <div class="tablediv">
+
+                            <table class="table" id="myTable">
+                                <thead>
+                                    <tr>
+
+                                        <th class="Col01_C">Succssor Name</th>
+                                        <th class="Col02_C">DOB</th>
+                                        <th class="Col03_C">Age</th>
+                                        <th class="Col04_C">Relation</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+
+
+                                        @foreach (var Member in Model.CollectionModel)
+                                        {
+
+                                            <tr>
+                                                <td>@Member.SuccssorName</td>
+                                                <td>@Member.SuccssorDOB</td>
+                                                <td>@Member.Age</td>
+                                                <td>@Member.Relation</td>
+
+                                            </tr>
+
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+</body>
+
+

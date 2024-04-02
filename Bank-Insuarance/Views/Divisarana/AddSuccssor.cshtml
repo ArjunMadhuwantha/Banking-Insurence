@@ -1,0 +1,130 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeDivisaranaViewModel
+@{
+    ViewData["Title"] = "Add Succssor Payment";
+}
+
+<head>
+    
+    
+    <link rel="stylesheet" href="~/css/DivisaranaAddSuccStyle.css">
+    <script src="~/js/DivisaranaAddSuccScript.js"></script>
+    <title>Divisarana Insuarance</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="TopicDivisarana">Divisarana Insuarance</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Divisarana" asp-action="AddDivisarana" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+                        <form asp-controller="Divisarana" asp-action="AddSuccssor" method="post">
+                            <div class="V_div01">
+
+
+                                <div class="V_div">
+                                    <label class="NIC_lbl">Member NIC</label>
+                                    <input asp-for="DivisaranaViewModel.ID" class="NIC_txt" type="text">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Name_lbl">Name</label>
+                                    <input asp-for="DivisaranaViewModel.SuccssorName" class="Name_txt" type="text">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="DOB_lbl">D.O.B</label>
+                                    <input asp-for="DivisaranaViewModel.SuccssorDOB" class="DOB_txt" type="date">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Age_lbl">Age</label>
+                                    <input asp-for="DivisaranaViewModel.Age" class="Age_txt" type="number" min="0" oninput="validity.valid||(value='');">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Relation_lbl">Relation</label>
+                                    <input asp-for="DivisaranaViewModel.Relation" class="Relation_txt" type="text">
+                                </div>
+
+
+                            </div>
+
+                            <div class="button_div">
+                                <div class="Add_div"><button type="submit" class="Add" onclick="ShowTable()">Add</button></div>
+                            </div>
+                        </form>
+                        <div class="tablediv" >
+
+                            <table class="table" id="myTable">
+                                <thead>
+                                    <tr>
+                                        <th class="Col01">Sub num</th>
+                                        <th class="Col02">Name</th>
+                                        <th class="Col03">D.O.B</th>
+                                        <th class="Col04">Age</th>
+                                        <th class="Col04">Relationship</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+                                        
+
+                                        @foreach (var succssor in Model.CollectionModel)
+                                        {
+
+                                            <tr>
+                                                <td><input type="number" class="tableinput " id="Column1-01"></td>
+
+                                                <td>@succssor.SuccssorName</td>
+                                                <td>@succssor.SuccssorDOB</td>
+                                                <td>@succssor.Age</td>
+                                                <td>@succssor.Relation</td>
+
+                                            </tr>
+
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+                        
+                    </div>
+                    @* <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+                </div>
+            </div>
+
+        </div>
+</body>
+
+

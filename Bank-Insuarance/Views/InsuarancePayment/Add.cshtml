@@ -1,0 +1,191 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model InsuarancePaymentViewModel
+@{
+    ViewData["Title"] = "Insuarance Payment";
+}
+
+<head>
+   
+    
+    <link rel="stylesheet" href="~/css/PaymentStyle.css">
+    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <script src="~/js/textfeildfocus.js"></script>
+
+    <title>Payment</title>
+</head>
+<body>
+    <div class="MainDiv">
+        
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a class="Back" asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="TopicPayment">Insurance payment</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Home" asp-action="Index" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+                    <form asp-controller="InsuarancePayment" asp-action="Add" method="post">
+                    <div class="content_div2">
+
+                        <div class="H_div01">
+                            <div class="V_div01">
+                                <label class="Branch_lbl">Branch</label>
+                                <input class="Branch_txt textbox" type="text" id="branchInput" placeholder="Search Branch">
+                                 <img class="BranchSearchImage" src="~/images/search.png">
+                                 <input type="hidden" id="branchId" name="BranchId"> <!-- Hidden field for BranchId -->
+                            </div>
+
+                            <div class="V_div02">
+                                <label class="Date_lbl">Date</label>
+                                    <input asp-for="Date" class="Date_txt textbox" type="date">
+                                    
+                            </div>
+
+                            <div class="V_div03">
+                            </div>
+                        </div>
+
+                        <div class="tablediv">
+
+                            <table id="myTable">
+                                <thead>
+                                    <tr>
+                                        <th class="Col01">Sub no</th>
+
+                                        <th class="Col03">Type of insurance</th>
+                                        <th class="Col04">Amount</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><label class="tableinput" id="Column1-01">1</label></td>
+                                        <td><label class="InsuranceType_lbl">Banking Insurance</label></td>
+                                            <td><input asp-for="BankingAmount" type="number" class="tableinput textbox" id="Column1-04" min="0" oninput="validity.valid||(value='');"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="tableinput" id="Column1-01">2</label></td>
+                                        <td><label class="InsuranceType_lbl">Building Insurance</label></td>
+                                            <td><input asp-for="BankingAmount" type="number" class="tableinput textbox" id="Column1-04" min="0" oninput="validity.valid||(value='');"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="tableinput" id="Column1-01">3</label></td>
+                                        <td><label class="InsuranceType_lbl">Saving relif Insurance</label></td>
+                                            <td><input asp-for="SavingAmount" type="number" class="tableinput textbox" id="Column1-04" min="0" oninput="validity.valid||(value='');"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="tableinput" id="Column1-01">4</label></td>
+                                        <td><label class="InsuranceType_lbl">Health Insurance</label></td>
+                                            <td><input asp-for="HealthAmount" type="number" class="tableinput textbox" id="Column1-04" min="0" oninput="validity.valid||(value='');"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label class="tableinput" id="Column1-01">5</label></td>
+                                        <td><label class="InsuranceType_lbl">Treasury Insurance</label></td>
+                                            <td><input asp-for="TreasuaryAmount" type="number" class="tableinput textbox" id="Column1-04" min="0" oninput="validity.valid||(value='');"></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                        <div class="button_div">
+                                <div class="Add_div">
+                                    
+                                    <a class="Add" asp-action="Treasurayes" asp-controller="InsuarancePayment">Add Treasaryes</a>
+                                </div>
+                                <div class="submit_div"><button type="button" class="submit" id="saveButton">Submit</button></div>
+                        </div>
+                            <div id="confirmationModal" class="modal">
+                                <div class="modal-content">
+
+                                    <p>Are you sure you want to Add?</p>
+                                    <button class="PopUpYes" type="submit" id="confirmSave">Yes</button>
+                                    <button class="PopUpNo" type="button" id="cancelSave">No</button>
+                                </div>
+                            </div>
+                    </div>
+                    </form>
+
+                    @* <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+                </div>
+            </div>
+        
+        </div>
+
+        
+</body>
+
+<script>
+    document.getElementById("saveButton").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "block";
+    });
+
+    document.getElementById("cancelSave").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    document.getElementById("confirmSave").addEventListener("click", function () {
+        
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+</script>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Get branch names from ViewBag and convert them to an array
+            var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
+
+            // Modify branches to remove dots
+            var branchNamesWithoutDots = branches.map(function (branch) {
+                return branch.text.replace('.', ''); // Remove dot from each branch name
+            });
+
+            // Initialize autocomplete on the input field
+            $("#branchInput").autocomplete({
+                source: branchNamesWithoutDots, // Provide the modified array of branch names as the source of suggestions
+                minLength: 1, // Minimum characters to trigger autocomplete
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    // Find the corresponding branch object based on the selected branch name
+                    var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
+
+                    // Set the selected branch's ID in the hidden field
+                    $("#branchId").val(selectedBranch.value);
+
+                    return true; // Allow default behavior of the input field (form submission)
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+        });
+    </script>
+}

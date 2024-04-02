@@ -1,0 +1,483 @@
+body {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    background-color: #DCF0FC;
+}
+
+a {
+    text-decoration: none;
+}
+
+.MainDiv {
+    margin-top: 1%;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: -1%;
+    margin-left: -0.6%;
+    margin-bottom: -1%;
+}
+
+.frame_TYPE {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    margin-top: -1%;
+    margin-left: -0.6%;
+    margin-bottom: -1%;
+}
+
+
+
+
+
+.NavBarTop_div {
+    display: flex;
+    flex-direction: row;
+    background-color: #05415C;
+    width: 100.5%;
+    height: 111px;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo_img_Home {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 50px;
+    z-index: -10;
+}
+
+.Blue {
+    color: #0099FF;
+}
+
+
+.TopUl {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0%;
+    width: 100%;
+    box-shadow: #000;
+    background-color: #05415C;
+    height: 100%;
+    font-family: "Roboto Condensed";
+}
+
+.TopLi {
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-right: 15px;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+}
+
+.TopLi {
+    margin-top: 2%;
+}
+
+
+
+    .TopLi a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+
+        .TopLi a:hover {
+            font-weight: bold;
+        }
+
+.Li_1 {
+    margin-left: 2%;
+    font-size: 25.5px;
+}
+
+.Li_2 {
+    margin-left: 58%;
+}
+
+.Li_3 {
+    margin-top: 2.3%;
+}
+
+
+
+.account_circle {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.content_div {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+
+
+
+
+
+/*left Side*/
+
+.navigation {
+    padding-top: 5%;
+    width: 13%;
+    height: 150%;
+    text-align: left;
+    background-color: #05415C;
+    position: fixed;
+    margin-top: 5%;
+}
+
+
+.LeftUl {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    box-shadow: #000;
+    background-color: #05415C;
+    height: 150%;
+}
+
+
+.LeftLi {
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    margin-right: 6%;
+    font-size: 14px;
+}
+
+
+    .LeftLi a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-align: center;
+        width: 86%;
+    }
+
+
+        .LeftLi a:hover {
+            background-color: #11729D;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+.active {
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+.white {
+    background-color: #ffffff;
+    color: #05415C;
+    font-weight: bold;
+    width: 83.5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+
+
+.LastLeftLi {
+}
+
+.Dashboard_png, .Account_png, .Zone_png, .Branch_png, .logout2_png {
+    position: absolute;
+    margin-left: -15%;
+    margin-top: -1.8%;
+}
+
+
+.type_div {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    height: 150%;
+    margin-left: 15%;
+    margin-top: 8%;
+    z-index: -2;
+}
+
+
+
+.Flex_div2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-top: 1%;
+    background-color: rgba(217, 217, 217, 0.2); /* #D9D9D9 with 20% opacity */
+}
+
+.Flex_div2_line1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-top: 3%;
+    height: 5%;
+}
+
+.Users_label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -8%;
+    margin-top: -2%;
+    margin-bottom: 2%;
+}
+
+.AddUserBtn_div {
+    margin-left: 88%;
+    margin-bottom: 5%;
+    margin-top: -2%;
+}
+
+.AddUserBtn {
+    font-family: "Roboto Condensed";
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    padding-left: 20%;
+    font-size: 14px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255);
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+    .AddUserBtn:hover {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+.AddUserbtn_png {
+    position: absolute;
+    margin-left: 0.8%;
+    margin-top: 0.8%;
+}
+
+.UsersInfo_div {
+    position: absolute;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 80%;
+    height: 116%;
+    border-radius: 8px;
+}
+
+    .UsersInfo_div:last-child {
+        flex-direction: column;
+    }
+
+
+.MiddleNav_div {
+    width: 17%;
+    height: 20%;
+}
+
+.Middlenavigation {
+    width: 100%;
+    height: 80%;
+    text-align: left;
+    padding-top: 6%;
+    background-color: #ffffff;
+    margin-top: 10%;
+}
+
+
+.MiddleUl {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0;
+    width: 100%;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+
+.MiddleLi {
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    margin-right: 5%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+    .MiddleLi a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-align: left;
+    }
+
+
+        .MiddleLi a:hover {
+            color: #025CA3;
+            font-weight: bold;
+        }
+
+.Middleactive {
+    color: #5B5B5B;
+    margin-left: 20%;
+}
+
+.Middlewhite {
+    background-color: #FFFFFF;
+    color: #05415C;
+    font-weight: bold;
+}
+
+.PinBlue {
+    color: #025CA3;
+}
+
+.Bar {
+    margin-left: 6%;
+}
+
+
+
+.PINNED_png, .Basic_png, .Security_png, .Delete_png {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: -2%;
+}
+
+
+
+
+
+.MiddleContent_div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: -8.6%;
+    margin-left: 18%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5%;
+}
+
+
+
+.BasicInformationTopic_div {
+    background-color: #11729D;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: -1%;
+}
+
+.BasicInformation_label {
+    position: absolute;
+    color: #FFFFFF;
+    margin-top: 1.2%;
+    margin-left: 2%;
+    font-size: 18px;
+}
+
+.BasicInformation_div {
+    display: flex;
+    flex-direction: row;
+}
+
+.left_div, .right_div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.Name_label, .Profession_label, .NIC_label, .PasswordSecurity_label, .Email_label, .DOB_label, .Live_label {
+    margin-top: 1%;
+    margin-left: 10%;
+}
+
+.Empty_label {
+    margin-top: 4.5%;
+    margin-left: 10%;
+}
+
+.Name_txt, .Profession_txt, .NIC_txt, .Email_txt, .DOB_txt, .Live_txt, .CurrentPassword_txt, .newpassword_txt, .Confirmnewpassword_txt {
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    height: 46px;
+    background-color: #BEEBFF;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding-left: 8%;
+    margin-bottom: 5%;
+}
+
+
+
+.Name_png, .Profession_png, .NIC_png, .Email_png, .DOB_png, .Live_png, .UserPassword_png {
+    position: absolute;
+    margin-top: 1.9%;
+    margin-left: 5%;
+}
+
+.Visible_png {
+    margin-left: -7%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+
+
+.Update_div, .Update_div, .Save_div {
+    margin-left: 71%;
+    margin-bottom: 5%;
+}
+
+.Save_div {
+    margin-left: 74.8%;
+    margin-bottom: 5%;
+}
+
+.Update, .Update, .Save {
+    font-family: "Roboto Condensed";
+    border-radius: 10px;
+    width: 50%;
+    height: 110%;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255);
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+    .Update:hover, .Update:hover, .Save:hover {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+
+
+.copyright {
+    margin-left: 2%;
+    margin-top: 65%;
+    margin-bottom: 2%;
+}

@@ -1,0 +1,362 @@
+body {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.MainDiv {
+    margin-top: 1%;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: -1%;
+    margin-left: -0.6%;
+    margin-bottom: -1%;
+}
+
+
+
+.NavBarTop_div {
+    display: flex;
+    flex-direction: row;
+    background-color: #05415C;
+    width: 100.5%;
+    height: 111px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo_img_Home {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+
+
+.TopicDivisarana {
+    font-family: "Roboto Condensed";
+    font-size: 32PX;
+    font-weight: bold;
+    margin-left: 6%;
+    margin-top: 2%;
+    color: #FBFBFB;
+}
+
+
+.content_div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+
+
+
+/*left Side*/
+
+.navigation {
+    padding-top: 5%;
+    width: 13%;
+    height: 150%;
+    text-align: left;
+    background-color: #05415C;
+    position: fixed;
+    margin-top: 5%;
+}
+
+
+.LeftUl {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    box-shadow: #000;
+    background-color: #05415C;
+    height: 150%;
+}
+
+
+.LeftLi {
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    margin-right: 6%;
+    font-size: 14px;
+}
+
+
+    .LeftLi a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-align: center;
+        width: 86%;
+    }
+
+
+        .LeftLi a:hover {
+            background-color: #11729D;
+            color: #FFFFFF;
+        }
+
+.active {
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+.white {
+    background-color: #ffffff;
+    color: #05415C;
+    font-weight: bold;
+    width: 83.5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+
+
+.LastLeftLi {
+}
+
+.Back_png {
+    position: absolute;
+    margin-left: -15%;
+    margin-top:;
+}
+
+
+
+
+
+.type_div {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 150%;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.content_div2 {
+    width: 90%;
+    margin-left: 4%;
+    margin-top:5%
+}
+
+.H_div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.V_div01 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 3%;
+    margin-top: -3%;
+}
+
+.V_div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 3%;
+    margin-top: 1.2%;
+}
+
+
+.NIC_lbl,.Name_lbl, .DOB_lbl, .Age_lbl, .Relation_lbl {
+    font-size: 20PX;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-left: 3%;
+}
+
+.NIC_txt,.Name_txt, .DOB_txt, .Age_txt, .Relation_txt {
+    border: #FFFFFF;
+    border-radius: 5px;
+    width: 50%;
+    height: 31px;
+    cursor: pointer;
+    background-color: #E7E4E4;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto Condensed";
+    margin-top: -1%;
+    margin-left: 3%;
+}
+
+.tablediv {
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    overflow: hidden; /* This ensures the border-radius applies to the table */
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+    th:first-child, td:first-child {
+        border-left: 1px solid #ddd;
+    }
+
+    th:last-child, td:last-child {
+        border-right: 1px solid #ddd;
+    }
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.tableinput {
+    border: none;
+    outline: none;
+    width: 90%;
+    background-color: #F4F1F1;
+    cursor: pointer;
+}
+
+.checkbox {
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.Col01 {
+    width: 8%;
+}
+
+.Col02 {
+    width: 30%;
+}
+
+.Col03 {
+    width: 10%;
+}
+
+.Col04 {
+    width: 10%;
+}
+.Col05 {
+    width: 20%;
+}
+
+.InsuranceType_lbl {
+    margin-left: 5%;
+    padding-right: 20%;
+}
+
+.White {
+    background-color: #ffffff;
+    border: none;
+}
+
+.Total_lbl {
+    position: absolute;
+    right: calc(32% - 10px);
+    margin-top: -0.5%;
+}
+
+.Amount_td {
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.button_div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.Add_div {
+    margin-left: 3%;
+    
+}
+.submit_div {
+    margin-left: 77%;
+    
+}
+
+.submit, .Add {
+    font-family: "Roboto Condensed";
+    border-radius: 10px;
+    border: #FFFFFF;
+    width: 148px;
+    height: 43px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255);
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+    .submit:hover, .Add:hover {
+        cursor: pointer;
+    }
+
+
+
+
+.copyright {
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 10%;
+    background-color: #ffffff; /* Background color of autocomplete dropdown */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ui-menu-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style: none;
+}
+
+    .ui-menu-item:hover {
+        background-color: #82A0AD; /* Background color of hovered item */
+    }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    background-color: #82A0AD; /* Background color of selected item */
+    color: #ffffff; /* Text color of selected item */
+}

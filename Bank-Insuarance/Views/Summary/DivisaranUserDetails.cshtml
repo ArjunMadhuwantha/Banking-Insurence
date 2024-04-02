@@ -1,0 +1,128 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeDivisaranaViewModel
+
+
+<head>
+
+    
+    <link rel="stylesheet" href="~/css/SummaryStyle.css">
+    <script src="~/js/DivisaranaAddSuccScript.js"></script>
+    <title>Divisarana User Summary</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">Divisarana User Summary</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Summary" asp-action="DivisaranaSummary" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+                   
+
+                    <div class="content_div2">
+                       
+
+
+                        @if (Model != null)
+                        {
+
+
+                            @foreach (var Member in Model.CollectionModel)
+                            {
+                                <div class="V_div02_User">
+
+
+                                    <div class="V_div">
+                                        <label class="CName_lbl">Full Name</label>
+                                        <a href="/Summary/CustomerpaymentSummary?CusPolicyNo=@Member.CusPolicyNo">
+                                            <input asp-for="@Member.Fullname" class="CName_txt" type="text">
+                                        </a>
+                                    </div>
+
+                                    <div class="V_div2">
+                                        <label class="CAddress_lbl">Address</label>
+                                        <input asp-for="@Member.Address" class="CAddress_txt" type="text">
+                                    </div>
+
+                                    <div class="V_div2">
+                                        <label class="CNIC_lbl">NIC</label>
+                                        <input asp-for="@Member.ID" class="CNIC_txt" type="text">
+                                    </div>
+
+                                    <div class="V_div2">
+                                        <label class="CDOB_lbl">D.O.B</label>
+                                        <input asp-for="@Member.DOB" class="CDOB_txt" type="text">
+                                    </div>
+
+                                    <div class="V_div2">
+                                        <label class="CBMNumber_lbl">Bank Member No</label>
+                                        <input asp-for="@Member.BankMemberNo" class="CBMNumber_txt" type="text">
+                                    </div>
+
+                                    <div class="V_div2">
+                                        <label class="CJob_lbl">Job</label>
+                                        <input asp-for="@Member.Job" class="CJob_txt" type="text">
+                                    </div>
+
+                                    <div class="V_div2">
+                                        <label class="CJob_lbl">Succssor</label>
+                                        <input asp-for="@Member.Succssor" class="CJob_txt" type="text">
+                                    </div>
+
+                                    <div class="V_div2">
+                                        <label class="CJob_lbl">Start Date</label>
+                                        <input asp-for="@Member.StartDate" class="CJob_txt" type="text">
+                                    </div>
+
+                                    <div class="V_div2">
+                                        <label class="CJob_lbl">Addmission</label>
+                                        <input asp-for="@Member.AddmissionFee" class="CJob_txt" type="text">
+                                    </div>
+
+                                    <div class="V_div2">
+                                        <label class="CJob_lbl">Time Piroed</label>
+                                        <input asp-for="@Member.TimePeriod" class="CJob_txt" type="text">
+                                    </div>
+
+
+                                </div>
+
+                                <a href="/Summary/CustomerpaymentSummary?CusPolicyNo=@Member.CusPolicyNo">
+                                    <button type="button" class="Add bottomButton1">Payments</button>
+                                </a>
+
+                                <a href="/Summary/CustomerSuccsoursSummary?CusPolicyNo=@Member.CusPolicyNo">
+                                    <button type="button" class="Add bottomButton2">Succssors</button>
+                                </a>
+                            }
+                        }
+
+                       
+
+
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+</body>

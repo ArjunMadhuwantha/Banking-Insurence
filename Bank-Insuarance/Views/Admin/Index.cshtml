@@ -1,0 +1,237 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Bank_Insuarance.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+<head>
+
+    <link rel="stylesheet" href="~/css/AddZoneStyle.css">
+    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <script src="~/js/EditZoneScript.js"></script>
+
+    <title>Zone</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <ul class="TopUl" id="HUI">
+                    <li class="TopLi Li_1"><a class="active" href="#">User/<label class="Blue">Setting</label></a></li>
+
+                    <li class="TopLi Li_2"><a class="active" href="#"><img src="~/images/Line.png" class="searchWhite_img"></a></li>
+                    <li class="TopLi Li_3">
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            var user = await UserManager.GetUserAsync(User);
+
+
+                            <a class="active">@user.FullName!</a>
+
+
+                            @* <p>Welcome, @user.FullName!</p> *@
+                        }
+                    </li>
+                    <li class="TopLi Li_4"><a class="active" href="#"><img src="~/images/account_circle.png" class="account_circle" onclick="togglePopup()"></a></li>
+
+                </ul>
+
+
+
+
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+
+                    <ul class="LeftUl">
+                        
+
+                        <li class="LeftLi">
+                            <a asp-area="Identity" asp-page="/Account/Register" class="active" id="AccountButton">
+                                Register New User
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-controller="AppRole" asp-action="Create" class="active white" id="AccountButton">
+                                Add Role
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-controller="Branch" asp-action="Branch" class="active" id="BranchButton">
+                                Branch
+                            </a>
+                        </li>
+
+                        
+
+
+
+                        <li class="LeftLi">
+                            <a class="active" id="logoutButton">
+                                <img src="~/images/logout2.png" class="logout2_png">Log out
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                    <div id="confirmationModalLogOut" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Are you sure you want to Log out?</p>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+
+
+                                <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                                    <button type="submit" class="PopUpLogOutYes" id="confirmLogOut">Yes</button>
+                                </form>
+
+
+
+
+                            }
+                            <button class="PopUpLogOutNo" type="button" id="cancelLogOut">No</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="Flex_div2">
+                        <div class="Flex_div2_line1">
+                            <label class="Zone_label" id="Topic">Role</label>
+
+                        </div>
+                        <div class="ZoneInfo_div">
+                            <div class="MiddleNav_div">
+                                <div class="Middlenavigation" id="Leftnav">
+
+                                    <ul class="MiddleUl">
+
+
+                                        <li class="MiddleLi Bar">
+                                            <label class="Middleactive PinBlue" onclick="" id="">
+                                                <img src="~/images/Zone.png" class="Basic_png">Basic Information
+                                            </label>
+                                        </li>
+
+                                        @* <li class="MiddleLi Bar">
+                                        <a asp-controller="Zone" asp-action="EditZone" class="Middleactive" onclick="" id="">
+                                        <img src="~/images/AddZone.png" class="AddZone_png">Edit Zone
+                                        </a>
+                                        </li> *@
+
+                                        <li class="MiddleLi Bar">
+                                            <a asp-controller="Zone" asp-action="AddZone" class="Middleactive" onclick="" id="">
+                                                <img src="~/images/AddZone.png" class="AddZone_png">Add Zone
+                                            </a>
+                                        </li>
+
+
+
+
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="MiddleContent_div">
+
+                                <div class="BasicInformationTopic_div"><label class="BasicInformation_label">Basic Information</label></div>
+
+                                <div class="BasicInformation_div">
+
+                                    <div class="tablediv">
+
+
+
+                                        <table class="table" id="myTable">
+                                            <thead>
+                                                <tr>
+
+
+                                                    <th class="Col01">Zone ID</th>
+                                                    <th class="Col02">Zone Name</th>
+                                                    <th class="Col03">Zone Status</th>
+
+
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @if (Model != null)
+                                                {
+
+
+                                                    @foreach (var zone in Model)
+                                                    {
+                                                        <tr>
+                                                            <td scope="row">@zone.ZoneId</td>
+                                                            <td scope="row"><a class="btn btn-dark" asp-action="EditZone" asp-controller="Zone" asp-route-id="@zone.ZoneId">@zone.Zone_name</a></td>
+                                                            <td>@zone.Status</td>
+
+                                                        </tr>
+                                                    }
+                                                }
+
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+</body>
+<script>
+
+    document.getElementById("logoutButton").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "block";
+    });
+
+    document.getElementById("cancelLogOut").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+
+    document.getElementById("confirmLogOut").addEventListener("click", function () {
+
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+</script>
+
+<div class="AdminLoginDiv PopupElement"><a asp-controller="AppRole" asp-action="Create" class=""><img class="admin_loginBlackpng" src="~/images/admin_loginBlack.png"><label class="DetailLbl">Add Role</label></a></div>
+<div class="ManageDiv PopupElement"><a asp-area="Identity" asp-page="/Account/Register" class=""><img class="manage_accountsBlackpng" src="~/images/manage_accountsBlack.png"><label class="DetailLbl">RegisretUser</label></a></div>

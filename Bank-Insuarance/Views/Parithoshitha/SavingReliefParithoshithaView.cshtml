@@ -1,0 +1,157 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeOtherViewModel
+@{
+    ViewData["Title"] = "Add Saving Relief Parithoshitha";
+}
+
+<head>
+    
+    <link rel="stylesheet" href="~/css/ParithoshithaStyle.css">
+    <script src="~/js/textfeildfocus.js"></script>
+    <script src="~/js/valuesubmitscript.js"></script>
+    <title>Saving Reilef Parithoshitha View</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a class="Back" asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">Saving Reilef Parithoshitha View</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Parithoshitha" asp-action="AddSavingReliefParithoshitha" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+                        <form asp-controller="Parithoshitha" asp-action="SavingReliefParithoshithaView" method="post">
+                            <div class="V_div01">
+
+
+                                <div class="V_div">
+                                    @* <label class="Branch_lbl">Branch</label> *@
+                                    <input class="BranchV_txt" type="text" id="branchInput" placeholder="Search Branch">
+                                    <img class="BranchSearchImage" src="~/images/search.png">
+                                    <input type="hidden" id="branchId" name="Parithoshitha.BranchId">
+
+                                </div>
+
+
+                            </div>
+
+                            @* <div class="buttonV_div">
+                                <div class="Add_div"><button type="submit" class="Add">Search</button></div>
+                            </div> *@
+
+                        </form>
+
+                        <div class="tablediv">
+
+                            <table class="table" id="myTable">
+                                    <thead>
+                                        <tr>
+
+
+                                        <th class="Col01">Branch</th>
+                                        <th class="Col02P">Name</th>
+                                        <th class="Col03">Member No</th>
+                                        <th class="Col04P">Amount</th>
+                                        <th class="Col05P">Comment</th>
+
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (Model != null)
+                                        {
+
+
+                                            @foreach (var Member in Model.CollectionModelParithoshitha)
+                                            {
+
+                                                <tr>
+
+
+                                                    <td>@Member.BranchName</td>
+                                                    <td>@Member.DName</td>
+                                                <td>@Member.DMemberNo</td>
+                                                    <td>@Member.DAmount</td>
+                                                    <td>@Member.DComment</td>
+
+
+
+
+
+
+                                                </tr>
+
+                                            }
+                                        }
+                                        
+
+                                    </tbody>
+                                </table>
+
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+</body>
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
+
+            var branchNamesWithoutDots = branches.map(function (branch) {
+                return branch.text.replace('.', '');
+            });
+
+            $("#branchInput").autocomplete({
+                source: branchNamesWithoutDots,
+                minLength: 1,
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
+                    $("input[name='Parithoshitha.BranchId']").val(selectedBranch.value);
+                    return true;
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+        });
+    </script>
+}

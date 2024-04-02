@@ -1,0 +1,92 @@
+﻿@page
+@model Bank_Insuarance.Areas.Identity.Pages.Account.Manage.ShowPersonalDataModel
+@{
+    ViewData["Title"] = "Personal data";
+    ViewData["ActivePage"] = ManageNavPages.ShowPersonalData;
+}
+
+<h1>User Details</h1>
+
+<div class="PersonView_div">
+    <div class="Personleft_div">
+    
+       
+        <div class="DFeild">
+            <label class="labelP">User ID</label>
+            <input class="txtP" value="@Model.id" disabled />
+        </div>
+
+        <div class="DFeild">
+            <label class="labelP">Full Name</label>
+            <input class="txtP" value="@Model.FullName" disabled />
+        </div>
+
+        <div class="DFeild">
+            <label class="labelP">Username</label>
+            <input class="txtP" value="@Model.Username" disabled />
+        </div>
+
+        <div class="DFeild">
+            <label class="labelP">Phone Number</label>
+            <input class="txtP" value="@Model.PhoneNumber" disabled />
+        </div>
+
+        <div class="DFeild">
+            <label class="labelP">Email</label>
+            <input class="txtP" value="@Model.Email" disabled />
+        </div>
+
+    
+
+
+    </div>
+    <div class="Personright_div">
+
+
+        <div class="">
+            <label class="labelP">Profession</label>
+            <input class="txtP" value="@Model.Profession" disabled />
+        </div>
+
+        <div class="">
+            <label class="labelP">Date of Birth</label>
+            <input class="txtP" value="@Model.DOB" disabled />
+        </div>
+
+        <div class="">
+            <label class="labelP">NIC Number</label>
+            <input class="txtP" value="@Model.NicNo" disabled />
+        </div>
+
+        <div class="">
+            <label class="labelP">Address</label>
+            <input class="txtP" value="@Model.Address" disabled />
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

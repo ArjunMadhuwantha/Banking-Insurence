@@ -1,0 +1,548 @@
+body {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.MainDiv {
+    margin-top: 1%;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: -1%;
+    margin-left: -0.6%;
+    margin-bottom: -1%;
+}
+
+
+
+.NavBarTop_div {
+    display: flex;
+    flex-direction: row;
+    background-color: #05415C;
+    width: 100.5%;
+    height: 111px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo_img_Home {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+
+
+.Topic {
+    font-family: "Roboto Condensed";
+    font-size: 32PX;
+    font-weight: bold;
+    margin-left: 6%;
+    margin-top: 2%;
+    color: #FBFBFB;
+}
+
+
+.content_div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+
+
+
+/*left Side*/
+
+.navigation {
+    padding-top: 5%;
+    width: 13%;
+    height: 150%;
+    text-align: left;
+    background-color: #05415C;
+    position: fixed;
+    margin-top: 5%;
+}
+
+.LeftUl {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    box-shadow: #000;
+    background-color: #05415C;
+    height: 150%;
+}
+
+
+.LeftLi {
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    margin-right: 6%;
+    font-size: 14px;
+}
+
+
+    .LeftLi a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-align: center;
+        width: 86%;
+    }
+
+
+        .LeftLi a:hover {
+            background-color: #11729D;
+            color: #FFFFFF;
+        }
+
+.active {
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+.white {
+    background-color: #ffffff;
+    color: #05415C;
+    font-weight: bold;
+    width: 83.5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+
+
+.LastLeftLi {
+}
+
+.Back_png {
+    position: absolute;
+    margin-left: -15%;
+}
+
+
+
+
+
+
+.type_div {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 150%;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.content_div2 {
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 10%
+}
+
+.H_div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.V_div01 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 3%;
+    margin-top: -3%;
+}
+
+.V_div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 3%;
+    margin-top: 1.2%;
+}
+
+
+.Branch_lbl, .Reason_lbl, .Name_lbl {
+    font-size: 20PX;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-left: 3%;
+}
+
+.NameB_lbl {
+    font-size: 20PX;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-left: 1%;
+}
+
+.Branch_txt, .BranchDropdown, .ReasonDropdown, .TypeDropdown {
+    border: #FFFFFF;
+    border-radius: 20px;
+    width: 50%;
+    height: 30px;
+    cursor: pointer;
+    background-color: #E7E4E4;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto Condensed";
+    margin-top: -0.5%;
+    margin-left: 3%;
+    padding-left: 1%;
+}
+
+
+.ReasonDropdown {
+    margin-left: 10.7%;
+    width: 50.4%;
+}
+
+.TypeDropdown {
+    margin-left: 3%;
+    width: 51.1%;
+    height: 32px;
+    margin-bottom:1%;
+}
+
+.Nameb_txt {
+    border: #FFFFFF;
+    border-radius: 20px;
+    width: 40%;
+    height: 31px;
+    cursor: pointer;
+    background-color: #E7E4E4;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto Condensed";
+    margin-top: -0.5%;
+    margin-left: 3%;
+    padding-left: 1%;
+}
+
+.BranchSearchImage, .NameSearchImage {
+    position: absolute;
+    margin-left: 39%;
+    margin-top: 0.3%;
+}
+.NameSearchImage {
+    
+    margin-left: 31%;
+    margin-top: 0.3%;
+}
+
+.tablediv {
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+th {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+    th:first-child, td:first-child {
+        border-left: 1px solid #ddd;
+    }
+
+    th:last-child, td:last-child {
+        border-right: 1px solid #ddd;
+    }
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.tableinput {
+    border: none;
+    outline: none;
+    width: 90%;
+    background-color: #F4F1F1;
+    cursor: pointer;
+}
+
+.checkbox {
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.Col01 {
+    width: 8%;
+}
+
+.Col02 {
+    width: 30%;
+}
+
+.Col03 {
+    width: 10%;
+}
+
+.Col04 {
+    width: 10%;
+}
+
+.Col05 {
+    width: 20%;
+}
+
+
+.Col01_1 {
+    width: 30%;
+}
+
+.Col02_1 {
+    width: 10%;
+}
+
+.Col03_1 {
+    width: 10%;
+}
+
+.Col02_2 {
+    width: 10%;
+}
+
+.Col01_D {
+    width: 10%;
+}
+
+.Col02_D {
+    width: 20%;
+}
+
+.Col03_D {
+    width: 8%;
+}
+
+.Col04_D {
+    width: 12%;
+}
+
+.Col05_D {
+    width: 12%;
+}
+
+.Col06_D {
+    width: 10%;
+}
+
+.Col07_D {
+    width: 10%;
+}
+
+.Col08_D {
+    width: 10%;
+}
+
+.Col01_C {
+    width: 30%;
+}
+
+.Col02_C {
+    width: 10%;
+}
+
+.Col03_C {
+    width: 10%;
+}
+
+.Col04_C {
+    width: 10%;
+}
+
+.Col02_3 {
+    width: 20%;
+}
+
+.Col03_3 {
+    width: 30%;
+}
+
+.InsuranceType_lbl {
+    margin-left: 5%;
+    padding-right: 20%;
+}
+
+.White {
+    background-color: #ffffff;
+    border: none;
+}
+
+.Total_lbl {
+    position: absolute;
+    right: calc(32% - 10px);
+    margin-top: -0.5%;
+}
+
+.Amount_td {
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.button_div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: -2.1%;
+    margin-left: 40%;
+}
+
+.Add_div, .LoanSummryAdd_div {
+    margin-left: 3%;
+}
+
+.LoanSummryAdd_div {
+    margin-top: 15%;
+}
+
+.Add {
+    font-family: "Roboto Condensed";
+    border-radius: 10px;
+    border: #FFFFFF;
+    width: 120px;
+    height: 33px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255);
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+
+    .Add:hover {
+        cursor: pointer;
+    }
+
+.bottomButton1, .bottomButton2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+
+.bottomButton2 {
+    margin-left: 50%;
+}
+
+
+
+.V_div02 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: -7%;
+}
+
+.V_div02_User {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -5%;
+    margin-left: -7%;
+}
+
+.V_div2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 3%;
+    margin-top: 1.2%;
+}
+
+
+.CName_lbl, .CAddress_lbl, .CNIC_lbl, .CDOB_lbl, .CBMNumber_lbl, .CJob_lbl {
+    font-size: 20PX;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.CName_txt, .CAddress_txt, .CNIC_txt, .CDOB_txt, .CBMNumber_txt, .CJob_txt {
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    height: 31px;
+    cursor: pointer;
+    border-color: #ffffff;
+    right: calc(13% - 10px);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto Condensed";
+    margin-top: -1%;
+    margin-left: -5%;
+}
+
+.copyright {
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.copyright_C {
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 10%;
+    background-color: #ffffff; /* Background color of autocomplete dropdown */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ui-menu-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style: none;
+}
+
+    .ui-menu-item:hover {
+        background-color: #82A0AD; /* Background color of hovered item */
+    }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    background-color: #82A0AD; /* Background color of selected item */
+    color: #ffffff; /* Text color of selected item */
+}

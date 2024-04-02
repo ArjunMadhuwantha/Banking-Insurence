@@ -1,0 +1,164 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeInsurancePaymentViewModel
+
+@{
+    ViewData["Title"] = "Add Treasuary";
+}
+
+
+<head>
+   
+    
+    <link rel="stylesheet" href="~/css/AddTreasureStyle.css">
+    <script src="~/js/textfeildfocus.js"></script>
+    <title>Add Treasure</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="TopicAddTreasure">Add Treasure</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="InsuarancePayment" asp-action="Add" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+
+                        <form asp-controller="InsuarancePayment" asp-action="Treasurayes" method="post">
+                            <div class="V_div01">
+                                <div class="V_div">
+                                    <label class="Branch_lbl">Branch</label>
+                                    <input class="Branch_txt textbox" type="text" id="branchInput">
+                                    <input type="hidden" id="branchId" name="BranchId">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Date_lbl">Form Date</label>
+                                    <input asp-for="InsuarancePaymentViewModel.Date" class="Date_txt textbox" type="date">
+                                </div>
+
+                                <div class="V_div">
+                                    <label class="Name_lbl">Name</label>
+                                    <input asp-for="InsuarancePaymentViewModel.TreasuaryName" class="Name_txt textbox" type="text">
+                                </div>
+
+
+
+                            </div>
+
+
+                            <div class="button_div">
+                                <div class="Add_div"><button type="submit" class="Add">Add</button></div>
+
+                            </div>
+                        </form>
+
+                        <div class="tablediv">
+
+                            <table id="myTable">
+                                <thead>
+                                    <tr>
+                                        <th class="Col01">Sub num</th>
+                                        <th class="Col02">Name</th>
+                                        <th class="Col03">Date</th>
+
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+                                        @* var branchIdToShow = ViewBag.BranchIdToShow; *@
+                                      
+                                        @foreach (var tr in Model.CollectionModel)
+                                        {
+                                           
+                                            <tr>
+                                                <td></td>
+                                                <td>@tr.TreasuaryName</td>
+                                                <td>@tr.Date</td>
+
+                                            </tr>
+                                           
+                                        }
+                                    }
+
+
+
+
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+
+                    </div>
+                    @* <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+                </div>
+            </div>
+
+        </div>
+</body>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Get branch names from ViewBag and convert them to an array
+            var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
+
+            // Modify branches to remove dots
+            var branchNamesWithoutDots = branches.map(function (branch) {
+                return branch.text.replace('.', ''); // Remove dot from each branch name
+            });
+
+            // Initialize autocomplete on the input field
+            $("#branchInput").autocomplete({
+                source: branchNamesWithoutDots, // Provide the modified array of branch names as the source of suggestions
+                minLength: 1, // Minimum characters to trigger autocomplete
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    // Find the corresponding branch object based on the selected branch name
+                    var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
+
+                    // Set the selected branch's ID in the hidden field
+                    $("#branchId").val(selectedBranch.value);
+
+                    return true; // Allow default behavior of the input field (form submission)
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+        });
+    </script>
+}

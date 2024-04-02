@@ -1,0 +1,92 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeSummaryViewModel
+
+<head>
+
+
+    <link rel="stylesheet" href="~/css/SummaryStyle.css">
+    <script src="~/js/DivisaranaAddSuccScript.js"></script>
+    <title>Treashary Insuarance Compensation Summary</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">Treashary Insuarance Compensation Summary</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Summary" asp-action="TreasharySummary" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+
+                        <div class="tablediv">
+
+                            <table class="table" id="myTable">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th class="Col01">Date</th>
+                                        <th class="Col02_3">compensation value</th>
+                                        <th class="Col03_3">comment</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+
+
+                                        @foreach (var Member in Model.CollectionSummaryModel)
+                                        {
+
+                                            <tr>
+                                                
+
+                                                
+                                                <td>@Member.Date</td>
+                                                <td>@Member.value</td>
+                                                <td>@Member.Comment</td>
+
+
+                                            </tr>
+
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+</body>
+
+
+

@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Add Phone Number";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+
+<h3>@ViewData["Title"]</h3>
+<partial name="_StatusMessage" for="StatusMessage" />
+<div class="">
+    <div class="">
+        <form id="profile-form" method="post">
+            <div asp-validation-summary="ModelOnly" class="" role="alert"></div>
+            <div class="left_div">
+                
+                <div>
+                    <label asp-for="Username" class="labelA"></label>
+                    <input asp-for="Username" class="txtA" placeholder="Please choose your username." disabled />
+                </div>
+
+                <div>
+                    <label asp-for="Input.PhoneNumber" class="labelA"></label>
+                    <input asp-for="Input.PhoneNumber" class="txtA" placeholder="Please enter your phone number."/>
+                    <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="Save_divA">
+                    <button id="update-profile-button" type="submit" class="SaveA">Save</button>
+                </div>
+            </div>
+            
+            
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

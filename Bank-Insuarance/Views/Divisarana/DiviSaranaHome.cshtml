@@ -1,0 +1,61 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model DivisaranaViewModel
+<head>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
+    <link rel="stylesheet" href="~/css/DiviSaranaHomeStyle.css">
+   
+    <title>Divisarana Insuarance</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="TopicDivisarana">Divisarana Insuarance</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Home" asp-action="Index" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+
+
+
+                        <a asp-action="AddDivisarana" asp-controller="Divisarana">
+                            <div class="Register_div"><button type="submit" class="Register">Register</button></div>
+                        </a>
+
+                        <a asp-action="Payment" asp-controller="Divisarana">
+                            <div class="Payment_div"><button type="submit" class="Payment">Monthly Payment</button></div>
+                        </a>
+
+                        <a asp-action="AddDivisaranaAbiprerana" asp-controller="Abiprerana">
+                            <div class="Abiprerana_div"><button type="submit" class="Abiprerana">Divisarana Abiprerana</button></div>
+                        </a>
+
+                    </div>
+                    @* <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+                </div>
+            </div>
+
+        </div>
+</body>

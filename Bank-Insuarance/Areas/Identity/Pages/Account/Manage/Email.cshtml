@@ -1,0 +1,51 @@
+﻿@page
+@model EmailModel
+@{
+    ViewData["Title"] = "Manage Email";
+    ViewData["ActivePage"] = ManageNavPages.Email;
+}
+
+<h3>@ViewData["Title"]</h3>
+<partial name="_StatusMessage" for="StatusMessage" />
+<div class="">
+    <div class="left_div">
+        <form id="email-form" method="post">
+            <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+            @if (Model.IsEmailConfirmed)
+            {
+                <div class="">
+                    <label asp-for="Email" class="labelA"></label>
+                    <input asp-for="Email" class="txtA" placeholder="Please enter your email." disabled />
+                        <div class="input-group-append">
+                            <span class="h-100 input-group-text text-success font-weight-bold">✓</span>
+                        </div>
+                    
+                </div>
+            }
+            else
+            {
+                <div class="">
+                    <label asp-for="Email" class="labelA"></label>
+                    <input asp-for="Email" class="txtA" placeholder="Please enter your email." disabled />
+                    
+                    @* <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link">Send verification email</button> *@
+                </div>
+            }
+
+            <div class="">
+                <label asp-for="Input.NewEmail" class="labelA"></label>
+                <input asp-for="Input.NewEmail" class="txtA" autocomplete="email" aria-required="true" placeholder="Please enter new email." />
+                
+                <span asp-validation-for="Input.NewEmail" class="text-danger"></span>
+            </div>
+            <div class="Save_divA">
+                <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="SaveA">Change email</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

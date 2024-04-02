@@ -1,0 +1,398 @@
+body {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.MainDiv {
+    margin-top: 1%;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: -1%;
+    margin-left: -0.6%;
+    margin-bottom: -1%;
+}
+
+
+
+.NavBarTop_div {
+    display: flex;
+    flex-direction: row;
+    background-color: #05415C;
+    width: 100.5%;
+    height: 111px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo_img_Home {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+
+
+.Topic {
+    font-family: "Roboto Condensed";
+    font-size: 32PX;
+    font-weight: bold;
+    margin-left: 6%;
+    margin-top: 2%;
+    color: #FBFBFB;
+}
+
+
+.content_div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+
+
+
+/*left Side*/
+
+.navigation {
+    padding-top: 5%;
+    width: 13%;
+    height: 150%;
+    text-align: left;
+    background-color: #05415C;
+    position: fixed;
+    margin-top: 5%;
+}
+
+.LeftUl {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    box-shadow: #000;
+    background-color: #05415C;
+    height: 150%;
+}
+
+
+.LeftLi {
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    margin-right: 6%;
+    font-size: 14px;
+}
+
+
+    .LeftLi a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-align: center;
+        width: 86%;
+    }
+
+
+        .LeftLi a:hover {
+            background-color: #11729D;
+            color: #FFFFFF;
+        }
+
+.active {
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+.white {
+    background-color: #ffffff;
+    color: #05415C;
+    font-weight: bold;
+    width: 83.5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+
+
+.LastLeftLi {
+}
+
+.Back_png {
+    position: absolute;
+    margin-left: -15%;
+    margin-top:;
+}
+
+
+
+
+
+
+.type_div {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 150%;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+.V_div01 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+.Reason_lbl {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-left: 4%;
+}
+.ReasonDropdown {
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    height: 31px;
+    border-color: #ffffff;
+    right: calc(53% - 10px);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto Condensed";
+    background-color: #F4F1F1;
+    margin-top:-0.1%;
+}
+
+.TopicDeceased {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 60px;
+    margin-left: 35%;
+}
+.content_div2 {
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 3%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #F4F1F1;
+}
+
+.H_div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.V_div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+.D_div {
+    margin-top: 9%;
+}
+
+.Branch_lbl, .Name_lbl, .PolicyNo_lbl, .Value_lbl, .Requirement_lbl, .Date_lbl, .Comment_lbl, .Address_lbl, .Number_lbl, .Relation_lbl, .DeceasedNameD_lbl, .Person_lbl, .Hospital_lbl, .Disease_lbl, .Surgery_lbl, .Amount_lbl, .ValueSR_lbl, .balanceSR_lbl {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+.BranchD_lbl {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 7px;
+    margin-left: 10%;
+}
+
+
+.DeceasedName_lbl, .ValueS_lbl, .balance_lbl, .NameD_lbl, .NumberD_lbl, .PersonD_lbl, .DateD_lbl {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 10%;
+}
+
+.Branch_txt, .Name_txt, .PolicyNo_txt, .Value_txt, .RequirementDropdown, .Date_txt, .Comment_txt, .Address_txt, .DeceasedNameSR_txt, .ValueSR_txt, .balanceSR_txt {
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    height: 31px;
+    border-color: #ffffff;
+    right: calc(13% - 10px);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto Condensed";
+    background-color: #F4F1F1;
+}
+
+.ValueS_txt, .balance_txt, .Relation_txt, .NameD_txt, .Number_txt, .RelationSR_txt {
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    height: 31px;
+    border-color: #ffffff;
+    right: calc(13% - 10px);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto Condensed";
+    background-color: #F4F1F1;
+    margin-top: 0.5%;
+}
+.BranchD_txt, .DateD_txt, .DeceasedName_txt, .RelationD_txt, .Hospital_txt, .Disease_txt, .Surgery_txt, .Amount_txt, .Person_txt, .DateD2_txt, .BranchSR_txt, .NameSR_txt, .AddressSR_txt, .DateSR_txt {
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    height: 31px;
+    border-color: #ffffff;
+    right: calc(13% - 10px);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto Condensed";
+    background-color: #F4F1F1;
+    margin-top: -0.5%;
+}
+
+
+.ValueSR_txt {
+    margin-top: -0.1%;
+}
+.AddressSR_txt {
+    margin-top: -0.3%;
+}
+.balanceSR_txt {
+    margin-top: -0.5%;
+}
+.Hospital_txt, .RelationSR_txt {
+    margin-top: -0.9%;
+}
+.Person_txt {
+    margin-top: -1.7%;
+}
+.DeceasedName_txt {
+    margin-top: -3%;
+}
+.top {
+    margin-top:3%;
+}
+.top2 {
+    margin-top: 4%;
+}
+.RequirementDropdown {
+    width: 50.5%;
+}
+.Comment_txt {
+    background-color: #D9D9D9;
+    width: 50%;
+    height: 100px;
+    border-color: #ffffff;
+    right: calc(13% - 10px);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto Condensed";
+}
+
+.hidden {
+    display:none;
+}
+.Deth {
+    display: block;
+}
+.Hospitalization, .Surgery {
+    display: none;
+}
+
+
+
+.button_div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+.Back_div {
+    margin-left: 25%;
+    
+}
+.submit_div {
+    margin-left: 41%;
+    
+}
+.submit_div_2 {
+    margin-left: 78%;
+}
+
+.submit, .Back {
+    font-family: "Roboto Condensed";
+    border-radius: 10px;
+    border-color: #ffffff;
+    width: 148px;
+    height: 43px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255);
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+}
+
+    .submit:hover, .Back:hover {
+        cursor: pointer;
+    }
+
+
+
+
+.copyright {
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 10%;
+    background-color: #ffffff; /* Background color of autocomplete dropdown */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ui-menu-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style: none;
+}
+
+    .ui-menu-item:hover {
+        background-color: #82A0AD; /* Background color of hovered item */
+    }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    background-color: #82A0AD; /* Background color of selected item */
+    color: #ffffff; /* Text color of selected item */
+}

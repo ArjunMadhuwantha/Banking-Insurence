@@ -1,0 +1,105 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeSummaryViewModel
+
+
+<head>
+
+    <link rel="stylesheet" href="~/css/SummaryStyle.css">
+    <script src="~/js/DivisaranaAddSuccScript.js"></script>
+    <title>SavingRelif Insuarance Compensation Summary</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">SavingRelif Insuarance Compensation Summary</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Summary" asp-action="SavingRelifSummary" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+                       
+
+
+
+
+                        <div class="tablediv">
+
+                            <table class="table" id="myTable">
+                                <thead>
+                                    <tr>
+
+                                        <th class="Col01">Branch</th>
+                                        <th class="Col02">FullName</th>
+                                        <th class="Col03">Address</th>
+                                        <th class="Col04">Reason</th>
+
+
+                                        <th class="Col05">Remmaing value</th>
+                                        <th class="Col06">Compensation value</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+
+
+                                        @foreach (var Member in Model.CollectionSummaryModel)
+                                        {
+
+                                            <tr>
+
+
+                                                <td>@Member.BranchName</td>
+                                                <th>@Member.Fullname</th>
+                                                <td>@Member.Address</td>
+                                                <td>@Member.Reason</td>
+                                                <td>@Member.Reammaingvalue</td>
+                                                <td>@Member.Compensationvalue</td>
+
+
+
+                                            </tr>
+
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+</body>
+
+
+

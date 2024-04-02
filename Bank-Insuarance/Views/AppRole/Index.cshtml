@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityRole>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Index" asp-controller="Home">Home</a>
+    <br />
+    <a asp-action="Create">Create New</a>
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                @Html.DisplayNameFor(model => model.Name)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                    <td>
+
+                    <a class="btn btn-secondary"  asp-action="Edit" asp-route-id="@item.Id"><button type="button">Edit</button></a>
+                    
+
+                    <br />
+
+
+                    <form asp-action="Delete" asp-route-id="@item.Id" method="post">
+                        <div class="form-group">
+                            <input type="submit" value="Delete" class="btn btn-danger" />
+                            
+                        </div>
+                    </form>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+

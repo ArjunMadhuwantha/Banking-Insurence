@@ -1,0 +1,31 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model SavingCompenstaionViewModel
+@{
+    ViewData["Title"] = "Select branch";
+}
+<div class="p-4 container">
+    <div class="row p-4">
+        <div class="col-md-12">
+            <h3>Select branch</h3>
+        </div>
+    </div>
+    <div class="row p-4">
+        <div class="col-md-6">
+            <form asp-controller="Compensation" asp-action="BranchSelect" method="post">
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Please choose Branch</label>
+                    <select asp-for="BranchId" asp-items="ViewBag.Branchs"></select>
+                </div>
+
+
+                <button type="submit" class="btn btn-dark">Submit</button>
+
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+

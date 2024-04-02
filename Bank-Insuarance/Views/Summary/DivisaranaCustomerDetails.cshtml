@@ -1,0 +1,193 @@
+﻿@using Bank_Insurance.ViewModel
+@using Microsoft.AspNetCore.Identity
+@model CompositeDivisaranaViewModel
+
+
+<head>
+
+   
+    <link rel="stylesheet" href="~/css/SummaryStyle.css">
+    <script src="~/js/valuesubmitscript.js"></script>
+    <title>Divisarana Customer Summary</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <label class="Topic">Divisarana Customer Summary</label>
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+                    <ul class="LeftUl">
+
+                        <li class="LeftLi">
+                            <a asp-controller="Home" asp-action="Index" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="content_div2">
+                        <form asp-controller="Summary" asp-action="DivisaranaCustomerDetails" method="post">
+                            <div class="V_div01">
+
+
+                                <div class="V_div Coman" id="Coman">
+                                    @* <label class="Name_lbl" id="NameB_lbl">Name of</label>
+                                    <label class="NameB_lbl" id="NameB_lbl">beneficiary</label> *@
+                                    
+                                    @* <input asp-for="DivisaranaViewModel.Fullname" class="Nameb_txt textbox" type="text" id="fullname" placeholder="Search Name of beneficiary"> *@
+                                    
+                                    
+                                    <input  class="Nameb_txt" type="text" id="fullname" placeholder="Search Name of beneficiary">
+                                    <img class="NameSearchImage" src="~/images/search.png">
+                                    <input asp-for="DivisaranaViewModel.CusPolicyNo" type="hidden" class="" id="policyno">
+                                </div>
+
+                                
+                            </div>
+
+                            @* <div class="button_div">
+                                <div class="Add_div"><button type="submit" class="Add" id="searchButton">Search</button></div>
+                            </div> *@
+                        </form>
+
+                        @if (Model != null)
+                                    {
+
+
+                                        @foreach (var Member in Model.CollectionModel)
+                                        {
+                                            <div class="V_div02">
+
+
+                                                <div class="V_div">
+                                                    <label class="CName_lbl">Full Name</label>
+                                                    <a href="/Summary/CustomerpaymentSummary?CusPolicyNo=@Member.CusPolicyNo">
+                                                        <input asp-for="@Member.Fullname" class="CName_txt" type="text">
+                                                    </a>
+                                                </div>
+
+                                                <div class="V_div2">
+                                                    <label class="CAddress_lbl">Address</label>
+                                                    <input asp-for="@Member.Address" class="CAddress_txt" type="text">
+                                                </div>
+
+                                                <div class="V_div2">
+                                                    <label class="CNIC_lbl">NIC</label>
+                                                    <input asp-for="@Member.ID" class="CNIC_txt" type="text">
+                                                </div>
+
+                                                <div class="V_div2">
+                                                    <label class="CDOB_lbl">D.O.B</label>
+                                                    <input asp-for="@Member.DOB" class="CDOB_txt" type="text">
+                                                </div>
+
+                                                <div class="V_div2">
+                                                    <label class="CBMNumber_lbl">Bank Member No</label>
+                                                    <input asp-for="@Member.BankMemberNo" class="CBMNumber_txt" type="text">
+                                                </div>
+
+                                                <div class="V_div2">
+                                                    <label class="CJob_lbl">Job</label>
+                                                    <input asp-for="@Member.Job" class="CJob_txt" type="text">
+                                                </div>
+
+                                                <div class="V_div2">
+                                                    <label class="CJob_lbl">Succssor</label>
+                                                    <input asp-for="@Member.Succssor" class="CJob_txt" type="text">
+                                                </div>
+
+                                                <div class="V_div2">
+                                                    <label class="CJob_lbl">Start Date</label>
+                                                    <input asp-for="@Member.StartDate" class="CJob_txt" type="text">
+                                                </div>
+
+                                                <div class="V_div2">
+                                                    <label class="CJob_lbl">Addmission</label>
+                                                    <input asp-for="@Member.AddmissionFee" class="CJob_txt" type="text">
+                                                </div>
+
+                                                <div class="V_div2">
+                                                    <label class="CJob_lbl">Time Piroed</label>
+                                                    <input asp-for="@Member.TimePeriod" class="CJob_txt" type="text">
+                                                </div>
+                            
+
+                                            </div>
+
+                                            <a href="/Summary/CustomerpaymentSummary?CusPolicyNo=@Member.CusPolicyNo">
+                                                <button type="button" class="Add bottomButton1">Payments</button>
+                                            </a>
+
+                                            <a href="/Summary/CustomerSuccsoursSummary?CusPolicyNo=@Member.CusPolicyNo">
+                                            <button type="button" class="Add bottomButton2">Successors</button>
+                                            </a>
+                                        }
+                                    }
+
+                        
+                        
+                        
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var members = @Html.Raw(Json.Serialize(ViewBag.Member));
+
+            var memberNamesWithoutDots = members.map(function (member) {
+                return member.text.replace('.', '');
+            });
+
+            $("#fullname").autocomplete({
+                source: memberNamesWithoutDots,
+                minLength: 1,
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    var selectedMember = members.find(function (member) {
+                        return member.text === ui.item.value;
+                    });
+
+                    $("#policyno").val(selectedMember.value);
+
+                    return true;
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+        });
+    </script>
+}
