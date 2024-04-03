@@ -8,7 +8,7 @@
     
     
     <link rel="stylesheet" href="~/css/DivisaranaAddStyle.css">
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <script src="~/js/textfeildfocus.js"></script>
     <title>Divisarana Insuarance</title>
 </head>
@@ -46,13 +46,13 @@
 
                                 <div class="V_div">
                                     <label class="Branch_lbl">Branch</label>
-                                    <input class="Branch_txt textbox" type="text" id="branchInput">
+                                    <input class="Branch_txt textbox" type="text" id="branchInput" required>
                                     <input type="hidden" id="branchId" name="BranchId">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Name_lbl">Full Name</label>
-                                    <input asp-for="Fullname" class="Name_txt textbox" type="text">
+                                    <input asp-for="Fullname" class="Name_txt textbox" type="text" required>
                                 </div>
 
                                 <div class="V_div">
@@ -62,7 +62,7 @@
 
                                 <div class="V_div">
                                     <label class="NIC_lbl">NIC</label>
-                                    <input asp-for="ID" class="NIC_txt textbox" type="text">
+                                    <input asp-for="ID" class="NIC_txt textbox" type="text" required>
                                 </div>
 
                                 <div class="V_div">
@@ -72,7 +72,7 @@
 
                                 <div class="V_div">
                                     <label class="BMNumber_lbl">Bank Member No</label>
-                                    <input asp-for="BankMemberNo" class="BMNumber_txt textbox" type="text">
+                                    <input asp-for="BankMemberNo" class="BMNumber_txt textbox" type="text" required>
                                 </div>
 
                                 <div class="V_div">
@@ -82,13 +82,13 @@
 
                                 <div class="V_div">
                                     <label class="Successor_lbl">Successor</label>
-                                    <input asp-for="Succssor" class="Successor_txt textbox" type="text">
+                                    <input asp-for="Succssor" class="Successor_txt textbox" type="text" required>
                                 </div>
 
                                 <div class="V_div">
                                     
                                     <label class="Period_lbl">Period</label>
-                                    <select asp-for="TimePeriod"  id="Period" class="PeriodDropdown textbox">
+                                    <select asp-for="TimePeriod" id="Period" class="PeriodDropdown textbox" required>
                                         <option value="" disabled selected>Select a Period</option>
                                         <option value="1">Monthly</option>
                                         <option value="6">6 Month</option>
@@ -99,12 +99,12 @@
 
                                 <div class="V_div">
                                     <label class="Date_lbl">Start Date</label>
-                                    <input asp-for="StartDate" class="Date_txt textbox" type="date">
+                                    <input asp-for="StartDate" class="Date_txt textbox" type="date" required>
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Fee_lbl">Fee</label>
-                                    <input asp-for="AddmissionFee" class="Fee_txt textbox" type="number" min="0" oninput="validity.valid||(value='');">
+                                    <input asp-for="AddmissionFee" class="Fee_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
                                 </div>
                                 
                             </div>

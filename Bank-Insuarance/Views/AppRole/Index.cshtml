@@ -1,56 +1,214 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @model IEnumerable<IdentityRole>
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Index" asp-controller="Home">Home</a>
-    <br />
-    <a asp-action="Create">Create New</a>
-    </p>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Id)
-                </th>
-                <th>
-                @Html.DisplayNameFor(model => model.Name)
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Id)
-                    </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                    <td>
-
-                    <a class="btn btn-secondary"  asp-action="Edit" asp-route-id="@item.Id"><button type="button">Edit</button></a>
-                    
-
-                    <br />
+@using Bank_Insuarance.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 
 
-                    <form asp-action="Delete" asp-route-id="@item.Id" method="post">
-                        <div class="form-group">
-                            <input type="submit" value="Delete" class="btn btn-danger" />
-                            
+<head>
+
+    <link rel="stylesheet" href="~/css/AccountStyle.css">
+    <link rel="stylesheet" href="~/css/popupstyle.css">
+    <script src="~/js/EditZoneScript.js"></script>
+
+    <title>Role Details</title>
+</head>
+<body>
+    <div class="MainDiv">
+
+        <div class="frame" id="Home">
+            <div class="NavBarTop_div">
+                <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
+                <ul class="TopUl" id="HUI">
+                    <li class="TopLi Li_1"><a class="active" href="#">Role/<label class="Blue">Setting</label></a></li>
+
+                    <li class="TopLi Li_2"><a class="active" href="#"><img src="~/images/Line.png" class="searchWhite_img"></a></li>
+                    <li class="TopLi Li_3">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            var user = await UserManager.GetUserAsync(User);
+
+
+                            <a class="active">@user.FullName!</a>
+
+
+                            @* <p>Welcome, @user.FullName!</p> *@
+                        }
+                    </li>
+                    <li class="TopLi Li_4"><a class="active" href="#"><img src="~/images/account_circle.png" class="account_circle" onclick="togglePopup()"></a></li>
+
+                </ul>
+
+
+
+
+
+            </div>
+
+
+            <div class="content_div">
+                <div class="navigation" id="Leftnav">
+
+                    <ul class="LeftUl">
+
+
+                       
+                        
+                        <li class="LeftLi">
+                            <a asp-area="Identity" asp-page="/Account/Register" class="active" id="AccountButton">
+                                Register New User
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-area="Identity" asp-page="/Account/ResetpasswordNew" class="active" id="BranchButton">
+                                Password Reset
+                            </a>
+                        </li>
+
+                        <li class="LeftLi">
+                            <a asp-controller="AppRole" asp-action="Create" class="active white" id="AccountButton">
+                                Add Role
+                            </a>
+                        </li>
+
+
+
+
+                        <li class="LeftLi">
+                            <a class="active" id="logoutButton">
+                                <img src="~/images/logout2.png" class="logout2_png">Log out
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                    <div id="confirmationModalLogOut" class="modal">
+                        <div class="modal-content">
+
+                            <p>Are you sure you want to Log out?</p>
+                            <div class="LogoutButton_Div">
+                                @if (SignInManager.IsSignedIn(User))
+                                {
+
+                                    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                                        <button type="submit" class="PopUpLogOutYes" id="confirmLogOut">Yes</button>
+                                    </form>
+
+
+                                }
+                                else
+                                {
+
+                                }
+
+                                <button class="PopUpLogOutNo" type="button" id="cancelLogOut">No</button>
+                            </div>
+
                         </div>
-                    </form>
+                    </div>
 
-                    </td>
-                </tr>
-            }
-        </tbody>
+                </div>
+
+                <div class="type_div">
+
+
+
+                    <div class="Flex_div2">
+                        <div class="Flex_div2_line1">
+                            <label class="Users_label" id="Topic">Role Details</label>
+
+                        </div>
+                        <div class="UsersInfo_divPR">
+
+                            <div class="Roletablediv">
+
+                               @*  <div class="Register_div"> *@
+
+                                    @* <div class="left_divR"> *@
+
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="Col03">
+                                                        @Html.DisplayNameFor(model => model.Name)
+                                                     </th>
+                                                    <th class ="Col03">
+                                                        Action
+                                                    </th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var item in Model)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            <label class="RoleName_lbl">@Html.DisplayFor(modelItem => item.Name)</label>
+                                                        </td>
+                                                        <td>
+                                                            
+                                                        
+                                                            <div class="btn_div">
+
+                                                                <div class="btn1_div">
+
+                                                                    <a class="" asp-action="Edit" asp-route-id="@item.Id"><button class="RoleEdit" type="button">Edit</button></a>
+
+                                                                </div>
+
+                                                                <div class="btn2_div">
+
+                                                                    <form asp-action="Delete" asp-route-id="@item.Id" method="post">
+
+                                                                        <button class="RoleDelete" type="submit" value="Delete">Delete</button>
+
+                                                                    </form>
+                                                                </div>
+                                                                 
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+
+                                    @* </div> *@
+
+                                @* </div> *@
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+</body>
+<script>
+
+    document.getElementById("logoutButton").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "block";
+    });
+
+    document.getElementById("cancelLogOut").addEventListener("click", function () {
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+
+    document.getElementById("confirmLogOut").addEventListener("click", function () {
+
+        document.getElementById("confirmationModalLogOut").style.display = "none";
+    });
+</script>
+
+
+    
 
 

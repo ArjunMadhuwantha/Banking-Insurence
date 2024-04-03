@@ -5,8 +5,8 @@
 @inject UserManager<ApplicationUser> UserManager
 @model BranchViewModel
 <head>
-    <link href="~/css/editBranchstyle.css" rel="stylesheet" />
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/editBranchstyle.css">
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <script src="~/js/EditZoneScript.js"></script>
 
     <title>Add Branch</title>
@@ -168,10 +168,10 @@
 
                                             <div class="left_div">
                                                 <label class="BranchID_label">Branch ID</label>
-                                                <div><input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchID" value="" placeholder="Branch ID"><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchID" value="" placeholder="Branch ID" required><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="BranchName_label">Branch Name</label>
-                                                <div><input asp-for="Branch_name" class="BranchName_txt  textbox" type="text" name="Branch_name" value="" placeholder="  Branch Name"><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Branch_name" class="BranchName_txt  textbox" type="text" name="Branch_name" value="" placeholder="  Branch Name" required><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="PhoneNumber_label">Phone Number</label>
                                                 <div><input asp-for="TpNo" class="PhoneNumber_txt  textbox" type="number" name="TpNo" value="" placeholder="  Phone Number"><img src="~/images/edit.png" class="edit_png"></div>
@@ -193,10 +193,10 @@
                                         <div class="AddBranch_div"><button type="button" class="AddBranch" id="saveButton">Add</button></div>
                                         <div id="confirmationModal" class="modal">
                                             <div class="modal-content">
-                                                <span class="close">&times;</span>
+                                                
                                                 <p>Are you sure you want to Add?</p>
-                                                <button type="submit" id="confirmSave">Yes</button>
-                                                <button type="button" id="cancelSave">No</button>
+                                                <button class="PopUpYes" type="submit" id="confirmSave">Yes</button>
+                                                <button class="PopUpNo" type="button" id="cancelSave">No</button>
                                             </div>
                                         </div>
                                     </form>

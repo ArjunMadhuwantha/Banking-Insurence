@@ -13,7 +13,7 @@
 <head>
 
     <link rel="stylesheet" href="~/css/AccountStyle.css">
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <script src="~/js/EditZoneScript.js"></script>
 
     <title>Create Role</title>
@@ -127,7 +127,7 @@
 
                     <div class="Flex_div2">
                         <div class="Flex_div2_line1">
-                            <label class="Users_label" id="Topic">Reset Password</label>
+                            <label class="Users_label" id="Topic">Create Role</label>
 
                         </div>
                         <div class="UsersInfo_divPR">
@@ -139,17 +139,21 @@
                                     <div class="left_divR">
 
                                         <form id="createRoleForm" asp-action="Create" method="post">
-                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            
                                             <div class="DFeild">
                                                 <label class="labelP">Role Name</label>
-                                                <input asp-for="Name" class="txtP" />
+                                                <input asp-for="Name" class="txtP" required />
 
-                                                <span asp-validation-for="Name" class="text-danger"></span>
+                                                
                                             </div>
 
                                             <div class="Save_divR">
-                                                <button type="submit" class="SaveA">Create</button>
+                                                  <button type="submit" class="SaveA">Create</button>
                                             </div>
+
+                                            <a asp-controller="AppRole" asp-action="Index"><button type="button" class="RoleDetails">Role Details</button></a>
+
+
                                         </form>
 
                                     </div>

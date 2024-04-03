@@ -5,8 +5,8 @@
 @inject UserManager<ApplicationUser> UserManager
 @model BranchViewModel
 <head>
-    <link href="~/css/editBranchstyle.css" rel="stylesheet" />
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/editBranchstyle.css">
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <script src="~/js/EditZoneScript.js"></script>
 
     <title>Edit Branch</title>
@@ -179,7 +179,7 @@
                                                 <div><input asp-for="City" class="City_txt  textbox" type="text" name="City" ><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="Address_label">Address</label>
-                                                <div><input asp-for="Address" class="Address_txt  textbox" type="text" name="Address"  ><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Address" class="Address_txt  textbox" type="text" name="Address" ><img src="~/images/edit.png" class="edit_png"></div>
 
 
 
@@ -189,10 +189,10 @@
                                         <div class="AddBranch_div"><button type="button" class="AddBranch" id="saveButton">Update</button></div>
                                         <div id="confirmationModal" class="modal">
                                             <div class="modal-content">
-                                                <span class="close">&times;</span>
+                                               
                                                 <p>Are you sure you want to Update?</p>
-                                                <button type="submit" id="confirmSave">Yes</button>
-                                                <button type="button" id="cancelSave">No</button>
+                                                <button class="PopUpYes" type="submit" id="confirmSave">Yes</button>
+                                                <button class="PopUpNo" type="button" id="cancelSave">No</button>
                                             </div>
                                         </div>
                                     </form>

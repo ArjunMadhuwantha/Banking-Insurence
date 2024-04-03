@@ -5,8 +5,8 @@
 @inject UserManager<ApplicationUser> UserManager
 @model ZoneViewModel
 <head>
-    <link href="~/css/editzonestyle.css" rel="stylesheet" />
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/editzonestyle.css">
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <script src="~/js/EditZoneScript.js"></script>
 
     <title>Add Zone</title>
@@ -169,14 +169,14 @@
 
                                             <div class="left_div">
                                                 <label class="ZoneID_label">Zone ID</label>
-                                                <div><input asp-for="ZoneId" class="ZoneID_txt textbox" type="text" name="ZoneId" value="" placeholder="Zone ID"><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="ZoneId" class="ZoneID_txt textbox" type="text" name="ZoneId" value="" placeholder="Zone ID" required><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="ZoneName_label">Zone Name</label>
-                                                <div><input asp-for="Zone_name" class="ZoneName_txt  textbox" type="text" name="Zone_name" value="" placeholder="  Zone Name"><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Zone_name" class="ZoneName_txt  textbox" type="text" name="Zone_name" value="" placeholder="  Zone Name" required><img src="~/images/edit.png" class="edit_png"></div>
 
 
                                                 <label class="ZoneStatus_label">Zone Status</label>
-                                                <select asp-for="Status" name="Status" id="" class="Dropdown_ZoneStatus  textbox">
+                                                <select asp-for="Status" name="Status" id="" class="Dropdown_ZoneStatus  textbox" required>
                                                     <option  value="Active" id="Active">Active</option>
                                                     <option  value="InActive" id="InActive">InActive</option>
                                                 </select>
@@ -187,10 +187,10 @@
                                         <div class="AddZone_div"><button type="button" class="AddZone" id="saveButton">Add</button></div>
                                         <div id="confirmationModal" class="modal">
                                             <div class="modal-content">
-                                                <span class="close">&times;</span>
+                                                
                                                 <p>Are you sure you want to Add?</p>
-                                                <button type="submit" id="confirmSave">Yes</button>
-                                                <button type="button" id="cancelSave">No</button>
+                                                <button class="PopUpYes" type="submit" id="confirmSave">Yes</button>
+                                                <button class="PopUpNo" type="button" id="cancelSave">No</button>
                                             </div>
                                         </div>
                                     </form>

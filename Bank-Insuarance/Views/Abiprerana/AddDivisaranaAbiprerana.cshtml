@@ -8,7 +8,7 @@
 <head>
     
     <link rel="stylesheet" href="~/css/ParithoshithaStyle.css">
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <title>Divisarana Insuarance Abiprerana</title>
 </head>
 <body>
@@ -51,13 +51,13 @@
                             
                             <div class="V_div">
                                 <label class="Branch_lbl">Branch</label>
-                                <input class="Branch_txt textbox" type="text" id="branchInput">
+                                    <input class="Branch_txt textbox" type="text" id="branchInput" required>
                                 <input type="hidden" id="branchId" name="BranchId">
                             </div>
 
                             <div class="V_div">
                                 <label class="Month_lbl">Month</label>
-                                <select name="Month" id="Month" class="MonthDropdown textbox">
+                                    <select name="Month" id="Month" class="MonthDropdown textbox" required>
                                     <option value="" disabled selected >Select a month</option>
                                     <option value="January">January</option>
                                     <option value="February">February</option>
@@ -76,7 +76,7 @@
 
                             <div class="V_div">
                                 <label class="Amount_lbl">Amount</label>
-                                    <input asp-for="Amount" class="Amount_txt textbox" type="number" min="0" oninput="validity.valid||(value='');">
+                                    <input asp-for="Amount" class="Amount_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
                             </div>
 
                             <div class="V_div">
