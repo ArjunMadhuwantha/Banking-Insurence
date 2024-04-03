@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bank-Insuarance")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f95c6a68baa9b5b213354b96993565cc67eebec1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3aac50aa13580a6f83cbdeb3afa2056872864782")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bank-Insuarance")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bank-Insuarance")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

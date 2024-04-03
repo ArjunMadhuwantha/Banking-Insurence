@@ -49,7 +49,7 @@
                                 <div class="V_div">
                                     <label class="Branch_lbl">Branch</label>
                                     <input class="Branch_txt textbox" type="text" id="branchInput">
-                                    <input type="hidden" id="branchId" name="InsuarancePaymentViewModel.BranchId">
+                                    <input type="hidden" id="branchId" name="InsuarancePaymentViewModel.BranchId" required>
                                 </div>
 
                                 <div class="V_div">
@@ -59,7 +59,7 @@
 
                                 <div class="V_div">
                                     <label class="Name_lbl">Name</label>
-                                    <input asp-for="InsuarancePaymentViewModel.TreasuaryName" class="Name_txt textbox" type="text">
+                                    <input asp-for="InsuarancePaymentViewModel.TreasuaryName" class="Name_txt textbox" type="text" required>
                                 </div>
 
 

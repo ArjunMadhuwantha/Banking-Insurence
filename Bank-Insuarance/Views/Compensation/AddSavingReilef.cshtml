@@ -8,7 +8,7 @@
 <head>
 
     <link rel="stylesheet" href="~/css/CompentionceStyle.css">
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <script src="~/js/compentioncescript.js"></script>
     <title>Saving Reilef Compensation</title>
 </head>
@@ -59,13 +59,13 @@
 
                                 <div class="V_div">
                                     <label class="Branch_lbl">Branch</label>
-                                    <input class="BranchSR_txt textbox" type="text" id="branchInput">
+                                    <input class="BranchSR_txt textbox" type="text" id="branchInput" required>
                                     <input type="hidden" id="branchId" name="BranchId">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Name_lbl">Member Name</label>
-                                    <input asp-for="MemberName" class="NameSR_txt textbox" type="text">
+                                    <input asp-for="MemberName" class="NameSR_txt textbox" type="text" required>
                                 </div>
 
                                 <div class="V_div">
@@ -87,7 +87,7 @@
                                 <div class="V_div">
                                     <label class="ValueS_lbl">Compensation</label>
                                     <label class="ValueSR_lbl">Value</label>
-                                    <input asp-for="CompensationValue" class="ValueSR_txt textbox" type="number" min="0" oninput="validity.valid||(value='');">
+                                    <input asp-for="CompensationValue" class="ValueSR_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
                                 </div>
 
                                 <div class="V_div">
@@ -98,7 +98,7 @@
 
                                 <div class="V_div">
                                     <label id="date" class="Date_lbl">Date of death</label>
-                                    <input asp-for="ReasonDate" class="DateSR_txt textbox" type="date">
+                                    <input asp-for="ReasonDate" class="DateSR_txt textbox" type="date" required>
                                 </div>
 
                                 <div class="V_div hidden" id="UniversityName_Div">

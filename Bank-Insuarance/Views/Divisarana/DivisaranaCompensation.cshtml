@@ -5,7 +5,7 @@
 <head>
 
     <link rel="stylesheet" href="~/css/CompentionceStyle.css">
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <script src="~/js/compentioncescript.js"></script>
     <title>DiviSarana Compensation</title>
 </head>
@@ -57,7 +57,7 @@
                                 <div class="V_div Coman" id="Coman">
                                     <label class="NameD_lbl" id="NameB_lbl">Name of</label>
                                     <label class="NameD_lbl" id="NameB_lbl">beneficiary</label>
-                                    <input asp-for="Fullname" class="NameD_txt textbox" type="text" id="fullname">
+                                    <input asp-for="Fullname" class="NameD_txt textbox" type="text" id="fullname" required>
                                     <input asp-for="CusPolicyNo" type="hidden" class="" id="policyno">
                                 </div>
 
@@ -65,12 +65,12 @@
                                 <div class="V_div Coman" id="Coman">
                                     <label class="NumberD_lbl" id="number_lbl">Insurance</label>
                                     <label class="Number_lbl" id="number_lbl">number</label>
-                                    <input asp-for="DivisaranaNo" class="Number_txt textbox" type="text">
+                                    <input asp-for="DivisaranaNo" class="Number_txt textbox" type="text" required>
                                 </div>
 
                                 <div class="V_div Coman" id="Coman">
                                     <label class="BranchD_lbl">Branch</label>
-                                    <input class="BranchD_txt textbox" type="text" id="branchInput">
+                                    <input class="BranchD_txt textbox" type="text" id="branchInput" required>
                                     <input type="hidden" id="branchId" name="BranchId">
                                 </div>
 

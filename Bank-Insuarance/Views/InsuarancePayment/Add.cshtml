@@ -9,7 +9,7 @@
    
     
     <link rel="stylesheet" href="~/css/PaymentStyle.css">
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <script src="~/js/textfeildfocus.js"></script>
 
     <title>Payment</title>
@@ -47,14 +47,14 @@
                         <div class="H_div01">
                             <div class="V_div01">
                                 <label class="Branch_lbl">Branch</label>
-                                <input class="Branch_txt textbox" type="text" id="branchInput" placeholder="Search Branch">
+                                    <input class="Branch_txt textbox" type="text" id="branchInput" placeholder="Search Branch" required>
                                  <img class="BranchSearchImage" src="~/images/search.png">
                                  <input type="hidden" id="branchId" name="BranchId"> <!-- Hidden field for BranchId -->
                             </div>
 
                             <div class="V_div02">
                                 <label class="Date_lbl">Date</label>
-                                    <input asp-for="Date" class="Date_txt textbox" type="date">
+                                    <input asp-for="Date" class="Date_txt textbox" type="date" required>
                                     
                             </div>
 

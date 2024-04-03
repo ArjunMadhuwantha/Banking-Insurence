@@ -8,8 +8,8 @@
 <head>
 
 
-    <link href="~/css/loaninsurancestyle.css" rel="stylesheet" />
-    <link href="~/css/popupstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/loaninsurancestyle.css">
+    <link rel="stylesheet" href="~/css/popupstyle.css">
     <script src="~/js/loaninsurancescript.js"></script>
     <script src="~/js/textfeildfocus.js"></script>
     <title>Home Loan Insurance</title>
@@ -48,18 +48,18 @@
 
                                 <div class="V_div">
                                     <label class="Branch_lbl">Branch</label>
-                                    <input class="Branch_txt textbox" type="text" id="branchInput">
+                                    <input class="Branch_txt textbox" type="text" id="branchInput" required>
                                     <input type="hidden" id="branchId" name="BranchId">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Name_lbl">Name</label>
-                                    <input asp-for="Name" class="Name_txt textbox" type="text">
+                                    <input asp-for="Name" class="Name_txt textbox" type="text" required>
                                 </div>
 
                                 <div class="V_div">
                                     <label class="ID_lbl">ID</label>
-                                    <input asp-for="ID" class="ID_txt textbox" type="text">
+                                    <input asp-for="ID" class="ID_txt textbox" type="text" required>
                                 </div>
 
                                 <div class="V_div">
@@ -85,7 +85,7 @@
 
                                 <div class="V_div">
                                     <label class="Date_lbl">Loan Start Date</label>
-                                    <input asp-for="LoanIssueDate" class="Date_txt textbox" type="date">
+                                    <input asp-for="LoanIssueDate" class="Date_txt textbox" type="date" required>
                                 </div>
 
                                 <div class="V_div">
@@ -95,7 +95,7 @@
 
                                 <div class="V_div">
                                     <label class="Value_lbl">Loan Value</label> @* BackEnd Ekata Danna one *@
-                                    <input class="Value_txt textbox" asp-for="LoanValue" type="number" min="0" oninput="validity.valid||(value='');">
+                                    <input class="Value_txt textbox" asp-for="LoanValue" type="number" min="0" oninput="validity.valid||(value='');" required>
                                 </div>
 
                                 <div class="V_div">
@@ -105,12 +105,12 @@
 
                                 <div class="V_div">
                                     <label class="Value_lbl">Payment</label>
-                                    <input asp-for="Payment" class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');">
+                                    <input asp-for="Payment" class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
                                 </div>
 
                                 <div class="V_div">
                                     <label class="FormNumber_lbl">Team Number</label>
-                                    <input asp-for="TeamNo" class="FormNumber_txt textbox" type="text">
+                                    <input asp-for="TeamNo" class="FormNumber_txt textbox" type="text" required>
                                 </div>
 
 

@@ -672,7 +672,7 @@ tr:hover {
     margin-bottom: 0%;
 }
 
-.Save, .SaveA, .Delete {
+.Save, .SaveA, .Delete, .RoleDetails {
     font-family: "Roboto Condensed";
     border-radius: 10px;
     width: 148px;
@@ -697,6 +697,52 @@ tr:hover {
     font-weight: bold;
 }
 
+/*//Role*/
+
+.RoleName_lbl {
+    margin-left: 10%;
+    font-weight:bold;
+}
+
+.Roletablediv {
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    width: 40%;
+}
+
+.btn_div {
+    display: flex;
+    
+}
+.btn2_div {
+    margin-left:10%;
+}
+.RoleEdit, .RoleDelete {
+    cursor: pointer;
+    font-family: "Roboto Condensed";
+    border-radius: 5px;
+    width: 50px;
+    height: 23px;
+    font-size: 15px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255);
+    background-color: #05415C;
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+}
+
+.RoleDelete {
+    background-color: #ff0000;
+    margin-left: 5%;
+}
+.RoleDetails {
+    position: absolute;
+    width: 138px;
+    height: 35px;
+    margin-left: 5%;
+    margin-top: -2.8%;
+}
 .dangerAllert {
     position: absolute;
     color: #ff0000;
