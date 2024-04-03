@@ -19,6 +19,7 @@
 
         public DateOnly DeathDate { get; set; }
 
+        public string? Disese { get; set; }
         public string? Reason { get; set; }
         public string? Surgery { get; set; }
 

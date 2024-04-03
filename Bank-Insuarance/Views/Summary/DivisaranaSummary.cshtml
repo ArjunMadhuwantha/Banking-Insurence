@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="~/css/SummaryStyle.css">
     <script src="~/js/valuesubmitscript.js"></script>
-    <title>Divisarana Insuarance Insuarance</title>
+    <title>Divisarana Insuarance Compensation Summary</title>
 </head>
 <body>
     <div class="MainDiv">
@@ -16,7 +16,7 @@
         <div class="frame" id="Home">
             <div class="NavBarTop_div">
                 <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
-                <label class="Topic">Divisarana Insuarance Summary</label>
+                <label class="Topic">Divisarana Insuarance Compensation Summary</label>
 
             </div>
 
@@ -94,7 +94,7 @@
                                                 <td>@Member.DivisaranaNo</td>
                                                 <td>@Member.DeathPersonName</td>
                                                 <td>@Member.HospitalizedPerson</td>
-                                                <td></td>
+                                                <td>@Member.Disese</td>
                                                 <td>@Member.Surgery</td>
                                                 <td>@Member.Compensationvalue</td>
                                                

@@ -57,7 +57,8 @@ namespace Bank_Insurance.Repository.Summary
                     CusPolicyNo = compensation.CustomerPolicyNo,
                     HospitalizedPerson = compensation.HospitalizedPerson,
                     Surgery = compensation.Surgery,
-                };
+                    Disese = compensation.Diseases,
+    };
                 SummaryViewModels.Add(summaryViewModel);
             }
 
