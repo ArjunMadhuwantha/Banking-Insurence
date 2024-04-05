@@ -72,7 +72,7 @@ namespace Bank_Insurance.Controllers
                 await _branchRepository.UpdateAsync(branch);
 
                 // Redirect to List all department page
-                return RedirectToAction("Index", "Branch");
+                return RedirectToAction("Branch", "Branch");
             }
 
             return View(branch);

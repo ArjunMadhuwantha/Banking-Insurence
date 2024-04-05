@@ -41,7 +41,7 @@
 
 
                     <div class="content_div2">
-                        <form asp-controller="Parithoshitha" asp-action="SavingReliefParithoshithaView" method="post">
+                        <form asp-controller="Parithoshitha" asp-action="SavingReliefParithoshithaView" method="post" id="BR1">
                             <div class="V_div01">
 
 
@@ -144,6 +144,10 @@
                 select: function (event, ui) {
                     var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
                     $("input[name='Parithoshitha.BranchId']").val(selectedBranch.value);
+
+                    // Submitting the form
+                    $("#BR1").submit();
+
                     return true;
                 }
             }).autocomplete("instance")._renderMenu = function (ul, items) {
@@ -155,3 +159,4 @@
         });
     </script>
 }
+

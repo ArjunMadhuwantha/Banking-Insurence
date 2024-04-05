@@ -39,7 +39,7 @@
                     
 
                     <div class="content_div2">
-                        <form asp-controller="Summary" asp-action="HealthSummary" method="post">
+                        <form asp-controller="Summary" asp-action="HealthSummary" method="post" id="BR1">
                             <div class="V_div01">
 
 
@@ -131,8 +131,27 @@
                 },
                 select: function (event, ui) {
                     var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
-                    //$("#branchId").val(selectedBranch.value);
+
                     $("input[name='SummaryViewModel.BranchId']").val(selectedBranch.value);
+
+
+                    $("#BR1").submit();
+
+
+                    /*
+                    $.ajax({
+                        url: "yourEndpointUrl",
+                        method: "POST",
+                        data: { branchId: selectedBranch.value },
+                        success: function (response) {
+                            // Handle success
+                        },
+                        error: function (xhr, status, error) {
+                            // Handle error
+                        }
+                    });
+                    */
+
                     return true;
                 }
             }).autocomplete("instance")._renderMenu = function (ul, items) {

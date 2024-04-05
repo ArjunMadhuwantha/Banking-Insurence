@@ -176,11 +176,10 @@
 
                                                     <th class="Col01">Branch ID</th>
                                                     <th class="Col02">Branch Name</th>
-                                                    <th class="Col03">Phone Number</th>
-                                                    <th class="Col04">City</th>
+                                                    <th class="Col03">City</th>
+                                                    <th class="Col04">Phone Number</th>
                                                     <th class="Col05">Address</th>
-
-
+                                                    <th class="Col06">Action</th>
 
                                                 </tr>
                                             </thead>
@@ -194,10 +193,10 @@
                                                         <tr>
                                                             <td scope="row">@branch.BranchId</td>
                                                             <td scope="row"><a class="btn btn-dark" asp-action="EditBranch" asp-controller="Branch" asp-route-id="@branch.BranchId">@branch.Branch_name</a></td>
-                                                            <td scope="row">@branch.Address</td>
-                                                            <td scope="row">@branch.TpNo</td>
                                                             <td scope="row">@branch.City</td>
-                                                           
+                                                            <td scope="row">@branch.TpNo</td>
+                                                            <td scope="row">@branch.Address</td>
+                                                            <td scope="row"><a class="btn btn-dark" asp-action="EditBranch" asp-controller="Branch" asp-route-id="@branch.BranchId"><button class="BranchEdit" type="button">Edit</button></a></td>
 
                                                             
                                                         </tr>
