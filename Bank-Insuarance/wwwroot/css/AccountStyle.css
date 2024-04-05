@@ -583,6 +583,16 @@ h1, h3 {
     margin-left: 3%;
 }
 
+.Allert_div {
+}
+
+.Allert {
+    position: absolute;
+    margin-left: 5%;
+    color: #ff0000;
+    font-weight: bold;
+}
+
 
 .tablediv {
     display: flex;
@@ -701,7 +711,7 @@ tr:hover {
 
 .RoleName_lbl {
     margin-left: 10%;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .Roletablediv {
@@ -714,11 +724,12 @@ tr:hover {
 
 .btn_div {
     display: flex;
-    
 }
+
 .btn2_div {
-    margin-left:10%;
+    margin-left: 10%;
 }
+
 .RoleEdit, .RoleDelete {
     cursor: pointer;
     font-family: "Roboto Condensed";
@@ -736,6 +747,7 @@ tr:hover {
     background-color: #ff0000;
     margin-left: 5%;
 }
+
 .RoleDetails {
     position: absolute;
     width: 138px;
@@ -743,6 +755,7 @@ tr:hover {
     margin-left: 5%;
     margin-top: -2.8%;
 }
+
 .dangerAllert {
     position: absolute;
     color: #ff0000;

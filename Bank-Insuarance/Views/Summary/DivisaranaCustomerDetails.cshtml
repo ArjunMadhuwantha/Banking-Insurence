@@ -39,7 +39,7 @@
 
 
                     <div class="content_div2">
-                        <form asp-controller="Summary" asp-action="DivisaranaCustomerDetails" method="post">
+                        <form asp-controller="Summary" asp-action="DivisaranaCustomerDetails" method="post" id="BR1">
                             <div class="V_div01">
 
 
@@ -180,6 +180,9 @@
 
                     $("#policyno").val(selectedMember.value);
 
+                    // Submitting the form upon selection
+                    $("#BR1").submit();
+
                     return true;
                 }
             }).autocomplete("instance")._renderMenu = function (ul, items) {
@@ -191,3 +194,4 @@
         });
     </script>
 }
+

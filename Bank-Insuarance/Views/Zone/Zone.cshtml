@@ -178,7 +178,7 @@
                                                     <th class="Col01">Zone ID</th>
                                                     <th class="Col02">Zone Name</th>
                                                     <th class="Col03">Zone Status</th>
-
+                                                    <th class="Col04">Action</th>
 
 
                                                 </tr>
@@ -194,7 +194,7 @@
                                                             <td scope="row">@zone.ZoneId</td>
                                                             <td scope="row"><a class="btn btn-dark" asp-action="EditZone" asp-controller="Zone" asp-route-id="@zone.ZoneId">@zone.Zone_name</a></td>
                                                             <td>@zone.Status</td>
-                                                            
+                                                            <td scope="row"><a class="btn btn-dark" asp-action="EditZone" asp-controller="Zone" asp-route-id="@zone.ZoneId"><button class="ZoneEdit" type="button">Edit</button></a></td>
                                                         </tr>
                                                     }
                                                 }

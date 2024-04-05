@@ -40,7 +40,7 @@
 
 
                     <div class="content_div2">
-                        <form asp-controller="Divisarana" asp-action="payment" method="post">
+                        <form asp-controller="Divisarana" asp-action="payment" method="post" id="BR1">
                             <div class="V_div01">
 
 
@@ -148,11 +148,9 @@
 
             var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
 
-
             var branchNamesWithoutDots = branches.map(function (branch) {
                 return branch.text.replace('.', '');
             });
-
 
             $("#branchInput").autocomplete({
                 source: branchNamesWithoutDots,
@@ -162,11 +160,12 @@
                     results: function () { }
                 },
                 select: function (event, ui) {
-
                     var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
-
-
                     $("input[name='DivisaranaViewModel.BranchId']").val(selectedBranch.value);
+
+                    // Submitting the form
+                    $("#BR1").submit();
+
                     return true;
                 }
             }).autocomplete("instance")._renderMenu = function (ul, items) {
@@ -178,4 +177,5 @@
         });
     </script>
 }
+
 
