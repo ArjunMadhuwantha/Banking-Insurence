@@ -1,203 +1,207 @@
--- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
+Enter password:
+-- MySQL dump 10.13  Distrib 8.3.0, for Linux (x86_64)
 --
--- Host: localhost    Database: bank_insurance_db_ns_v01
+-- Host: localhost    Database: bankdb
 -- ------------------------------------------------------
--- Server version	8.0.36
+-- Server version       8.3.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+mysqldump: Error: 'Access denied; you need (at least one of) the PROCESS privilege(s) for this operation' when trying to dump tablespaces
 
 --
--- Table structure for table `__efmigrationshistory`
+-- Table structure for table `AspNetRoleClaims`
 --
 
-DROP TABLE IF EXISTS `__efmigrationshistory`;
+DROP TABLE IF EXISTS `AspNetRoleClaims`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `__efmigrationshistory` (
-  `MigrationId` varchar(150) COLLATE utf8mb4_general_ci NOT NULL,
-  `ProductVersion` varchar(32) COLLATE utf8mb4_general_ci NOT NULL,
-  PRIMARY KEY (`MigrationId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `__efmigrationshistory`
---
-
-LOCK TABLES `__efmigrationshistory` WRITE;
-/*!40000 ALTER TABLE `__efmigrationshistory` DISABLE KEYS */;
-INSERT INTO `__efmigrationshistory` VALUES ('20240315181606_initial','8.0.3'),('20240315204121_initialAll','8.0.3'),('20240322094942_updateuserfull','8.0.3');
-/*!40000 ALTER TABLE `__efmigrationshistory` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `aspnetroleclaims`
---
-
-DROP TABLE IF EXISTS `aspnetroleclaims`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `aspnetroleclaims` (
+CREATE TABLE `AspNetRoleClaims` (
   `Id` int NOT NULL AUTO_INCREMENT,
-  `RoleId` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `ClaimType` longtext COLLATE utf8mb4_general_ci,
-  `ClaimValue` longtext COLLATE utf8mb4_general_ci,
+  `RoleId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ClaimType` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `ClaimValue` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   PRIMARY KEY (`Id`),
   KEY `IX_AspNetRoleClaims_RoleId` (`RoleId`),
-  CONSTRAINT `FK_AspNetRoleClaims_AspNetRoles_RoleId` FOREIGN KEY (`RoleId`) REFERENCES `aspnetroles` (`Id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_AspNetRoleClaims_AspNetRoles_RoleId` FOREIGN KEY (`RoleId`) REFERENCES `AspNetRoles` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `aspnetroleclaims`
+-- Dumping data for table `AspNetRoleClaims`
 --
 
-LOCK TABLES `aspnetroleclaims` WRITE;
-/*!40000 ALTER TABLE `aspnetroleclaims` DISABLE KEYS */;
-/*!40000 ALTER TABLE `aspnetroleclaims` ENABLE KEYS */;
+LOCK TABLES `AspNetRoleClaims` WRITE;
+/*!40000 ALTER TABLE `AspNetRoleClaims` DISABLE KEYS */;
+/*!40000 ALTER TABLE `AspNetRoleClaims` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `aspnetroles`
+-- Table structure for table `AspNetRoles`
 --
 
-DROP TABLE IF EXISTS `aspnetroles`;
+DROP TABLE IF EXISTS `AspNetRoles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `aspnetroles` (
-  `Id` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `Name` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `NormalizedName` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `ConcurrencyStamp` longtext COLLATE utf8mb4_general_ci,
+CREATE TABLE `AspNetRoles` (
+  `Id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `Name` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `NormalizedName` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `ConcurrencyStamp` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   PRIMARY KEY (`Id`),
   UNIQUE KEY `RoleNameIndex` (`NormalizedName`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `aspnetroles`
+-- Dumping data for table `AspNetRoles`
 --
 
-LOCK TABLES `aspnetroles` WRITE;
-/*!40000 ALTER TABLE `aspnetroles` DISABLE KEYS */;
-INSERT INTO `aspnetroles` VALUES ('cd14e372-0ddd-4b5d-80ba-f5556483e35f','Admin','ADMIN',NULL),('d974e5c4-a799-49e5-83e9-0a2082247f6c','User','USER',NULL);
-/*!40000 ALTER TABLE `aspnetroles` ENABLE KEYS */;
+LOCK TABLES `AspNetRoles` WRITE;
+/*!40000 ALTER TABLE `AspNetRoles` DISABLE KEYS */;
+INSERT INTO `AspNetRoles` VALUES ('cd14e372-0ddd-4b5d-80ba-f5556483e35f','Admin','ADMIN',NULL),('d974e5c4-a799-49e5-83e9-0a2082247f6c','User','USER',NULL);
+/*!40000 ALTER TABLE `AspNetRoles` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `aspnetuserclaims`
+-- Table structure for table `AspNetUserClaims`
 --
 
-DROP TABLE IF EXISTS `aspnetuserclaims`;
+DROP TABLE IF EXISTS `AspNetUserClaims`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `aspnetuserclaims` (
+CREATE TABLE `AspNetUserClaims` (
   `Id` int NOT NULL AUTO_INCREMENT,
-  `UserId` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `ClaimType` longtext COLLATE utf8mb4_general_ci,
-  `ClaimValue` longtext COLLATE utf8mb4_general_ci,
+  `UserId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ClaimType` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `ClaimValue` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   PRIMARY KEY (`Id`),
   KEY `IX_AspNetUserClaims_UserId` (`UserId`),
-  CONSTRAINT `FK_AspNetUserClaims_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `aspnetusers` (`Id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_AspNetUserClaims_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `AspNetUsers` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `aspnetuserclaims`
+-- Dumping data for table `AspNetUserClaims`
 --
 
-LOCK TABLES `aspnetuserclaims` WRITE;
-/*!40000 ALTER TABLE `aspnetuserclaims` DISABLE KEYS */;
-/*!40000 ALTER TABLE `aspnetuserclaims` ENABLE KEYS */;
+LOCK TABLES `AspNetUserClaims` WRITE;
+/*!40000 ALTER TABLE `AspNetUserClaims` DISABLE KEYS */;
+/*!40000 ALTER TABLE `AspNetUserClaims` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `aspnetuserlogins`
+-- Table structure for table `AspNetUserLogins`
 --
 
-DROP TABLE IF EXISTS `aspnetuserlogins`;
+DROP TABLE IF EXISTS `AspNetUserLogins`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `aspnetuserlogins` (
-  `LoginProvider` varchar(128) COLLATE utf8mb4_general_ci NOT NULL,
-  `ProviderKey` varchar(128) COLLATE utf8mb4_general_ci NOT NULL,
-  `ProviderDisplayName` longtext COLLATE utf8mb4_general_ci,
-  `UserId` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+CREATE TABLE `AspNetUserLogins` (
+  `LoginProvider` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ProviderKey` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ProviderDisplayName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `UserId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`LoginProvider`,`ProviderKey`),
   KEY `IX_AspNetUserLogins_UserId` (`UserId`),
-  CONSTRAINT `FK_AspNetUserLogins_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `aspnetusers` (`Id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_AspNetUserLogins_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `AspNetUsers` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `aspnetuserlogins`
+-- Dumping data for table `AspNetUserLogins`
 --
 
-LOCK TABLES `aspnetuserlogins` WRITE;
-/*!40000 ALTER TABLE `aspnetuserlogins` DISABLE KEYS */;
-/*!40000 ALTER TABLE `aspnetuserlogins` ENABLE KEYS */;
+LOCK TABLES `AspNetUserLogins` WRITE;
+/*!40000 ALTER TABLE `AspNetUserLogins` DISABLE KEYS */;
+/*!40000 ALTER TABLE `AspNetUserLogins` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `aspnetuserroles`
+-- Table structure for table `AspNetUserRoles`
 --
 
-DROP TABLE IF EXISTS `aspnetuserroles`;
+DROP TABLE IF EXISTS `AspNetUserRoles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `aspnetuserroles` (
-  `UserId` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `RoleId` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+CREATE TABLE `AspNetUserRoles` (
+  `UserId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `RoleId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`UserId`,`RoleId`),
   KEY `IX_AspNetUserRoles_RoleId` (`RoleId`),
-  CONSTRAINT `FK_AspNetUserRoles_AspNetRoles_RoleId` FOREIGN KEY (`RoleId`) REFERENCES `aspnetroles` (`Id`) ON DELETE CASCADE,
-  CONSTRAINT `FK_AspNetUserRoles_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `aspnetusers` (`Id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_AspNetUserRoles_AspNetRoles_RoleId` FOREIGN KEY (`RoleId`) REFERENCES `AspNetRoles` (`Id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_AspNetUserRoles_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `AspNetUsers` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `aspnetuserroles`
+-- Dumping data for table `AspNetUserRoles`
 --
 
-LOCK TABLES `aspnetuserroles` WRITE;
-/*!40000 ALTER TABLE `aspnetuserroles` DISABLE KEYS */;
-INSERT INTO `aspnetuserroles` VALUES ('49573782-f7d4-4510-8a27-07d3210ccf0d','cd14e372-0ddd-4b5d-80ba-f5556483e35f'),('936a9cc4-8e3f-49d6-98e0-77c930ec213b','d974e5c4-a799-49e5-83e9-0a2082247f6c');
-/*!40000 ALTER TABLE `aspnetuserroles` ENABLE KEYS */;
+LOCK TABLES `AspNetUserRoles` WRITE;
+/*!40000 ALTER TABLE `AspNetUserRoles` DISABLE KEYS */;
+INSERT INTO `AspNetUserRoles` VALUES ('49573782-f7d4-4510-8a27-07d3210ccf0d','cd14e372-0ddd-4b5d-80ba-f5556483e35f'),('50e4b5f5-fa12-4989-b954-bdaf48adb463','cd14e372-0ddd-4b5d-80ba-f5556483e35f');
+/*!40000 ALTER TABLE `AspNetUserRoles` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `aspnetusers`
+-- Table structure for table `AspNetUserTokens`
 --
 
-DROP TABLE IF EXISTS `aspnetusers`;
+DROP TABLE IF EXISTS `AspNetUserTokens`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `aspnetusers` (
-  `Id` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `Discriminator` varchar(21) COLLATE utf8mb4_general_ci NOT NULL,
-  `FullName` longtext COLLATE utf8mb4_general_ci,
-  `Profession` longtext COLLATE utf8mb4_general_ci,
+CREATE TABLE `AspNetUserTokens` (
+  `UserId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `LoginProvider` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `Name` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `Value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  PRIMARY KEY (`UserId`,`LoginProvider`,`Name`),
+  CONSTRAINT `FK_AspNetUserTokens_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `AspNetUsers` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `AspNetUserTokens`
+--
+
+LOCK TABLES `AspNetUserTokens` WRITE;
+/*!40000 ALTER TABLE `AspNetUserTokens` DISABLE KEYS */;
+/*!40000 ALTER TABLE `AspNetUserTokens` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `AspNetUsers`
+--
+
+DROP TABLE IF EXISTS `AspNetUsers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `AspNetUsers` (
+  `Id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `Discriminator` varchar(21) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `FullName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Profession` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `DOB` date DEFAULT NULL,
-  `NicNo` longtext COLLATE utf8mb4_general_ci,
-  `Address` longtext COLLATE utf8mb4_general_ci,
-  `UserName` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `NormalizedUserName` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `Email` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `NormalizedEmail` varchar(256) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `NicNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Address` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `UserName` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `NormalizedUserName` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Email` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `NormalizedEmail` varchar(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `EmailConfirmed` tinyint(1) NOT NULL,
-  `PasswordHash` longtext COLLATE utf8mb4_general_ci,
-  `SecurityStamp` longtext COLLATE utf8mb4_general_ci,
-  `ConcurrencyStamp` longtext COLLATE utf8mb4_general_ci,
-  `PhoneNumber` longtext COLLATE utf8mb4_general_ci,
+  `PasswordHash` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `SecurityStamp` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `ConcurrencyStamp` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `PhoneNumber` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `PhoneNumberConfirmed` tinyint(1) NOT NULL,
   `TwoFactorEnabled` tinyint(1) NOT NULL,
   `LockoutEnd` datetime(6) DEFAULT NULL,
@@ -206,278 +210,252 @@ CREATE TABLE `aspnetusers` (
   PRIMARY KEY (`Id`),
   UNIQUE KEY `UserNameIndex` (`NormalizedUserName`),
   KEY `EmailIndex` (`NormalizedEmail`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `aspnetusers`
+-- Dumping data for table `AspNetUsers`
 --
 
-LOCK TABLES `aspnetusers` WRITE;
-/*!40000 ALTER TABLE `aspnetusers` DISABLE KEYS */;
-INSERT INTO `aspnetusers` VALUES ('49573782-f7d4-4510-8a27-07d3210ccf0d','ApplicationUser','DefaultAdmin','Admin','2024-03-23','123456789V','Default Admin','defaultadmin@gmail.com','DEFAULTADMIN@GMAIL.COM','defaultadmin@gmail.com','DEFAULTADMIN@GMAIL.COM',0,'AQAAAAIAAYagAAAAECI9EYX2BYHCQOLD8D1ZLJZ9PUtbVd0/mIAc/UWhKCstWXenJfzdyIkCuF18Cm/BKA==','KVMZW6KK6CLDJOAB2UN5S5JF3CPF2BNM','816de0b1-237c-437e-a6bb-6633de3f89d2',NULL,0,0,NULL,1,0),('936a9cc4-8e3f-49d6-98e0-77c930ec213b','ApplicationUser','DefaultUser','User','2024-03-23','123456789v','Default User','defaultuser@gmail','DEFAULTUSER@GMAIL','defaultuser@gmail','DEFAULTUSER@GMAIL',0,'AQAAAAIAAYagAAAAEPpjVNNFNrMLguS34iMIYfTTVFFbtoBAyZ1n47M7LZBOvKEdPMiX1FNhtFSG/q+DjA==','TS3762ZAWSPXN24B4VMRLM5TZBB3MZLJ','b0cc4387-d827-4fcb-9d89-7bd6987f3575',NULL,0,0,NULL,1,0);
-/*!40000 ALTER TABLE `aspnetusers` ENABLE KEYS */;
+LOCK TABLES `AspNetUsers` WRITE;
+/*!40000 ALTER TABLE `AspNetUsers` DISABLE KEYS */;
+INSERT INTO `AspNetUsers` VALUES ('49573782-f7d4-4510-8a27-07d3210ccf0d','ApplicationUser','DefaultAdmin','Admin','2024-03-23','123456789V','Default Admin','defaultadmin@gmail.com','DEFAULTADMIN@GMAIL.COM','defaultadmin@gmail.com','DEFAULTADMIN@GMAIL.COM',0,'AQAAAAIAAYagAAAAECI9EYX2BYHCQOLD8D1ZLJZ9PUtbVd0/mIAc/UWhKCstWXenJfzdyIkCuF18Cm/BKA==','KNEVPHGLEK7BUZYXDDN55FNHDV6HJKJR','7d9f514b-3a11-4b0d-8273-22f4bbf7493d','+94773526450',0,0,NULL,1,0),('50e4b5f5-fa12-4989-b954-bdaf48adb463','ApplicationUser','kavindu','DevOps Engineer','1998-12-22','199835700534','322/23/2, wellambarawtt, kahangama, ratnapura','kavindu@nanosoft.lk','KAVINDU@NANOSOFT.LK','kavindu@nanosoft.lk','KAVINDU@NANOSOFT.LK',0,'AQAAAAIAAYagAAAAENYYSIe3xCrgcnClZqfqo9yroLsa+q/INli/KbdC+4/+nNaPEV7DKL+jNDciUhM39A==','SY2N7EJ6B7GJGJJWWGBPXNRP3MQHFADH','f4f563bc-345e-4358-844b-405a3312bf47',NULL,0,0,NULL,1,0);
+/*!40000 ALTER TABLE `AspNetUsers` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `aspnetusertokens`
+-- Table structure for table `BankingInsuaranceCompenstaions`
 --
 
-DROP TABLE IF EXISTS `aspnetusertokens`;
+DROP TABLE IF EXISTS `BankingInsuaranceCompenstaions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `aspnetusertokens` (
-  `UserId` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `LoginProvider` varchar(128) COLLATE utf8mb4_general_ci NOT NULL,
-  `Name` varchar(128) COLLATE utf8mb4_general_ci NOT NULL,
-  `Value` longtext COLLATE utf8mb4_general_ci,
-  PRIMARY KEY (`UserId`,`LoginProvider`,`Name`),
-  CONSTRAINT `FK_AspNetUserTokens_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `aspnetusers` (`Id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `aspnetusertokens`
---
-
-LOCK TABLES `aspnetusertokens` WRITE;
-/*!40000 ALTER TABLE `aspnetusertokens` DISABLE KEYS */;
-/*!40000 ALTER TABLE `aspnetusertokens` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `bankinginsuarancecompenstaions`
---
-
-DROP TABLE IF EXISTS `bankinginsuarancecompenstaions`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `bankinginsuarancecompenstaions` (
+CREATE TABLE `BankingInsuaranceCompenstaions` (
   `BankingInsuaranceCompenstaionID` int NOT NULL AUTO_INCREMENT,
   `Value` double NOT NULL,
   `Data` date NOT NULL,
-  `Comment` longtext COLLATE utf8mb4_general_ci,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Comment` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`BankingInsuaranceCompenstaionID`),
   KEY `IX_BankingInsuaranceCompenstaions_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_BankingInsuaranceCompenstaions_BankingInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `bankinginsuarances` (`PolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_BankingInsuaranceCompenstaions_BankingInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `BankingInsuarances` (`PolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `bankinginsuarancecompenstaions`
+-- Dumping data for table `BankingInsuaranceCompenstaions`
 --
 
-LOCK TABLES `bankinginsuarancecompenstaions` WRITE;
-/*!40000 ALTER TABLE `bankinginsuarancecompenstaions` DISABLE KEYS */;
-/*!40000 ALTER TABLE `bankinginsuarancecompenstaions` ENABLE KEYS */;
+LOCK TABLES `BankingInsuaranceCompenstaions` WRITE;
+/*!40000 ALTER TABLE `BankingInsuaranceCompenstaions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `BankingInsuaranceCompenstaions` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `bankinginsuarancedatas`
+-- Table structure for table `BankingInsuaranceDatas`
 --
 
-DROP TABLE IF EXISTS `bankinginsuarancedatas`;
+DROP TABLE IF EXISTS `BankingInsuaranceDatas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `bankinginsuarancedatas` (
+CREATE TABLE `BankingInsuaranceDatas` (
   `DataId` int NOT NULL AUTO_INCREMENT,
   `Date` date NOT NULL,
   `Amount` double NOT NULL,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`DataId`),
   KEY `IX_BankingInsuaranceDatas_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_BankingInsuaranceDatas_BankingInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `bankinginsuarances` (`PolicyNo`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_BankingInsuaranceDatas_BankingInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `BankingInsuarances` (`PolicyNo`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `bankinginsuarancedatas`
+-- Dumping data for table `BankingInsuaranceDatas`
 --
 
-LOCK TABLES `bankinginsuarancedatas` WRITE;
-/*!40000 ALTER TABLE `bankinginsuarancedatas` DISABLE KEYS */;
-INSERT INTO `bankinginsuarancedatas` VALUES (7,'2024-03-24',500,'Poilicy-banking-BR001');
-/*!40000 ALTER TABLE `bankinginsuarancedatas` ENABLE KEYS */;
+LOCK TABLES `BankingInsuaranceDatas` WRITE;
+/*!40000 ALTER TABLE `BankingInsuaranceDatas` DISABLE KEYS */;
+INSERT INTO `BankingInsuaranceDatas` VALUES (1,'2024-03-08',1000,'Poilicy-banking-Br002'),(2,'2024-04-05',100,'Poilicy-banking-Br002');
+/*!40000 ALTER TABLE `BankingInsuaranceDatas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `bankinginsuarances`
+-- Table structure for table `BankingInsuarances`
 --
 
-DROP TABLE IF EXISTS `bankinginsuarances`;
+DROP TABLE IF EXISTS `BankingInsuarances`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `bankinginsuarances` (
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `InsuranceId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+CREATE TABLE `BankingInsuarances` (
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `InsuranceId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`PolicyNo`),
   KEY `IX_BankingInsuarances_InsuranceId` (`InsuranceId`),
-  CONSTRAINT `FK_BankingInsuarances_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `insuarances` (`InsuranceId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_BankingInsuarances_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `Insuarances` (`InsuranceId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `bankinginsuarances`
+-- Dumping data for table `BankingInsuarances`
 --
 
-LOCK TABLES `bankinginsuarances` WRITE;
-/*!40000 ALTER TABLE `bankinginsuarances` DISABLE KEYS */;
-INSERT INTO `bankinginsuarances` VALUES ('Poilicy-banking-BR001','insuarance-002_BR001');
-/*!40000 ALTER TABLE `bankinginsuarances` ENABLE KEYS */;
+LOCK TABLES `BankingInsuarances` WRITE;
+/*!40000 ALTER TABLE `BankingInsuarances` DISABLE KEYS */;
+INSERT INTO `BankingInsuarances` VALUES ('Poilicy-banking-Br002','insuarance-002_Br002');
+/*!40000 ALTER TABLE `BankingInsuarances` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `branches`
+-- Table structure for table `Branches`
 --
 
-DROP TABLE IF EXISTS `branches`;
+DROP TABLE IF EXISTS `Branches`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `branches` (
-  `BranchId` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `Branch_name` longtext COLLATE utf8mb4_general_ci,
-  `Address` longtext COLLATE utf8mb4_general_ci,
-  `TpNo` longtext COLLATE utf8mb4_general_ci,
-  `City` longtext COLLATE utf8mb4_general_ci,
-  `ZoneId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+CREATE TABLE `Branches` (
+  `BranchId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `Branch_name` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Address` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `TpNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `City` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `ZoneId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`BranchId`),
   KEY `IX_Branches_ZoneId` (`ZoneId`),
-  CONSTRAINT `FK_Branches_Zones_ZoneId` FOREIGN KEY (`ZoneId`) REFERENCES `zones` (`ZoneId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_Branches_Zones_ZoneId` FOREIGN KEY (`ZoneId`) REFERENCES `Zones` (`ZoneId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `branches`
+-- Dumping data for table `Branches`
 --
 
-LOCK TABLES `branches` WRITE;
-/*!40000 ALTER TABLE `branches` DISABLE KEYS */;
-INSERT INTO `branches` VALUES ('BR001','Branch 01','BR001','0000000000','BR001','Z001'),('BR002','Branch 02','BR002','0000000000','BR002','Z001'),('BR003','නැනෝසොෆ්ට්','BR003','0000000000','BR003','Z001');
-/*!40000 ALTER TABLE `branches` ENABLE KEYS */;
+LOCK TABLES `Branches` WRITE;
+/*!40000 ALTER TABLE `Branches` DISABLE KEYS */;
+INSERT INTO `Branches` VALUES ('B001','Kahangama','Kahangama,Ratnapura','0715224830','Ratnapura','Z001'),('Br002','Vavuniya','148/A pahala hanwella','0769199812','Hanwella','Ham001');
+/*!40000 ALTER TABLE `Branches` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `buildiinginsurancecompenstaions`
+-- Table structure for table `BuildiingInsuranceCompenstaions`
 --
 
-DROP TABLE IF EXISTS `buildiinginsurancecompenstaions`;
+DROP TABLE IF EXISTS `BuildiingInsuranceCompenstaions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `buildiinginsurancecompenstaions` (
+CREATE TABLE `BuildiingInsuranceCompenstaions` (
   `BuildiingInsuranceCompenstaionID` int NOT NULL AUTO_INCREMENT,
   `Value` double NOT NULL,
   `Data` date NOT NULL,
-  `Comment` longtext COLLATE utf8mb4_general_ci,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Comment` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`BuildiingInsuranceCompenstaionID`),
   KEY `IX_BuildiingInsuranceCompenstaions_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_BuildiingInsuranceCompenstaions_BuildingInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `buildinginsuarances` (`PolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_BuildiingInsuranceCompenstaions_BuildingInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `BuildingInsuarances` (`PolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `buildiinginsurancecompenstaions`
+-- Dumping data for table `BuildiingInsuranceCompenstaions`
 --
 
-LOCK TABLES `buildiinginsurancecompenstaions` WRITE;
-/*!40000 ALTER TABLE `buildiinginsurancecompenstaions` DISABLE KEYS */;
-/*!40000 ALTER TABLE `buildiinginsurancecompenstaions` ENABLE KEYS */;
+LOCK TABLES `BuildiingInsuranceCompenstaions` WRITE;
+/*!40000 ALTER TABLE `BuildiingInsuranceCompenstaions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `BuildiingInsuranceCompenstaions` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `buildinginsuarancedatas`
+-- Table structure for table `BuildingInsuaranceDatas`
 --
 
-DROP TABLE IF EXISTS `buildinginsuarancedatas`;
+DROP TABLE IF EXISTS `BuildingInsuaranceDatas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `buildinginsuarancedatas` (
+CREATE TABLE `BuildingInsuaranceDatas` (
   `DataId` int NOT NULL AUTO_INCREMENT,
   `Date` date NOT NULL,
   `Amount` double NOT NULL,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`DataId`),
   KEY `IX_BuildingInsuaranceDatas_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_BuildingInsuaranceDatas_BuildingInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `buildinginsuarances` (`PolicyNo`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_BuildingInsuaranceDatas_BuildingInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `BuildingInsuarances` (`PolicyNo`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `buildinginsuarancedatas`
+-- Dumping data for table `BuildingInsuaranceDatas`
 --
 
-LOCK TABLES `buildinginsuarancedatas` WRITE;
-/*!40000 ALTER TABLE `buildinginsuarancedatas` DISABLE KEYS */;
-INSERT INTO `buildinginsuarancedatas` VALUES (7,'2024-03-24',0,'Poilicy-building-BR001');
-/*!40000 ALTER TABLE `buildinginsuarancedatas` ENABLE KEYS */;
+LOCK TABLES `BuildingInsuaranceDatas` WRITE;
+/*!40000 ALTER TABLE `BuildingInsuaranceDatas` DISABLE KEYS */;
+INSERT INTO `BuildingInsuaranceDatas` VALUES (1,'2024-03-08',0,'Poilicy-building-Br002'),(2,'2024-04-05',0,'Poilicy-building-Br002');
+/*!40000 ALTER TABLE `BuildingInsuaranceDatas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `buildinginsuarances`
+-- Table structure for table `BuildingInsuarances`
 --
 
-DROP TABLE IF EXISTS `buildinginsuarances`;
+DROP TABLE IF EXISTS `BuildingInsuarances`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `buildinginsuarances` (
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `InsuranceId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+CREATE TABLE `BuildingInsuarances` (
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `InsuranceId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`PolicyNo`),
   KEY `IX_BuildingInsuarances_InsuranceId` (`InsuranceId`),
-  CONSTRAINT `FK_BuildingInsuarances_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `insuarances` (`InsuranceId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_BuildingInsuarances_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `Insuarances` (`InsuranceId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `buildinginsuarances`
+-- Dumping data for table `BuildingInsuarances`
 --
 
-LOCK TABLES `buildinginsuarances` WRITE;
-/*!40000 ALTER TABLE `buildinginsuarances` DISABLE KEYS */;
-INSERT INTO `buildinginsuarances` VALUES ('Poilicy-building-BR001','insuarance-003_BR001');
-/*!40000 ALTER TABLE `buildinginsuarances` ENABLE KEYS */;
+LOCK TABLES `BuildingInsuarances` WRITE;
+/*!40000 ALTER TABLE `BuildingInsuarances` DISABLE KEYS */;
+INSERT INTO `BuildingInsuarances` VALUES ('Poilicy-building-Br002','insuarance-003_Br002');
+/*!40000 ALTER TABLE `BuildingInsuarances` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `divisaranaabhiperanas`
+-- Table structure for table `DivisaranaAbhiperanas`
 --
 
-DROP TABLE IF EXISTS `divisaranaabhiperanas`;
+DROP TABLE IF EXISTS `DivisaranaAbhiperanas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `divisaranaabhiperanas` (
+CREATE TABLE `DivisaranaAbhiperanas` (
   `DataId` int NOT NULL AUTO_INCREMENT,
-  `Month` longtext COLLATE utf8mb4_general_ci,
+  `Month` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `Amount` double DEFAULT NULL,
-  `Comment` longtext COLLATE utf8mb4_general_ci,
-  `BranchId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Comment` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `BranchId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`DataId`),
   KEY `IX_DivisaranaAbhiperanas_BranchId` (`BranchId`),
-  CONSTRAINT `FK_DivisaranaAbhiperanas_Branches_BranchId` FOREIGN KEY (`BranchId`) REFERENCES `branches` (`BranchId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_DivisaranaAbhiperanas_Branches_BranchId` FOREIGN KEY (`BranchId`) REFERENCES `Branches` (`BranchId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `divisaranaabhiperanas`
+-- Dumping data for table `DivisaranaAbhiperanas`
 --
 
-LOCK TABLES `divisaranaabhiperanas` WRITE;
-/*!40000 ALTER TABLE `divisaranaabhiperanas` DISABLE KEYS */;
-/*!40000 ALTER TABLE `divisaranaabhiperanas` ENABLE KEYS */;
+LOCK TABLES `DivisaranaAbhiperanas` WRITE;
+/*!40000 ALTER TABLE `DivisaranaAbhiperanas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `DivisaranaAbhiperanas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `divisaranacircledates`
+-- Table structure for table `DivisaranaCircleDates`
 --
 
-DROP TABLE IF EXISTS `divisaranacircledates`;
+DROP TABLE IF EXISTS `DivisaranaCircleDates`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `divisaranacircledates` (
+CREATE TABLE `DivisaranaCircleDates` (
   `CircleId` int NOT NULL AUTO_INCREMENT,
-  `BranchId` longtext COLLATE utf8mb4_general_ci,
-  `Fullname` longtext COLLATE utf8mb4_general_ci,
+  `BranchId` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Fullname` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `TimePeriod` int NOT NULL,
   `AddmissionFee` double NOT NULL,
   `TotalAmount` double NOT NULL,
@@ -485,718 +463,741 @@ CREATE TABLE `divisaranacircledates` (
   `StartDate` date NOT NULL,
   `NextExecuteDate` date NOT NULL,
   `RecoveryAmount` double NOT NULL,
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`CircleId`),
   KEY `IX_DivisaranaCircleDates_CustomerPolicyNo` (`CustomerPolicyNo`),
-  CONSTRAINT `FK_DivisaranaCircleDates_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `divisaranadatas` (`CustomerPolicyNo`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_DivisaranaCircleDates_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `DivisaranaDatas` (`CustomerPolicyNo`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `divisaranacircledates`
+-- Dumping data for table `DivisaranaCircleDates`
 --
 
-LOCK TABLES `divisaranacircledates` WRITE;
-/*!40000 ALTER TABLE `divisaranacircledates` DISABLE KEYS */;
-INSERT INTO `divisaranacircledates` VALUES (2,'BR001','Maduka Vinod',1,1000,600,550,'2024-03-24','2024-05-24',50,'Divi-123456789V');
-/*!40000 ALTER TABLE `divisaranacircledates` ENABLE KEYS */;
+LOCK TABLES `DivisaranaCircleDates` WRITE;
+/*!40000 ALTER TABLE `DivisaranaCircleDates` DISABLE KEYS */;
+INSERT INTO `DivisaranaCircleDates` VALUES (1,'Br002','arjuna Maduwantha',1,100,600,600,'2024-03-01','2024-04-01',50,'Divi-953460801V');
+/*!40000 ALTER TABLE `DivisaranaCircleDates` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `divisaranacompensations`
+-- Table structure for table `DivisaranaCompensations`
 --
 
-DROP TABLE IF EXISTS `divisaranacompensations`;
+DROP TABLE IF EXISTS `DivisaranaCompensations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `divisaranacompensations` (
+CREATE TABLE `DivisaranaCompensations` (
   `CompensationId` int NOT NULL AUTO_INCREMENT,
-  `MemberName` longtext COLLATE utf8mb4_general_ci,
-  `BranchId` longtext COLLATE utf8mb4_general_ci,
-  `DivisaranaNo` longtext COLLATE utf8mb4_general_ci,
-  `DeathPersonName` longtext COLLATE utf8mb4_general_ci,
-  `HospitalizedPerson` longtext COLLATE utf8mb4_general_ci,
+  `MemberName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `BranchId` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `DivisaranaNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `DeathPersonName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `HospitalizedPerson` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `DeathDate` date NOT NULL,
   `DischargeDate` date NOT NULL,
-  `Realtion` longtext COLLATE utf8mb4_general_ci,
-  `Hospital` longtext COLLATE utf8mb4_general_ci,
-  `Diseases` longtext COLLATE utf8mb4_general_ci,
-  `Surgery` longtext COLLATE utf8mb4_general_ci,
+  `Realtion` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Hospital` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Diseases` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Surgery` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `CompensationValue` double DEFAULT NULL,
-  `Reason` longtext COLLATE utf8mb4_general_ci,
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Reason` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`CompensationId`),
   KEY `IX_DivisaranaCompensations_CustomerPolicyNo` (`CustomerPolicyNo`),
-  CONSTRAINT `FK_DivisaranaCompensations_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `divisaranadatas` (`CustomerPolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_DivisaranaCompensations_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `DivisaranaDatas` (`CustomerPolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `divisaranacompensations`
+-- Dumping data for table `DivisaranaCompensations`
 --
 
-LOCK TABLES `divisaranacompensations` WRITE;
-/*!40000 ALTER TABLE `divisaranacompensations` DISABLE KEYS */;
-/*!40000 ALTER TABLE `divisaranacompensations` ENABLE KEYS */;
+LOCK TABLES `DivisaranaCompensations` WRITE;
+/*!40000 ALTER TABLE `DivisaranaCompensations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `DivisaranaCompensations` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `divisaranadatas`
+-- Table structure for table `DivisaranaDatas`
 --
 
-DROP TABLE IF EXISTS `divisaranadatas`;
+DROP TABLE IF EXISTS `DivisaranaDatas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `divisaranadatas` (
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `Fullname` longtext COLLATE utf8mb4_general_ci,
-  `Address` longtext COLLATE utf8mb4_general_ci,
-  `ID` longtext COLLATE utf8mb4_general_ci,
-  `BankMemberNo` longtext COLLATE utf8mb4_general_ci,
+CREATE TABLE `DivisaranaDatas` (
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `Fullname` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Address` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `ID` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `BankMemberNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `DOB` date NOT NULL,
-  `Job` longtext COLLATE utf8mb4_general_ci,
-  `Succssor` longtext COLLATE utf8mb4_general_ci,
+  `Job` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Succssor` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   PRIMARY KEY (`CustomerPolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `divisaranadatas`
+-- Dumping data for table `DivisaranaDatas`
 --
 
-LOCK TABLES `divisaranadatas` WRITE;
-/*!40000 ALTER TABLE `divisaranadatas` DISABLE KEYS */;
-INSERT INTO `divisaranadatas` VALUES ('Divi-123456789V','Maduka Vinod','Aranayake','123456789V','BMN 01','2024-03-24','SE','Shen');
-/*!40000 ALTER TABLE `divisaranadatas` ENABLE KEYS */;
+LOCK TABLES `DivisaranaDatas` WRITE;
+/*!40000 ALTER TABLE `DivisaranaDatas` DISABLE KEYS */;
+INSERT INTO `DivisaranaDatas` VALUES ('Divi-953460801V','arjuna Maduwantha','Kandy','953460801V','20','2024-03-01','student','MOTHER');
+/*!40000 ALTER TABLE `DivisaranaDatas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `divisaranaparithoshithas`
+-- Table structure for table `DivisaranaParithoshithas`
 --
 
-DROP TABLE IF EXISTS `divisaranaparithoshithas`;
+DROP TABLE IF EXISTS `DivisaranaParithoshithas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `divisaranaparithoshithas` (
+CREATE TABLE `DivisaranaParithoshithas` (
   `DataId` int NOT NULL AUTO_INCREMENT,
-  `Name` longtext COLLATE utf8mb4_general_ci,
-  `MemberNo` longtext COLLATE utf8mb4_general_ci,
+  `Name` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `MemberNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `Amount` double DEFAULT NULL,
-  `Comment` longtext COLLATE utf8mb4_general_ci,
-  `BranchId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Comment` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `BranchId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`DataId`),
   KEY `IX_DivisaranaParithoshithas_BranchId` (`BranchId`),
-  CONSTRAINT `FK_DivisaranaParithoshithas_Branches_BranchId` FOREIGN KEY (`BranchId`) REFERENCES `branches` (`BranchId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_DivisaranaParithoshithas_Branches_BranchId` FOREIGN KEY (`BranchId`) REFERENCES `Branches` (`BranchId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `divisaranaparithoshithas`
+-- Dumping data for table `DivisaranaParithoshithas`
 --
 
-LOCK TABLES `divisaranaparithoshithas` WRITE;
-/*!40000 ALTER TABLE `divisaranaparithoshithas` DISABLE KEYS */;
-/*!40000 ALTER TABLE `divisaranaparithoshithas` ENABLE KEYS */;
+LOCK TABLES `DivisaranaParithoshithas` WRITE;
+/*!40000 ALTER TABLE `DivisaranaParithoshithas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `DivisaranaParithoshithas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `divisaranapayments`
+-- Table structure for table `DivisaranaPayments`
 --
 
-DROP TABLE IF EXISTS `divisaranapayments`;
+DROP TABLE IF EXISTS `DivisaranaPayments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `divisaranapayments` (
+CREATE TABLE `DivisaranaPayments` (
   `PaymentId` int NOT NULL AUTO_INCREMENT,
-  `BranchId` longtext COLLATE utf8mb4_general_ci,
-  `Fullname` longtext COLLATE utf8mb4_general_ci,
+  `BranchId` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Fullname` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `PaymentDate` date NOT NULL,
   `SystemDate` date NOT NULL,
   `PaymentValue` double DEFAULT NULL,
   `RunningBalance` double DEFAULT NULL,
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`PaymentId`),
   KEY `IX_DivisaranaPayments_CustomerPolicyNo` (`CustomerPolicyNo`),
-  CONSTRAINT `FK_DivisaranaPayments_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `divisaranadatas` (`CustomerPolicyNo`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_DivisaranaPayments_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `DivisaranaDatas` (`CustomerPolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `divisaranapayments`
+-- Dumping data for table `DivisaranaPayments`
 --
 
-LOCK TABLES `divisaranapayments` WRITE;
-/*!40000 ALTER TABLE `divisaranapayments` DISABLE KEYS */;
-INSERT INTO `divisaranapayments` VALUES (2,'BR001','Maduka Vinod','2024-04-24','2024-03-24',50,NULL,'Divi-123456789V');
-/*!40000 ALTER TABLE `divisaranapayments` ENABLE KEYS */;
+LOCK TABLES `DivisaranaPayments` WRITE;
+/*!40000 ALTER TABLE `DivisaranaPayments` DISABLE KEYS */;
+/*!40000 ALTER TABLE `DivisaranaPayments` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `divisaranasuccssors`
+-- Table structure for table `DivisaranaSuccssors`
 --
 
-DROP TABLE IF EXISTS `divisaranasuccssors`;
+DROP TABLE IF EXISTS `DivisaranaSuccssors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `divisaranasuccssors` (
+CREATE TABLE `DivisaranaSuccssors` (
   `Id` int NOT NULL AUTO_INCREMENT,
-  `SuccsorName` longtext COLLATE utf8mb4_general_ci,
+  `SuccsorName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `SuccssorDob` date NOT NULL,
   `Age` int NOT NULL,
-  `Relationship` longtext COLLATE utf8mb4_general_ci,
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Relationship` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `IX_DivisaranaSuccssors_CustomerPolicyNo` (`CustomerPolicyNo`),
-  CONSTRAINT `FK_DivisaranaSuccssors_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `divisaranadatas` (`CustomerPolicyNo`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_DivisaranaSuccssors_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `DivisaranaDatas` (`CustomerPolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `divisaranasuccssors`
+-- Dumping data for table `DivisaranaSuccssors`
 --
 
-LOCK TABLES `divisaranasuccssors` WRITE;
-/*!40000 ALTER TABLE `divisaranasuccssors` DISABLE KEYS */;
-INSERT INTO `divisaranasuccssors` VALUES (2,'Shean','2024-03-24',15,'son','Divi-123456789V'),(3,'Shefgdfg','2024-03-24',19,'son','Divi-123456789V');
-/*!40000 ALTER TABLE `divisaranasuccssors` ENABLE KEYS */;
+LOCK TABLES `DivisaranaSuccssors` WRITE;
+/*!40000 ALTER TABLE `DivisaranaSuccssors` DISABLE KEYS */;
+/*!40000 ALTER TABLE `DivisaranaSuccssors` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `divisaranatbls`
+-- Table structure for table `DivisaranaTbls`
 --
 
-DROP TABLE IF EXISTS `divisaranatbls`;
+DROP TABLE IF EXISTS `DivisaranaTbls`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `divisaranatbls` (
+CREATE TABLE `DivisaranaTbls` (
   `Id` int NOT NULL AUTO_INCREMENT,
-  `PolicyNo` longtext COLLATE utf8mb4_general_ci,
-  `InsuranceId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `PolicyNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `InsuranceId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `IX_DivisaranaTbls_CustomerPolicyNo` (`CustomerPolicyNo`),
   KEY `IX_DivisaranaTbls_InsuranceId` (`InsuranceId`),
-  CONSTRAINT `FK_DivisaranaTbls_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `divisaranadatas` (`CustomerPolicyNo`),
-  CONSTRAINT `FK_DivisaranaTbls_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `insuarances` (`InsuranceId`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_DivisaranaTbls_DivisaranaDatas_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `DivisaranaDatas` (`CustomerPolicyNo`),
+  CONSTRAINT `FK_DivisaranaTbls_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `Insuarances` (`InsuranceId`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `divisaranatbls`
+-- Dumping data for table `DivisaranaTbls`
 --
 
-LOCK TABLES `divisaranatbls` WRITE;
-/*!40000 ALTER TABLE `divisaranatbls` DISABLE KEYS */;
-INSERT INTO `divisaranatbls` VALUES (2,'Poilicy-divi-BR001','insuarance-007_BR001','Divi-123456789V');
-/*!40000 ALTER TABLE `divisaranatbls` ENABLE KEYS */;
+LOCK TABLES `DivisaranaTbls` WRITE;
+/*!40000 ALTER TABLE `DivisaranaTbls` DISABLE KEYS */;
+INSERT INTO `DivisaranaTbls` VALUES (1,'Poilicy-divi-Br002','insuarance-007_Br002','Divi-953460801V');
+/*!40000 ALTER TABLE `DivisaranaTbls` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `healthinsuarancedatas`
+-- Table structure for table `HealthInsuaranceDatas`
 --
 
-DROP TABLE IF EXISTS `healthinsuarancedatas`;
+DROP TABLE IF EXISTS `HealthInsuaranceDatas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `healthinsuarancedatas` (
+CREATE TABLE `HealthInsuaranceDatas` (
   `DataId` int NOT NULL AUTO_INCREMENT,
   `Date` date NOT NULL,
   `Amount` double NOT NULL,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`DataId`),
   KEY `IX_HealthInsuaranceDatas_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_HealthInsuaranceDatas_HealthInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `healthinsuarances` (`PolicyNo`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_HealthInsuaranceDatas_HealthInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `HealthInsuarances` (`PolicyNo`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `healthinsuarancedatas`
+-- Dumping data for table `HealthInsuaranceDatas`
 --
 
-LOCK TABLES `healthinsuarancedatas` WRITE;
-/*!40000 ALTER TABLE `healthinsuarancedatas` DISABLE KEYS */;
-INSERT INTO `healthinsuarancedatas` VALUES (7,'2024-03-24',300,'Poilicy-health-BR001');
-/*!40000 ALTER TABLE `healthinsuarancedatas` ENABLE KEYS */;
+LOCK TABLES `HealthInsuaranceDatas` WRITE;
+/*!40000 ALTER TABLE `HealthInsuaranceDatas` DISABLE KEYS */;
+INSERT INTO `HealthInsuaranceDatas` VALUES (1,'2024-03-08',5000,'Poilicy-health-Br002'),(2,'2024-04-05',100,'Poilicy-health-Br002');
+/*!40000 ALTER TABLE `HealthInsuaranceDatas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `healthinsuarances`
+-- Table structure for table `HealthInsuarances`
 --
 
-DROP TABLE IF EXISTS `healthinsuarances`;
+DROP TABLE IF EXISTS `HealthInsuarances`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `healthinsuarances` (
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `InsuranceId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+CREATE TABLE `HealthInsuarances` (
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `InsuranceId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`PolicyNo`),
   KEY `IX_HealthInsuarances_InsuranceId` (`InsuranceId`),
-  CONSTRAINT `FK_HealthInsuarances_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `insuarances` (`InsuranceId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_HealthInsuarances_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `Insuarances` (`InsuranceId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `healthinsuarances`
+-- Dumping data for table `HealthInsuarances`
 --
 
-LOCK TABLES `healthinsuarances` WRITE;
-/*!40000 ALTER TABLE `healthinsuarances` DISABLE KEYS */;
-INSERT INTO `healthinsuarances` VALUES ('Poilicy-health-BR001','insuarance-004_BR001');
-/*!40000 ALTER TABLE `healthinsuarances` ENABLE KEYS */;
+LOCK TABLES `HealthInsuarances` WRITE;
+/*!40000 ALTER TABLE `HealthInsuarances` DISABLE KEYS */;
+INSERT INTO `HealthInsuarances` VALUES ('Poilicy-health-Br002','insuarance-004_Br002');
+/*!40000 ALTER TABLE `HealthInsuarances` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `healthinsurancecompenstaions`
+-- Table structure for table `HealthInsuranceCompenstaions`
 --
 
-DROP TABLE IF EXISTS `healthinsurancecompenstaions`;
+DROP TABLE IF EXISTS `HealthInsuranceCompenstaions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `healthinsurancecompenstaions` (
+CREATE TABLE `HealthInsuranceCompenstaions` (
   `HealthInsuranceCompenstaionID` int NOT NULL AUTO_INCREMENT,
   `Value` double NOT NULL,
   `Data` date NOT NULL,
-  `Comment` longtext COLLATE utf8mb4_general_ci,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Comment` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`HealthInsuranceCompenstaionID`),
   KEY `IX_HealthInsuranceCompenstaions_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_HealthInsuranceCompenstaions_HealthInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `healthinsuarances` (`PolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_HealthInsuranceCompenstaions_HealthInsuarances_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `HealthInsuarances` (`PolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `healthinsurancecompenstaions`
+-- Dumping data for table `HealthInsuranceCompenstaions`
 --
 
-LOCK TABLES `healthinsurancecompenstaions` WRITE;
-/*!40000 ALTER TABLE `healthinsurancecompenstaions` DISABLE KEYS */;
-/*!40000 ALTER TABLE `healthinsurancecompenstaions` ENABLE KEYS */;
+LOCK TABLES `HealthInsuranceCompenstaions` WRITE;
+/*!40000 ALTER TABLE `HealthInsuranceCompenstaions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `HealthInsuranceCompenstaions` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `insuarances`
+-- Table structure for table `Insuarances`
 --
 
-DROP TABLE IF EXISTS `insuarances`;
+DROP TABLE IF EXISTS `Insuarances`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `insuarances` (
-  `InsuranceId` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `StartDate` longtext COLLATE utf8mb4_general_ci,
-  `PolicyNo` longtext COLLATE utf8mb4_general_ci,
-  `InsuranceProductID` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `BranchId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+CREATE TABLE `Insuarances` (
+  `InsuranceId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `StartDate` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `PolicyNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `InsuranceProductID` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `BranchId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`InsuranceId`),
   KEY `IX_Insuarances_BranchId` (`BranchId`),
   KEY `IX_Insuarances_InsuranceProductID` (`InsuranceProductID`),
-  CONSTRAINT `FK_Insuarances_Branches_BranchId` FOREIGN KEY (`BranchId`) REFERENCES `branches` (`BranchId`),
-  CONSTRAINT `FK_Insuarances_InsuranceProducts_InsuranceProductID` FOREIGN KEY (`InsuranceProductID`) REFERENCES `insuranceproducts` (`InsuranceProductID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_Insuarances_Branches_BranchId` FOREIGN KEY (`BranchId`) REFERENCES `Branches` (`BranchId`),
+  CONSTRAINT `FK_Insuarances_InsuranceProducts_InsuranceProductID` FOREIGN KEY (`InsuranceProductID`) REFERENCES `InsuranceProducts` (`InsuranceProductID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `insuarances`
+-- Dumping data for table `Insuarances`
 --
 
-LOCK TABLES `insuarances` WRITE;
-/*!40000 ALTER TABLE `insuarances` DISABLE KEYS */;
-INSERT INTO `insuarances` VALUES ('insuarance-001_BR001','2024-01-01','Poilicy-saving-BR001','Product-001','BR001'),('insuarance-002_BR001','2024-01-01','Poilicy-banking-BR001','Product-002','BR001'),('insuarance-003_BR001','2024-01-01','Poilicy-building-BR001','Product-003','BR001'),('insuarance-004_BR001','2024-01-01','Poilicy-health-BR001','Product-004','BR001'),('insuarance-005_BR001','2024-01-01','Poilicy-Treasuary-BR001','Product-005','BR001'),('insuarance-007_BR001','2024-01-01','Poilicy-divi-BR001','Product-006','BR001');
-/*!40000 ALTER TABLE `insuarances` ENABLE KEYS */;
+LOCK TABLES `Insuarances` WRITE;
+/*!40000 ALTER TABLE `Insuarances` DISABLE KEYS */;
+INSERT INTO `Insuarances` VALUES ('insuarance-001_Br002','2024-01-01','Poilicy-saving-Br002','Product-001','Br002'),('insuarance-002_Br002','2024-01-01','Poilicy-banking-Br002','Product-002','Br002'),('insuarance-003_Br002','2024-01-01','Poilicy-building-Br002','Product-003','Br002'),('insuarance-004_Br002','2024-01-01','Poilicy-health-Br002','Product-004','Br002'),('insuarance-005_Br002','2024-01-01','Poilicy-Treasuary-Br002','Product-005','Br002'),('insuarance-007_Br002','2024-01-01','Poilicy-divi-Br002','Product-006','Br002');
+/*!40000 ALTER TABLE `Insuarances` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `insuranceproducts`
+-- Table structure for table `InsuranceProducts`
 --
 
-DROP TABLE IF EXISTS `insuranceproducts`;
+DROP TABLE IF EXISTS `InsuranceProducts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `insuranceproducts` (
-  `InsuranceProductID` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `InsuranceProductName` longtext COLLATE utf8mb4_general_ci,
+CREATE TABLE `InsuranceProducts` (
+  `InsuranceProductID` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `InsuranceProductName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   PRIMARY KEY (`InsuranceProductID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `insuranceproducts`
+-- Dumping data for table `InsuranceProducts`
 --
 
-LOCK TABLES `insuranceproducts` WRITE;
-/*!40000 ALTER TABLE `insuranceproducts` DISABLE KEYS */;
-INSERT INTO `insuranceproducts` VALUES ('Product-001','Product-One'),('Product-002','Product-two'),('Product-003','Product-three'),('Product-004','Product-four'),('Product-005','Product-five'),('Product-006','Product-six');
-/*!40000 ALTER TABLE `insuranceproducts` ENABLE KEYS */;
+LOCK TABLES `InsuranceProducts` WRITE;
+/*!40000 ALTER TABLE `InsuranceProducts` DISABLE KEYS */;
+INSERT INTO `InsuranceProducts` VALUES ('Product-001','Product-One'),('Product-002','Product-two'),('Product-003','Product-three'),('Product-004','Product-four'),('Product-005','Product-five'),('Product-006','Product-six');
+/*!40000 ALTER TABLE `InsuranceProducts` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `loancompenstaions`
+-- Table structure for table `LoanCompenstaions`
 --
 
-DROP TABLE IF EXISTS `loancompenstaions`;
+DROP TABLE IF EXISTS `LoanCompenstaions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `loancompenstaions` (
+CREATE TABLE `LoanCompenstaions` (
   `LoanCompenstaionID` int NOT NULL AUTO_INCREMENT,
-  `FullName` longtext COLLATE utf8mb4_general_ci,
-  `BranchId` longtext COLLATE utf8mb4_general_ci,
+  `FullName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `BranchId` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `Value` double NOT NULL,
   `CompenstaionValue` double NOT NULL,
-  `Requirement` longtext COLLATE utf8mb4_general_ci,
-  `Comment` longtext COLLATE utf8mb4_general_ci,
+  `Requirement` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Comment` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `Date` date NOT NULL,
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`LoanCompenstaionID`),
   KEY `IX_LoanCompenstaions_CustomerPolicyNo` (`CustomerPolicyNo`),
-  CONSTRAINT `FK_LoanCompenstaions_LoanCustomers_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `loancustomers` (`CustomerPolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_LoanCompenstaions_LoanCustomers_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `LoanCustomers` (`CustomerPolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `loancompenstaions`
+-- Dumping data for table `LoanCompenstaions`
 --
 
-LOCK TABLES `loancompenstaions` WRITE;
-/*!40000 ALTER TABLE `loancompenstaions` DISABLE KEYS */;
-/*!40000 ALTER TABLE `loancompenstaions` ENABLE KEYS */;
+LOCK TABLES `LoanCompenstaions` WRITE;
+/*!40000 ALTER TABLE `LoanCompenstaions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `LoanCompenstaions` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `loancustomers`
+-- Table structure for table `LoanCustomers`
 --
 
-DROP TABLE IF EXISTS `loancustomers`;
+DROP TABLE IF EXISTS `LoanCustomers`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `loancustomers` (
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `CustomerName` longtext COLLATE utf8mb4_general_ci,
-  `ID` longtext COLLATE utf8mb4_general_ci,
-  `Address` longtext COLLATE utf8mb4_general_ci,
-  `ProjectName` longtext COLLATE utf8mb4_general_ci,
+CREATE TABLE `LoanCustomers` (
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `CustomerName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `ID` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Address` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `ProjectName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `LoanIssueDate` date NOT NULL,
   `LoanEndDate` date NOT NULL,
-  `TeamNo` longtext COLLATE utf8mb4_general_ci,
+  `TeamNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `LoanValue` double NOT NULL,
   PRIMARY KEY (`CustomerPolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `loancustomers`
+-- Dumping data for table `LoanCustomers`
 --
 
-LOCK TABLES `loancustomers` WRITE;
-/*!40000 ALTER TABLE `loancustomers` DISABLE KEYS */;
-/*!40000 ALTER TABLE `loancustomers` ENABLE KEYS */;
+LOCK TABLES `LoanCustomers` WRITE;
+/*!40000 ALTER TABLE `LoanCustomers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `LoanCustomers` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `loanpayments`
+-- Table structure for table `LoanPayments`
 --
 
-DROP TABLE IF EXISTS `loanpayments`;
+DROP TABLE IF EXISTS `LoanPayments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `loanpayments` (
+CREATE TABLE `LoanPayments` (
   `PaymentId` int NOT NULL AUTO_INCREMENT,
   `PaymentDate` date NOT NULL,
   `Paymentvalue` double NOT NULL,
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`PaymentId`),
   KEY `IX_LoanPayments_CustomerPolicyNo` (`CustomerPolicyNo`),
-  CONSTRAINT `FK_LoanPayments_LoanCustomers_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `loancustomers` (`CustomerPolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_LoanPayments_LoanCustomers_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `LoanCustomers` (`CustomerPolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `loanpayments`
+-- Dumping data for table `LoanPayments`
 --
 
-LOCK TABLES `loanpayments` WRITE;
-/*!40000 ALTER TABLE `loanpayments` DISABLE KEYS */;
-/*!40000 ALTER TABLE `loanpayments` ENABLE KEYS */;
+LOCK TABLES `LoanPayments` WRITE;
+/*!40000 ALTER TABLE `LoanPayments` DISABLE KEYS */;
+/*!40000 ALTER TABLE `LoanPayments` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `loantbls`
+-- Table structure for table `LoanTbls`
 --
 
-DROP TABLE IF EXISTS `loantbls`;
+DROP TABLE IF EXISTS `LoanTbls`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `loantbls` (
+CREATE TABLE `LoanTbls` (
   `Id` int NOT NULL AUTO_INCREMENT,
-  `PolicyNo` longtext COLLATE utf8mb4_general_ci,
-  `InsuranceId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `CustomerPolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `PolicyNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `InsuranceId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `CustomerPolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `IX_LoanTbls_CustomerPolicyNo` (`CustomerPolicyNo`),
   KEY `IX_LoanTbls_InsuranceId` (`InsuranceId`),
-  CONSTRAINT `FK_LoanTbls_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `insuarances` (`InsuranceId`),
-  CONSTRAINT `FK_LoanTbls_LoanCustomers_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `loancustomers` (`CustomerPolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_LoanTbls_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `Insuarances` (`InsuranceId`),
+  CONSTRAINT `FK_LoanTbls_LoanCustomers_CustomerPolicyNo` FOREIGN KEY (`CustomerPolicyNo`) REFERENCES `LoanCustomers` (`CustomerPolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `loantbls`
+-- Dumping data for table `LoanTbls`
 --
 
-LOCK TABLES `loantbls` WRITE;
-/*!40000 ALTER TABLE `loantbls` DISABLE KEYS */;
-/*!40000 ALTER TABLE `loantbls` ENABLE KEYS */;
+LOCK TABLES `LoanTbls` WRITE;
+/*!40000 ALTER TABLE `LoanTbls` DISABLE KEYS */;
+/*!40000 ALTER TABLE `LoanTbls` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `savingreliefcompensations`
+-- Table structure for table `SavingReliefCompensations`
 --
 
-DROP TABLE IF EXISTS `savingreliefcompensations`;
+DROP TABLE IF EXISTS `SavingReliefCompensations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `savingreliefcompensations` (
+CREATE TABLE `SavingReliefCompensations` (
   `MemberId` int NOT NULL AUTO_INCREMENT,
-  `MemberName` longtext COLLATE utf8mb4_general_ci,
-  `MemberAddress` longtext COLLATE utf8mb4_general_ci,
-  `DeathpersonName` longtext COLLATE utf8mb4_general_ci,
-  `Reason` longtext COLLATE utf8mb4_general_ci,
-  `Realtion` longtext COLLATE utf8mb4_general_ci,
+  `MemberName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `MemberAddress` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `DeathpersonName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Reason` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Realtion` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `ReasonDate` date NOT NULL,
   `CompensationValue` double NOT NULL,
   `RemainingBalanece` double NOT NULL,
-  `Schoolname` longtext COLLATE utf8mb4_general_ci,
-  `Studentname` longtext COLLATE utf8mb4_general_ci,
-  `Universityname` longtext COLLATE utf8mb4_general_ci,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Schoolname` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Studentname` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Universityname` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`MemberId`),
   KEY `IX_SavingReliefCompensations_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_SavingReliefCompensations_SavingReliefs_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `savingreliefs` (`PolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_SavingReliefCompensations_SavingReliefs_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `SavingReliefs` (`PolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `savingreliefcompensations`
+-- Dumping data for table `SavingReliefCompensations`
 --
 
-LOCK TABLES `savingreliefcompensations` WRITE;
-/*!40000 ALTER TABLE `savingreliefcompensations` DISABLE KEYS */;
-/*!40000 ALTER TABLE `savingreliefcompensations` ENABLE KEYS */;
+LOCK TABLES `SavingReliefCompensations` WRITE;
+/*!40000 ALTER TABLE `SavingReliefCompensations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `SavingReliefCompensations` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `savingreliefdatas`
+-- Table structure for table `SavingReliefDatas`
 --
 
-DROP TABLE IF EXISTS `savingreliefdatas`;
+DROP TABLE IF EXISTS `SavingReliefDatas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `savingreliefdatas` (
+CREATE TABLE `SavingReliefDatas` (
   `DataId` int NOT NULL AUTO_INCREMENT,
   `Date` date NOT NULL,
   `Amount` double NOT NULL,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`DataId`),
   KEY `IX_SavingReliefDatas_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_SavingReliefDatas_SavingReliefs_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `savingreliefs` (`PolicyNo`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_SavingReliefDatas_SavingReliefs_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `SavingReliefs` (`PolicyNo`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `savingreliefdatas`
+-- Dumping data for table `SavingReliefDatas`
 --
 
-LOCK TABLES `savingreliefdatas` WRITE;
-/*!40000 ALTER TABLE `savingreliefdatas` DISABLE KEYS */;
-INSERT INTO `savingreliefdatas` VALUES (7,'2024-03-24',700,'Poilicy-saving-BR001');
-/*!40000 ALTER TABLE `savingreliefdatas` ENABLE KEYS */;
+LOCK TABLES `SavingReliefDatas` WRITE;
+/*!40000 ALTER TABLE `SavingReliefDatas` DISABLE KEYS */;
+INSERT INTO `SavingReliefDatas` VALUES (1,'2024-03-08',3000,'Poilicy-saving-Br002'),(2,'2024-04-05',100,'Poilicy-saving-Br002');
+/*!40000 ALTER TABLE `SavingReliefDatas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `savingreliefparithoshithas`
+-- Table structure for table `SavingReliefParithoshithas`
 --
 
-DROP TABLE IF EXISTS `savingreliefparithoshithas`;
+DROP TABLE IF EXISTS `SavingReliefParithoshithas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `savingreliefparithoshithas` (
+CREATE TABLE `SavingReliefParithoshithas` (
   `DataId` int NOT NULL AUTO_INCREMENT,
-  `Name` longtext COLLATE utf8mb4_general_ci,
-  `MemberNo` longtext COLLATE utf8mb4_general_ci,
+  `Name` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `MemberNo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `Amount` double DEFAULT NULL,
-  `Comment` longtext COLLATE utf8mb4_general_ci,
-  `BranchId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Comment` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `BranchId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`DataId`),
   KEY `IX_SavingReliefParithoshithas_BranchId` (`BranchId`),
-  CONSTRAINT `FK_SavingReliefParithoshithas_Branches_BranchId` FOREIGN KEY (`BranchId`) REFERENCES `branches` (`BranchId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_SavingReliefParithoshithas_Branches_BranchId` FOREIGN KEY (`BranchId`) REFERENCES `Branches` (`BranchId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `savingreliefparithoshithas`
+-- Dumping data for table `SavingReliefParithoshithas`
 --
 
-LOCK TABLES `savingreliefparithoshithas` WRITE;
-/*!40000 ALTER TABLE `savingreliefparithoshithas` DISABLE KEYS */;
-/*!40000 ALTER TABLE `savingreliefparithoshithas` ENABLE KEYS */;
+LOCK TABLES `SavingReliefParithoshithas` WRITE;
+/*!40000 ALTER TABLE `SavingReliefParithoshithas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `SavingReliefParithoshithas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `savingreliefs`
+-- Table structure for table `SavingReliefs`
 --
 
-DROP TABLE IF EXISTS `savingreliefs`;
+DROP TABLE IF EXISTS `SavingReliefs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `savingreliefs` (
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `InsuranceId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+CREATE TABLE `SavingReliefs` (
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `InsuranceId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`PolicyNo`),
   UNIQUE KEY `IX_SavingReliefs_InsuranceId` (`InsuranceId`),
-  CONSTRAINT `FK_SavingReliefs_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `insuarances` (`InsuranceId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_SavingReliefs_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `Insuarances` (`InsuranceId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `savingreliefs`
+-- Dumping data for table `SavingReliefs`
 --
 
-LOCK TABLES `savingreliefs` WRITE;
-/*!40000 ALTER TABLE `savingreliefs` DISABLE KEYS */;
-INSERT INTO `savingreliefs` VALUES ('Poilicy-saving-BR001','insuarance-001_BR001');
-/*!40000 ALTER TABLE `savingreliefs` ENABLE KEYS */;
+LOCK TABLES `SavingReliefs` WRITE;
+/*!40000 ALTER TABLE `SavingReliefs` DISABLE KEYS */;
+INSERT INTO `SavingReliefs` VALUES ('Poilicy-saving-Br002','insuarance-001_Br002');
+/*!40000 ALTER TABLE `SavingReliefs` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `treasuaries`
+-- Table structure for table `Treasuaries`
 --
 
-DROP TABLE IF EXISTS `treasuaries`;
+DROP TABLE IF EXISTS `Treasuaries`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `treasuaries` (
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `InsuranceId` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+CREATE TABLE `Treasuaries` (
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `InsuranceId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`PolicyNo`),
   KEY `IX_Treasuaries_InsuranceId` (`InsuranceId`),
-  CONSTRAINT `FK_Treasuaries_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `insuarances` (`InsuranceId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_Treasuaries_Insuarances_InsuranceId` FOREIGN KEY (`InsuranceId`) REFERENCES `Insuarances` (`InsuranceId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `treasuaries`
+-- Dumping data for table `Treasuaries`
 --
 
-LOCK TABLES `treasuaries` WRITE;
-/*!40000 ALTER TABLE `treasuaries` DISABLE KEYS */;
-INSERT INTO `treasuaries` VALUES ('Poilicy-Treasuary-BR001','insuarance-005_BR001');
-/*!40000 ALTER TABLE `treasuaries` ENABLE KEYS */;
+LOCK TABLES `Treasuaries` WRITE;
+/*!40000 ALTER TABLE `Treasuaries` DISABLE KEYS */;
+INSERT INTO `Treasuaries` VALUES ('Poilicy-Treasuary-Br002','insuarance-005_Br002');
+/*!40000 ALTER TABLE `Treasuaries` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `treasuarydatas`
+-- Table structure for table `TreasuaryDatas`
 --
 
-DROP TABLE IF EXISTS `treasuarydatas`;
+DROP TABLE IF EXISTS `TreasuaryDatas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `treasuarydatas` (
+CREATE TABLE `TreasuaryDatas` (
   `DataId` int NOT NULL AUTO_INCREMENT,
   `Date` date NOT NULL,
   `Amount` double NOT NULL,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`DataId`),
   KEY `IX_TreasuaryDatas_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_TreasuaryDatas_Treasuaries_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `treasuaries` (`PolicyNo`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_TreasuaryDatas_Treasuaries_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `Treasuaries` (`PolicyNo`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `treasuarydatas`
+-- Dumping data for table `TreasuaryDatas`
 --
 
-LOCK TABLES `treasuarydatas` WRITE;
-/*!40000 ALTER TABLE `treasuarydatas` DISABLE KEYS */;
-INSERT INTO `treasuarydatas` VALUES (7,'2024-03-24',500,'Poilicy-Treasuary-BR001');
-/*!40000 ALTER TABLE `treasuarydatas` ENABLE KEYS */;
+LOCK TABLES `TreasuaryDatas` WRITE;
+/*!40000 ALTER TABLE `TreasuaryDatas` DISABLE KEYS */;
+INSERT INTO `TreasuaryDatas` VALUES (1,'2024-03-08',1000,'Poilicy-Treasuary-Br002'),(2,'2024-04-05',100,'Poilicy-Treasuary-Br002');
+/*!40000 ALTER TABLE `TreasuaryDatas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `treasuaryescollections`
+-- Table structure for table `TreasuaryesCollections`
 --
 
-DROP TABLE IF EXISTS `treasuaryescollections`;
+DROP TABLE IF EXISTS `TreasuaryesCollections`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `treasuaryescollections` (
+CREATE TABLE `TreasuaryesCollections` (
   `TreasuaryeId` int NOT NULL AUTO_INCREMENT,
-  `TreasuaryName` longtext COLLATE utf8mb4_general_ci,
+  `TreasuaryName` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   `Date` date NOT NULL,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`TreasuaryeId`),
   KEY `IX_TreasuaryesCollections_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_TreasuaryesCollections_Treasuaries_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `treasuaries` (`PolicyNo`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_TreasuaryesCollections_Treasuaries_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `Treasuaries` (`PolicyNo`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `treasuaryescollections`
+-- Dumping data for table `TreasuaryesCollections`
 --
 
-LOCK TABLES `treasuaryescollections` WRITE;
-/*!40000 ALTER TABLE `treasuaryescollections` DISABLE KEYS */;
-/*!40000 ALTER TABLE `treasuaryescollections` ENABLE KEYS */;
+LOCK TABLES `TreasuaryesCollections` WRITE;
+/*!40000 ALTER TABLE `TreasuaryesCollections` DISABLE KEYS */;
+INSERT INTO `TreasuaryesCollections` VALUES (1,'Nimal','2024-04-05','Poilicy-Treasuary-Br002');
+/*!40000 ALTER TABLE `TreasuaryesCollections` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `treasuraryinsurancecompenstaions`
+-- Table structure for table `TreasuraryInsuranceCompenstaions`
 --
 
-DROP TABLE IF EXISTS `treasuraryinsurancecompenstaions`;
+DROP TABLE IF EXISTS `TreasuraryInsuranceCompenstaions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `treasuraryinsurancecompenstaions` (
+CREATE TABLE `TreasuraryInsuranceCompenstaions` (
   `TreasuraryInsuranceCompenstaionID` int NOT NULL AUTO_INCREMENT,
   `Value` double NOT NULL,
   `Data` date NOT NULL,
-  `Comment` longtext COLLATE utf8mb4_general_ci,
-  `PolicyNo` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Comment` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `PolicyNo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`TreasuraryInsuranceCompenstaionID`),
   KEY `IX_TreasuraryInsuranceCompenstaions_PolicyNo` (`PolicyNo`),
-  CONSTRAINT `FK_TreasuraryInsuranceCompenstaions_Treasuaries_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `treasuaries` (`PolicyNo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  CONSTRAINT `FK_TreasuraryInsuranceCompenstaions_Treasuaries_PolicyNo` FOREIGN KEY (`PolicyNo`) REFERENCES `Treasuaries` (`PolicyNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `treasuraryinsurancecompenstaions`
+-- Dumping data for table `TreasuraryInsuranceCompenstaions`
 --
 
-LOCK TABLES `treasuraryinsurancecompenstaions` WRITE;
-/*!40000 ALTER TABLE `treasuraryinsurancecompenstaions` DISABLE KEYS */;
-/*!40000 ALTER TABLE `treasuraryinsurancecompenstaions` ENABLE KEYS */;
+LOCK TABLES `TreasuraryInsuranceCompenstaions` WRITE;
+/*!40000 ALTER TABLE `TreasuraryInsuranceCompenstaions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `TreasuraryInsuranceCompenstaions` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `zones`
+-- Table structure for table `Zones`
 --
 
-DROP TABLE IF EXISTS `zones`;
+DROP TABLE IF EXISTS `Zones`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `zones` (
-  `ZoneId` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `Zone_name` longtext COLLATE utf8mb4_general_ci,
-  `Status` longtext COLLATE utf8mb4_general_ci,
+CREATE TABLE `Zones` (
+  `ZoneId` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `Zone_name` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Status` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
   PRIMARY KEY (`ZoneId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `zones`
+-- Dumping data for table `Zones`
 --
 
-LOCK TABLES `zones` WRITE;
-/*!40000 ALTER TABLE `zones` DISABLE KEYS */;
-INSERT INTO `zones` VALUES ('Z001','Hambantota','Active');
-/*!40000 ALTER TABLE `zones` ENABLE KEYS */;
+LOCK TABLES `Zones` WRITE;
+/*!40000 ALTER TABLE `Zones` DISABLE KEYS */;
+INSERT INTO `Zones` VALUES ('Ham001','Colombo','Active'),('Z001','Ratnapura','Active');
+/*!40000 ALTER TABLE `Zones` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `__EFMigrationsHistory`
+--
+
+DROP TABLE IF EXISTS `__EFMigrationsHistory`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `__EFMigrationsHistory` (
+  `MigrationId` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ProductVersion` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  PRIMARY KEY (`MigrationId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `__EFMigrationsHistory`
+--
+
+LOCK TABLES `__EFMigrationsHistory` WRITE;
+/*!40000 ALTER TABLE `__EFMigrationsHistory` DISABLE KEYS */;
+INSERT INTO `__EFMigrationsHistory` VALUES ('20240315181606_initial','8.0.3'),('20240315204121_initialAll','8.0.3'),('20240322094942_updateuserfull','8.0.3');
+/*!40000 ALTER TABLE `__EFMigrationsHistory` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -1208,4 +1209,5 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-02 16:20:14
+-- Dump completed on 2024-04-06  4:04:24
+ss
