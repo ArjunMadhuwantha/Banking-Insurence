@@ -37,7 +37,7 @@ a {
 .NavBarTop_div {
     display: flex;
     flex-direction: row;
-    background-color: #05415C;
+    background-color: #0A0220;
     width: 100.5%;
     height: 111px;
     position: fixed;
@@ -63,7 +63,7 @@ a {
     margin: 0%;
     width: 100%;
     box-shadow: #000;
-    background-color: #05415C;
+    background-color: #0A0220;
     height: 100%;
     font-family: "Roboto Condensed";
 }
@@ -139,7 +139,7 @@ a {
     width: 13%;
     height: 150%;
     text-align: left;
-    background-color: #05415C;
+    background-color: #0A0220;
     position: fixed;
     margin-top: 5%;
 }
@@ -150,7 +150,7 @@ a {
     padding: 0;
     width: 100%;
     box-shadow: #000;
-    background-color: #05415C;
+    background-color: #0A0220;
     height: 150%;
 }
 
@@ -180,13 +180,13 @@ a {
         }
 
 .active {
-    background-color: #05415C;
+    background-color: #0A0220;
     color: rgb(255, 255, 255);
 }
 
 .white {
-    background-color: #ffffff;
-    color: #05415C;
+    background-color: #0A0220;
+    color: #FFF100;
     font-weight: bold;
     width: 83.5%;
     padding-top: 6%;
@@ -683,16 +683,16 @@ tr:hover {
     margin-bottom: 0%;
 }
 
-.Save, .SaveA, .Delete, .RoleDetails{
+.Save, .SaveA, .Delete, .RoleDetails {
     font-family: "Roboto Condensed";
     border-radius: 10px;
     width: 148px;
     height: 43px;
     font-size: 20px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255);
-    background-color: #05415C;
+    background-color: #0A0220;
     color: rgb(255, 255, 255);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .SaveA, .Delete {
@@ -741,7 +741,7 @@ tr:hover {
     height: 23px;
     font-size: 15px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255);
-    background-color: #05415C;
+    background-color: #0A0220;
     color: rgb(255, 255, 255);
     margin-left: 5%;
 }
@@ -782,4 +782,3 @@ tr:hover {
 .copyrightPR {
     margin-top: 36%;
 }
-

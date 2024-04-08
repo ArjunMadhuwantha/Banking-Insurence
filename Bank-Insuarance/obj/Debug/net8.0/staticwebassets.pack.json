@@ -153,20 +153,12 @@
       "PackagePath": "staticwebassets\\images\\Branch_png.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\DOB.png",
-      "PackagePath": "staticwebassets\\images\\DOB.png"
-    },
-    {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Dashboard.png",
-      "PackagePath": "staticwebassets\\images\\Dashboard.png"
-    },
-    {
       "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Delete.png",
       "PackagePath": "staticwebassets\\images\\Delete.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\DeleteZone.png",
-      "PackagePath": "staticwebassets\\images\\DeleteZone.png"
+      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Divisarana_Logo.png",
+      "PackagePath": "staticwebassets\\images\\Divisarana_Logo.png"
     },
     {
       "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Doc.png",
@@ -175,6 +167,10 @@
     {
       "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Email.png",
       "PackagePath": "staticwebassets\\images\\Email.png"
+    },
+    {
+      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\HomeLoan_Logo.png",
+      "PackagePath": "staticwebassets\\images\\HomeLoan_Logo.png"
     },
     {
       "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Homelogo.png",
@@ -205,8 +201,8 @@
       "PackagePath": "staticwebassets\\images\\Name.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\PINNED.png",
-      "PackagePath": "staticwebassets\\images\\PINNED.png"
+      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Other_Logo.png",
+      "PackagePath": "staticwebassets\\images\\Other_Logo.png"
     },
     {
       "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Profession.png",
@@ -235,6 +231,10 @@
     {
       "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Zone.png",
       "PackagePath": "staticwebassets\\images\\Zone.png"
+    },
+    {
+      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\ZoneMiddle.png",
+      "PackagePath": "staticwebassets\\images\\ZoneMiddle.png"
     },
     {
       "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\ZoneWhite.png",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RefmkSZfETf1+B86eTCJRYEzNNcip1XyKAjQikyUqAU=",
+  "Hash": "hxaSXN/tnDBg60+lr1SxKOQXxL29cnHux7kMtsb+DK8=",
   "Source": "Bank-Insuarance",
   "BasePath": "_content/Bank-Insuarance",
   "Mode": "Default",
@@ -1993,25 +1993,6 @@
       "OriginalItemSpec": "wwwroot\\images\\BranchBlue.png"
     },
     {
-      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Dashboard.png",
-      "SourceId": "Bank-Insuarance",
-      "SourceType": "Discovered",
-      "ContentRoot": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\",
-      "BasePath": "_content/Bank-Insuarance",
-      "RelativePath": "images/Dashboard.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Dashboard.png"
-    },
-    {
       "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Delete.png",
       "SourceId": "Bank-Insuarance",
       "SourceType": "Discovered",
@@ -2031,12 +2012,12 @@
       "OriginalItemSpec": "wwwroot\\images\\Delete.png"
     },
     {
-      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\DeleteZone.png",
+      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Divisarana_Logo.png",
       "SourceId": "Bank-Insuarance",
       "SourceType": "Discovered",
       "ContentRoot": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\",
       "BasePath": "_content/Bank-Insuarance",
-      "RelativePath": "images/DeleteZone.png",
+      "RelativePath": "images/Divisarana_Logo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2047,26 +2028,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\DeleteZone.png"
-    },
-    {
-      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\DOB.png",
-      "SourceId": "Bank-Insuarance",
-      "SourceType": "Discovered",
-      "ContentRoot": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\",
-      "BasePath": "_content/Bank-Insuarance",
-      "RelativePath": "images/DOB.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\DOB.png"
+      "OriginalItemSpec": "wwwroot\\images\\Divisarana_Logo.png"
     },
     {
       "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Doc.png",
@@ -2162,6 +2124,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\expandpng.png"
+    },
+    {
+      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\HomeLoan_Logo.png",
+      "SourceId": "Bank-Insuarance",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\",
+      "BasePath": "_content/Bank-Insuarance",
+      "RelativePath": "images/HomeLoan_Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HomeLoan_Logo.png"
     },
     {
       "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Homelogo.png",
@@ -2373,6 +2354,25 @@
       "OriginalItemSpec": "wwwroot\\images\\NIC.png"
     },
     {
+      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Other_Logo.png",
+      "SourceId": "Bank-Insuarance",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\",
+      "BasePath": "_content/Bank-Insuarance",
+      "RelativePath": "images/Other_Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Other_Logo.png"
+    },
+    {
       "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\password.png",
       "SourceId": "Bank-Insuarance",
       "SourceType": "Discovered",
@@ -2390,25 +2390,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\password.png"
-    },
-    {
-      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\PINNED.png",
-      "SourceId": "Bank-Insuarance",
-      "SourceType": "Discovered",
-      "ContentRoot": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\",
-      "BasePath": "_content/Bank-Insuarance",
-      "RelativePath": "images/PINNED.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\PINNED.png"
     },
     {
       "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Profession.png",
@@ -2637,6 +2618,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Zone.png"
+    },
+    {
+      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\ZoneMiddle.png",
+      "SourceId": "Bank-Insuarance",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\",
+      "BasePath": "_content/Bank-Insuarance",
+      "RelativePath": "images/ZoneMiddle.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ZoneMiddle.png"
     },
     {
       "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\ZoneWhite.png",

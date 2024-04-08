@@ -56,7 +56,7 @@ a {
 .NavBarTop_div {
     display: flex;
     flex-direction: row;
-    background-color: #05415C;
+    background-color: #0A0220;
     width: 110%;
     height: 111px;
 }
@@ -76,7 +76,7 @@ a {
     margin: 0%;
     width: 100%;
     box-shadow: #000;
-    background-color: #05415C;
+    background-color: #0A0220;
     height: 100%;
 }
 
@@ -156,7 +156,7 @@ a {
 }
 
 .Navbtn {
-    background-color: #05415C;
+    background-color: #0A0220;
     color: white;
     border: none;
     cursor: pointer;
@@ -222,51 +222,86 @@ a {
 
 .content_div {
     position: absolute;
+    margin-top: 120px;
+    margin-left: 0px;
+    width: 100%;
+    height: 80%;
     display: flex;
-    flex-direction: column;
-    margin-top: 130px;
-    margin-left: 260px;
-    width: 80%
+    justify-content: center;
+    align-items: center;
+}
+
+.Center_content_div {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .Divisaana_Div, .Loan_Div, .Other_Div {
-    border-radius: 0px;
-    margin-top: 60px;
-    background-color: rgba(217, 217, 217, 0.4);
-    width: 303px;
+    width: 330px;
+    height: 80%;
     cursor: pointer;
-    margin-left: 27%;
-    transition: margin-left 0.3s ease;
+    margin: 4%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    outline: 6px solid black;
 }
 
-    .Divisaana_Div:hover, .Loan_Div:hover, .Other_Div:hover {
-        background-color: #05415C;
-        cursor: pointer;
-        margin-left: 28%;
-    }
+.Divisaana_Div, .Other_Div {
+    background-color: #332755;
+    width: 330px;
+    height: 80%;
+    cursor: pointer;
+    margin: 4%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
 
+.Loan_Div {
+    background-color: #FFFFFF;
+    width: 330px;
+    height: 80%;
+    cursor: pointer;
+    margin: 4%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
 
 
 .Divisaana_label, .Loan_label, .Other_label {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     color: #176c94;
     cursor: pointer;
+    font-family: jsMath-cmbx10;
 }
 
-
-.Loan_Div {
-    margin-left: 27%;
+.InsuranceLogo1 {
+    margin-top: 10%;
 }
-
-.Other_Div {
-    margin-left: 27%;
+.InsuranceLogo2 {
+    margin-top: 13%;
 }
-
-
-
-
-
+.InsuranceLogo3 {
+    width:80%;
+    margin-top: 22%;
+}
+/*    .Divisaana_Div:hover, .Loan_Div:hover, .Other_Div:hover {
+        background-color: #0A0220;
+        cursor: pointer;
+        margin-left: 0%;
+        justify-content: center;
+        align-items: center;
+    }*/
 .popup .content {
     position: absolute;
     top: 40%;
@@ -282,6 +317,7 @@ a {
 
 .popup {
     display: block;
+    outline: 10px solid red;
 }
 
     .popup.active .content {
@@ -291,7 +327,7 @@ a {
 .TopDiv {
     width: 276px;
     height: 104px;
-    background: #05415C;
+    background: #0A0220;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -421,3 +457,8 @@ a {
     .PopupElement:hover {
         margin-left: 3%;
     }
+
+
+/*div {
+    outline: 1px solid red;*/ /* Set outline to a red color with 1px width */
+/*}*/

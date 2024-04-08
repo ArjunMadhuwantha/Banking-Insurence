@@ -74,12 +74,7 @@
                                     <a class="DropdownElement" asp-controller="Summary" asp-action="DivisaranaSummary">Divisarana Compensation Summary</a>
                                     
 
-                                    @* <a class="DropdownElement" asp-controller="Summary" asp-action="CustomerpaymentSummary">Customer Payment Summary</a>
-                                    <a class="DropdownElement" asp-controller="Summary" asp-action="BankCompensationSummary">Bank Compensation Summary</a>
-                                    <a class="DropdownElement" asp-controller="Summary" asp-action="BuildingCompensationSummary">Building Compensation Summary</a>
-                                    <a class="DropdownElement" asp-controller="Summary" asp-action="HealthCompensationSummary">Health Compensation Summary</a>
-                                    <a class="DropdownElement" asp-controller="Summary" asp-action="SavingRelifCompensationSummary">SavingRelif Compensation Summary</a>
-                                    <a class="DropdownElement" asp-controller="Summary" asp-action="TreasharyCompensationSummary">Treashary Compensation Summary</a> *@
+                                    
 
                                 </div>
                             </div>
@@ -131,22 +126,27 @@
             <div class="content_div" onmouseover="togglePopupremove()">
 
 
-                <div class="Divisaana_Div">
-                    <a asp-action="DiviSaranaHome" asp-controller="Divisarana">
-                        <label class="Divisaana_label">Divisarana Insurance</label>
-                    </a>
-                </div>
+                <div class="Center_content_div">
+                    <div class="Divisaana_Div">
+                        <a asp-action="DiviSaranaHome" asp-controller="Divisarana">
+                            <label class="Divisaana_label">Divisarana Insurance</label>
+                            <img class="InsuranceLogo1" src="~/images/Divisarana_Logo.png">
+                        </a>
+                    </div>
 
-                <div class="Loan_Div">
-                    <a asp-action="LoanHome" asp-controller="Loan">
-                        <label class="Loan_label">Home/Loan Insurance</label>
-                    </a>
-                </div>
+                    <div class="Loan_Div">
+                        <a asp-action="LoanHome" asp-controller="Loan">
+                            <label class="Loan_label">Home/Loan Insurance</label>
+                            <img class="InsuranceLogo2" src="~/images/HomeLoan_Logo.png">
+                        </a>
+                    </div>
 
-                <div class="Other_Div">
-                    <a asp-controller="InsuarancePayment" asp-action="Add">
-                        <label class="Other_label">Other <br />Insurance</label>
-                    </a>
+                    <div class="Other_Div">
+                        <a asp-controller="InsuarancePayment" asp-action="Add">
+                            <label class="Other_label">Other <br />Insurance</label>
+                            <img class="InsuranceLogo3" src="~/images/Other_Logo.png">
+                        </a>
+                    </div>
                 </div>
 
 

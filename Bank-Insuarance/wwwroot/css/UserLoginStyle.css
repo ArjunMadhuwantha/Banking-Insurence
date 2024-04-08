@@ -117,7 +117,7 @@ input {
 }
 
 .hr {
-    color: #05415C;
+    color: #0A0220;
     border-style: solid;
     border-width: 3px;
     width: 100%;
@@ -179,7 +179,7 @@ input {
     padding-top: 1%;
     padding-bottom: 1%;
     border-radius: 32px;
-    background-color: #05415C;
+    background-color: #0A0220;
     cursor: pointer;
     font-weight: bold;
     font-size: 17px;

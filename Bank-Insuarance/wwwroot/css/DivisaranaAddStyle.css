@@ -26,7 +26,7 @@ a {
 .NavBarTop_div {
     display: flex;
     flex-direction: row;
-    background-color: #05415C;
+    background-color: #0A0220;
     width: 100.5%;
     height: 111px;
     position: fixed;
@@ -70,7 +70,7 @@ a {
     width: 13%;
     height: 150%;
     text-align: left;
-    background-color: #05415C;
+    background-color: #0A0220;
     position: fixed;
     margin-top: 5%;
 }
@@ -80,7 +80,7 @@ a {
     padding: 0;
     width: 100%;
     box-shadow: #000;
-    background-color: #05415C;
+    background-color: #0A0220;
     height: 150%;
 }
 
@@ -109,12 +109,12 @@ a {
         }
 
 .active {
-    background-color: #05415C;
+    background-color: #0A0220;
     color: rgb(255, 255, 255);
 }
 
 .white {
-    background-color: #ffffff;
+    background-color: #0A0220;
     color: #05415C;
     font-weight: bold;
     width: 83.5%;
@@ -148,25 +148,12 @@ a {
     
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #05415C;
-    padding: 10px;
-    text-align: right;
-    color: #ffffff;
-    opacity: 0.5;
-}
 
 
 
-.copyright {
-    padding-right: 30px;
-    margin-bottom: 10px;
-}
-}
+
+
+
 
 .content_div2 {
     width: 90%;
@@ -239,7 +226,7 @@ a {
     font-weight: bold;
     font-size: 20px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255);
-    background-color: #05415C;
+    background-color: #0A0220;
     color: rgb(255, 255, 255);
     padding-top: 9px;
     padding-bottom: 9px;
@@ -259,7 +246,7 @@ a {
     font-weight: bold;
     font-size: 20px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255);
-    background-color: #05415C;
+    background-color: #0A0220;
     color: rgb(255, 255, 255);
 }
 
