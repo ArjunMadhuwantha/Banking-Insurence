@@ -49,17 +49,12 @@
                 <div class="navigation" id="Leftnav">
 
                     <ul class="LeftUl">
-                        @* <li class="LeftLi">
-                            <a class="active" href="" id="DashboardButton">
-                                <img src="~/images/Dashboard.png" class="Dashboard_png">Dashboard
+                        
+                        <li class="LeftLi">
+                            <a asp-controller="Home" asp-action="Index" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
                             </a>
                         </li>
-
-                        <li class="LeftLi">
-                            <a asp-page="/Account/DetailsManage" asp-area="Identity" class="active" id="AccountButton">
-                                <img src="~/images/Account.png" class="Account_png">Account
-                            </a>
-                        </li> *@
 
                         <li class="LeftLi">
                             <a asp-controller="Branch" asp-action="Branch" class="active" id="BranchButton">
@@ -73,11 +68,7 @@
                             </a>
                         </li>
 
-                        <li class="LeftLi">
-                            <a asp-controller="Home" asp-action="Index" class="active" id="">
-                                <img src="~/images/Back.png" class="Back_png">Back
-                            </a>
-                        </li>
+                        
 
                         <li class="LeftLi">
                             <a  class="active" id="logoutButton">

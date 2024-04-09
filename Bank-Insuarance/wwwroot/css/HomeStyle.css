@@ -127,17 +127,17 @@ a {
 }
 
 .Li_5 {
-    right: calc(37.5% - 10px);
+    right: calc(39.5% - 10px);
     margin-top: -0.1%;
 }
 
 .Li_6 {
-    right: calc(23% - 10px);
+    right: calc(25% - 10px);
     margin-top: -0.3%;
 }
 
 .Li_7 {
-    right: calc(11% - 10px);
+    right: calc(13% - 10px);
     margin-top: -0.1%;
 }
 
@@ -188,7 +188,7 @@ a {
 
 .Nav:hover .Nav-content {
     display: block;
-    background-color: rgba(5, 65, 92, 0.7);
+    background-color: rgba(10, 2, 32, 0.7);
     border-radius: 10px;
 }
 
@@ -242,7 +242,7 @@ a {
 
 .Divisaana_Div, .Loan_Div, .Other_Div {
     width: 330px;
-    height: 80%;
+    height: 73%;
     cursor: pointer;
     margin: 4%;
     justify-content: center;
@@ -254,26 +254,10 @@ a {
 
 .Divisaana_Div, .Other_Div {
     background-color: #332755;
-    width: 330px;
-    height: 80%;
-    cursor: pointer;
-    margin: 4%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 3%;
 }
 
 .Loan_Div {
     background-color: #FFFFFF;
-    width: 330px;
-    height: 80%;
-    cursor: pointer;
-    margin: 4%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 3%;
 }
 
 
@@ -283,18 +267,26 @@ a {
     color: #176c94;
     cursor: pointer;
     font-family: jsMath-cmbx10;
+    padding-top: 85px;
 }
 
 .InsuranceLogo1 {
-    margin-top: 10%;
+    margin-top: -20%;
+    padding-top: 85px;
 }
+
 .InsuranceLogo2 {
-    margin-top: 13%;
+    margin-top: -14%;
+    padding-top: 85px;
 }
+
 .InsuranceLogo3 {
-    width:80%;
-    margin-top: 22%;
+    width: 80%;
+    margin-top: -8%;
+    padding-top: 85px;
 }
+
+
 /*    .Divisaana_Div:hover, .Loan_Div:hover, .Other_Div:hover {
         background-color: #0A0220;
         cursor: pointer;
@@ -304,8 +296,8 @@ a {
     }*/
 .popup .content {
     position: absolute;
-    top: 40%;
-    left: 85%;
+    top: 300px;
+    right: calc(5% - 190px);
     transform: translate(-50%,-50%) scale(0);
     background: #FFFFFF;
     width: 276px;
@@ -317,7 +309,6 @@ a {
 
 .popup {
     display: block;
-    outline: 10px solid red;
 }
 
     .popup.active .content {
@@ -359,8 +350,8 @@ a {
 
 .editWhitepng {
     position: absolute;
-    margin-top: 86px;
-    margin-left: 255px;
+    margin-top: 80px;
+    right: calc(5% - 5px);
     cursor: pointer;
 }
 
@@ -457,8 +448,3 @@ a {
     .PopupElement:hover {
         margin-left: 3%;
     }
-
-
-/*div {
-    outline: 1px solid red;*/ /* Set outline to a red color with 1px width */
-/*}*/

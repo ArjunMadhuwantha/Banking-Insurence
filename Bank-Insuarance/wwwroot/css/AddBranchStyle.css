@@ -162,10 +162,13 @@ a {
 
     .LeftLi a {
         display: block;
-        padding: 8px 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
         text-decoration: none;
-        text-align: center;
-        width: 86%;
+        text-align: left;
+        width: 76%;
+        padding-left: 30%;
+        
     }
 
 

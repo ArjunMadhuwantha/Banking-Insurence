@@ -69,11 +69,11 @@
                                 <div class="V_div">
                                     <label class="Name_lbl">Project Name</label>
 
-                                    <select asp-for="ProjectName" name="Project" id="Project" class="ProjectDropdown textbox">
+                                    <select  name="ProjectName" id="Project" class="ProjectDropdown textbox">
                                         <option value="" disabled selected></option>
-                                        <option value="Home Loan 1" id="">Home Loan 1</option>
-                                        <option value="Home Loan 2" id="">Home Loan 2</option>
-                                        <option value="Home Loan 3" id="">Home Loan 3</option>
+                                        <option value="HomeLoan1" id="">Home Loan 1</option>
+                                        <option value="HomeLoan2" id="">Home Loan 2</option>
+                                        <option value="HomeLoan3" id="">Home Loan 3</option>
                                     </select>
                                 </div>
 
@@ -129,48 +129,7 @@
                             </div>
                         </form>
 
-                        <div class="tablediv">
-
-                            @* <table class="table" id="myTable">
-                                <thead>
-                                    <tr>
-                                        <th class="Col01">Form num</th>
-                                        <th class="Col02">Name</th>
-                                        <th class="Col03">Project name</th>
-                                        <th class="Col04">Loan Start Date</th>
-                                        <th class="Col05">Loan End Date</th>
-                                        <th class="Col06">Loan amount</th>
-
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @if (Model != null)
-                                    {
-
-
-                                        @foreach (var succssor in Model.CollectionModel)
-                                        {
-
-                                            <tr>
-                                                <td><input type="number" class="tableinput " id="Column1-01"></td>
-
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-
-                                            </tr>
-
-                                        }
-                                    }
-
-                                </tbody>
-                            </table> *@
-
-
-                        </div>
+                        
 
 
                     </div>
