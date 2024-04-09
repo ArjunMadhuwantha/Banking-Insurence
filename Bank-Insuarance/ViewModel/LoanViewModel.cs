@@ -20,6 +20,7 @@
 
         public DateOnly Paymentdate { get; set; }
 
+        //Compensation
         public Double LoanValue { get; set; }
         public Double CompenstaionValue { get; set; }
         public string? Requirement { get; set; }

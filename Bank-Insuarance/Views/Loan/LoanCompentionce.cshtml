@@ -1,6 +1,6 @@
 ﻿@using Bank_Insurance.ViewModel
 @using Microsoft.AspNetCore.Identity
-@model SavingCompenstaionViewModel
+@model LoanViewModel
 <head>
     
     <link rel="stylesheet" href="~/css/CompentionceStyle.css">
@@ -34,9 +34,9 @@
 
                 <div class="type_div">
 
+                    <form asp-controller="Loan" asp-action="LoanCompentionce" method="post">
 
-
-                    <div class="content_div2">
+                        <div class="content_div2">
 
                         <div class="V_div01">
 
@@ -48,46 +48,44 @@
 
                             <div class="V_div">
                                 <label class="Name_lbl">Name</label>
-                                <input class="Name_txt textbox" type="text" required>
+                                    <input asp-for="Name" class="Name_txt textbox" type="text" id="fullname" required>
                             </div>
 
                             <div class="V_div hidden">
                                 <label class="PolicyNo_lbl">Policy No</label>
-                                <input class="PolicyNo_txt" type="text" required>
+                                    <input asp-for="CustomerPolicyNo" class="PolicyNo_txt" type="text" id="policyno" required>
                             </div>
 
                             <div class="V_div">
                                 <label class="Value_lbl">Loan Value</label>
-                                <input class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
+                                <input asp-for="LoanValue" class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
                             </div>
 
                             <div class="V_div">
                                 <label class="Value_lbl">Compention Value</label>
-                                <input class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
+                                <input asp-for="CompenstaionValue" class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
                             </div>
 
                             <div class="V_div">
                                 <label class="Requirement_lbl">Requirement</label>
-                                
-                                <select name="zone" id="zone" class="RequirementDropdown textbox">
+
+                                 <select name="Requirement" id="" class="RequirementDropdown textbox">
                                     <option value="" disabled selected>Select Requirement</option>
-                                    <option value="" id="">Requirement_1</option>
-                                    <option value="" id="">Requirement_2</option>
-                                    <option value="" id="">Requirement_3</option>
+                                    <option value="Requirement_1" id="">Requirement_1</option>
+                                    <option value="Requirement_2" id="">Requirement_2</option>
+                                    <option value="Requirement_3" id="">Requirement_3</option>
                                     
-
-
                                 </select>
                             </div>
 
                             <div class="V_div">
                                 <label class="Comment_lbl">Comment</label>
-                                <textarea class="Comment_txt textbox" type="text" id="Comment_txt"></textarea>
+                                <textarea asp-for="Comment" class="Comment_txt textbox" type="text" id="Comment_txt"></textarea>
                             </div>
 
                             <div class="V_div D_div">
                                 <label class="Date_lbl">Incident Date</label>
-                                <input class="Date_txt textbox" type="date">
+                                <input asp-for="Date" class="Date_txt textbox" type="date">
                             </div>
                             
                         </div>
@@ -106,6 +104,8 @@
                         </div>
                         
                     </div>
+
+                    </form>
                     @* <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
                 </div>
             </div>
@@ -156,6 +156,42 @@
 
                     // Set the selected branch's ID in the hidden field
                     $("#branchId").val(selectedBranch.value);
+
+                    return true; // Allow default behavior of the input field (form submission)
+                }
+            }).autocomplete("instance")._renderMenu = function (ul, items) {
+                var that = this;
+                $.each(items, function (index, item) {
+                    that._renderItemData(ul, item);
+                });
+            };
+
+            // Get members from ViewBag and convert them to an array
+            var members = @Html.Raw(Json.Serialize(ViewBag.Member));
+
+            // Modify branches to remove dots
+            var memberNamesWithoutDots = members.map(function (member) {
+                return member.text.replace('.', ''); // Remove dot from each branch name
+            });
+
+            // Initialize autocomplete on the input field
+            $("#fullname").autocomplete({
+                source: memberNamesWithoutDots, // Provide the modified array of branch names as the source of suggestions
+                minLength: 1, // Minimum characters to trigger autocomplete
+                messages: {
+                    noResults: '',
+                    results: function () { }
+                },
+                select: function (event, ui) {
+                    // Find the corresponding branch object based on the selected branch name
+                    var selectedMember = members.find(function (member) {
+                        return member.text === ui.item.value;
+                    });
+
+                    // Set the selected branch's ID and policy number in the hidden fields
+                    //$("#memberNo").val(selectedMember.value);
+                    //$("#policyno").val(selectedMember.CustomerPolicyNo);
+                    $("#policyno").val(selectedMember.value);
 
                     return true; // Allow default behavior of the input field (form submission)
                 }
