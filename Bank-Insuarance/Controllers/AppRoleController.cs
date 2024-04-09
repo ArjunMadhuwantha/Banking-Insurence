@@ -67,8 +67,7 @@ namespace Bank_Insurance.Controllers
 
         // POST: /Role/Edit/5
         [HttpPost]
-
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("Id,Name")] IdentityRole role)
         {
             if (id != role.Id)
@@ -77,8 +76,24 @@ namespace Bank_Insurance.Controllers
             }
             if (ModelState.IsValid)
             {
-                await appRoleRepository.UpdateAsync(role);
-                return RedirectToAction(nameof(Index));
+                var existingRole = await appRoleRepository.GetByIdAsync(id);
+                if (existingRole == null)
+                {
+                    return NotFound();
+                }
+
+                existingRole.Name = role.Name; // Update role properties
+
+                try
+                {
+                    await appRoleRepository.UpdateAsync(existingRole);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty, "Error updating role: " + ex.Message);
+                    return View(existingRole);
+                }
             }
             return View(role);
         }
