@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hxaSXN/tnDBg60+lr1SxKOQXxL29cnHux7kMtsb+DK8=",
+  "Hash": "LqpMn9fFsgYS0b71QrCJhT51YUvapdd4Nhv6mGPwAFo=",
   "Source": "Bank-Insuarance",
   "BasePath": "_content/Bank-Insuarance",
   "Mode": "Default",
@@ -2392,6 +2392,25 @@
       "OriginalItemSpec": "wwwroot\\images\\password.png"
     },
     {
+      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\PasswordReset.png",
+      "SourceId": "Bank-Insuarance",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\",
+      "BasePath": "_content/Bank-Insuarance",
+      "RelativePath": "images/PasswordReset.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\PasswordReset.png"
+    },
+    {
       "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Profession.png",
       "SourceId": "Bank-Insuarance",
       "SourceType": "Discovered",
@@ -2409,6 +2428,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Profession.png"
+    },
+    {
+      "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Role.png",
+      "SourceId": "Bank-Insuarance",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\",
+      "BasePath": "_content/Bank-Insuarance",
+      "RelativePath": "images/Role.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Role.png"
     },
     {
       "Identity": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\search.png",

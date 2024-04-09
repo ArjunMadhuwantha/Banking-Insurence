@@ -53,25 +53,30 @@
 
 
                        
-                        
+                        <li class="LeftLi">
+                            <a asp-controller="AppRole" asp-action="Create" class="active" id="">
+                                <img src="~/images/Back.png" class="Back_png">Back
+                            </a>
+                        </li>
+
+
                         <li class="LeftLi">
                             <a asp-area="Identity" asp-page="/Account/Register" class="active" id="AccountButton">
-                                Register New User
+                                <img src="~/images/Account.png" class="Account_png">Register New User
                             </a>
                         </li>
 
                         <li class="LeftLi">
                             <a asp-area="Identity" asp-page="/Account/ResetpasswordNew" class="active" id="BranchButton">
-                                Password Reset
+                                <img src="~/images/PasswordReset.png" class="PasswordReset_png">Password Reset
                             </a>
                         </li>
 
                         <li class="LeftLi">
                             <a asp-controller="AppRole" asp-action="Create" class="active white" id="AccountButton">
-                                Add Role
+                                <img src="~/images/Role.png" class="Role_png">Add Role
                             </a>
                         </li>
-
 
 
 
@@ -163,8 +168,15 @@
 
                                                                     <form asp-action="Delete" asp-route-id="@item.Id" method="post">
 
-                                                                        <button class="RoleDelete" type="submit" value="Delete">Delete</button>
+                                                                <button class="RoleDelete" type="button" value="Delete" id="DeleteButton">Delete</button>
+                                                                <div id="confirmationModal" class="modal">
+                                                                    <div class="modal-content">
 
+                                                                        <p>Are you sure you want to Delete?</p>
+                                                                        <button class="PopUpYes" type="submit" id="confirmSave">Yes</button>
+                                                                        <button class="PopUpNo" type="button" id="cancelSave">No</button>
+                                                                    </div>
+                                                                </div>
                                                                     </form>
                                                                 </div>
                                                                  
@@ -193,6 +205,21 @@
 
 </body>
 <script>
+    document.getElementById("DeleteButton").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "block";
+    });
+
+    document.getElementById("cancelSave").addEventListener("click", function () {
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    document.getElementById("confirmSave").addEventListener("click", function () {
+
+        document.getElementById("confirmationModal").style.display = "none";
+    });
+
+    //////////////////////
+
 
     document.getElementById("logoutButton").addEventListener("click", function () {
         document.getElementById("confirmationModalLogOut").style.display = "block";

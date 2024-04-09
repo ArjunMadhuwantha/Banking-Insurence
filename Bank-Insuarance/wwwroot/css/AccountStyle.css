@@ -10,6 +10,7 @@ a {
 
 .MainDiv {
     margin-top: 1%;
+    margin-bottom: 10%;
 }
 
 .frame {
@@ -166,10 +167,12 @@ a {
 
     .LeftLi a {
         display: block;
-        padding: 8px 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
         text-decoration: none;
-        text-align: center;
-        width: 86%;
+        text-align: left;
+        width: 76%;
+        padding-left: 30%;
     }
 
 
@@ -201,12 +204,16 @@ a {
 .LastLeftLi {
 }
 
-.Dashboard_png, .Account_png, .Zone_png, .Branch_png, .logout2_png {
+.Dashboard_png, .Account_png, .Zone_png, .Branch_png, .logout2_png, .PasswordReset_png, .Role_png {
     position: absolute;
     margin-left: -15%;
     margin-top: -1.8%;
 }
 
+.Role_png {
+    margin-left: -17.5%;
+    margin-top: -5%;
+}
 
 .type_div {
     display: flex;
