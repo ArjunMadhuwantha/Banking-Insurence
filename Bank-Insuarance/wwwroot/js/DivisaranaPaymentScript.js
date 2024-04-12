@@ -1,17 +1,17 @@
-
 document.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
-        const rows = document.querySelectorAll('tbody tr');
-
-        rows.forEach(function (row) {
-            const paymentInput = row.querySelector('.tableinput');
-            if (paymentInput && paymentInput.value.trim() !== '') {
-                const submitButton = row.querySelector('.PaymentEnter');
+        const target = event.target;
+        if (target.classList.contains('tableinput')) {
+            event.preventDefault(); // Prevent default behavior of Enter key
+            const row = target.closest('tr');
+            const submitButton = row.querySelector('.PaymentEnter');
+            if (submitButton) {
                 submitButton.click();
             }
-        });
+        }
     }
 });
+
 document.addEventListener('keydown', function (event) {
     // Check if the pressed key is the "Escape" key (code 27)
     if (event.key === 'Escape' || event.keyCode === 27) {

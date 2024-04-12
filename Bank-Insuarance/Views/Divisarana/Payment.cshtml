@@ -108,7 +108,7 @@
                                                 <td><input type="hidden" asp-for="DivisaranaViewModel.DueAmount" value="@Member.DueAmount" />@Member.DueAmount</td>
                                                 <td><input type="hidden" asp-for="DivisaranaViewModel.NextExecuteDate" value="@Member.NextExecuteDate" />@Member.NextExecuteDate</td>
                                                 <td>@Member.RecoveryAmount</td>
-                                                <td><input asp-for="DivisaranaViewModel.Paymentvalue" type="number" class="tableinput textbox" id="" min="0" oninput="validity.valid||(value='');" value="@Member.RecoveryAmount"></td>
+                                                <td><input asp-for="DivisaranaViewModel.Paymentvalue" type="number" class="tableinput" id="" min="0" oninput="validity.valid||(value='');" value="@Member.RecoveryAmount"></td>
                                                 <td class="buttonTD"><button class="PaymentEnter" type="submit" id=""></button></td>
 
                                                 </form>
@@ -120,8 +120,7 @@
                                     }
 
                                 </tbody>
-                                @*  <button type="submit">Enter</button>
-                                </form> *@
+                               
                             </table>
 
 
@@ -175,7 +174,10 @@
                 });
             };
         });
+
+        
     </script>
 }
+
 
 
