@@ -16,7 +16,7 @@ namespace Bank_Insurance.Repository.Loan
         public string Divisaranaproductid = "Product-007";
         public string LoaninId = "insuarance-006";
         public string HouseLoaninId = "insuarance-007";
-        public string DivisaranainId = "insuarance-007";
+        public string DivisaranainId = "insuarance-008";
         public string policy = "Poilicy";
         public DateOnly days;
         public double RecoveryAmount;
@@ -70,7 +70,7 @@ namespace Bank_Insurance.Repository.Loan
             var NewHouse = new Models.LoanTbl()
             {
                 PolicyNo = policy + "-house-" + house.BranchId,
-                InsuranceId = LoaninId + "_" + house.BranchId,
+                InsuranceId = HouseLoaninId + "_" + house.BranchId,
                 CustomerPolicyNo = "House-" + house.ID
             };
 

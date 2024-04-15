@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Bank_Insurance.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class LoanController : Controller
     {
         private readonly ILoanRepository _loanRepository;
