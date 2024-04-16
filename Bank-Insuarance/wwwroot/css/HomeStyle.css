@@ -448,6 +448,7 @@ a {
     .PopupElement:hover {
         margin-left: 3%;
     }
+
 body {
     font-family: "Roboto Condensed";
     font-size: 14px;
@@ -688,10 +689,11 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top:-3%;
 }
 
 .Divisaana_Div, .Loan_Div, .Other_Div {
-    width: 330px;
+    width: 300px;
     height: 73%;
     cursor: pointer;
     margin: 4%;
@@ -721,18 +723,18 @@ a {
 }
 
 .InsuranceLogo1 {
-    margin-top: -20%;
+    margin-top: -25%;
     padding-top: 85px;
 }
 
 .InsuranceLogo2 {
-    margin-top: -14%;
+    margin-top: -19%;
     padding-top: 85px;
 }
 
 .InsuranceLogo3 {
     width: 80%;
-    margin-top: -8%;
+    margin-top: -10%;
     padding-top: 85px;
 }
 
