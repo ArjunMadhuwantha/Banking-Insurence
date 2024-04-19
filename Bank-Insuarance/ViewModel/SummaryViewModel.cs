@@ -48,5 +48,7 @@
 
         public DateOnly? StartDate { get; set; }
         public DateOnly? EndDateDate { get; set; }
+
+        public string? Requirement { get; set; }
     }
 }

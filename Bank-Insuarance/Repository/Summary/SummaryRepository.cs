@@ -508,6 +508,53 @@ namespace Bank_Insurance.Repository.Summary
             return SummaryViewModels;
         }
 
-        
+        //Loan Compensation Summary
+        public async Task<List<SummaryViewModel>> GetAllLoanBranchCompensationList(string Bid, string Type)
+        {
+            var branch = await _dbContext.Branches
+                .FirstOrDefaultAsync(b => b.BranchId == Bid);
+
+            var PolicyNo = "";
+
+            if (Type == "Loan")
+            {
+                PolicyNo = policy + "-loan-" + Bid;
+            }
+            else if (Type == "House")
+            {
+                PolicyNo = policy + "-house-" + Bid;
+            }
+
+            var customerPolicyNos = await _dbContext.LoanTbls
+                .Where(b => b.PolicyNo == PolicyNo)
+                .Select(b => b.CustomerPolicyNo)
+                .ToListAsync();
+
+            var loanCustomers = await _dbContext.LoanCompenstaions
+                .Where(c => customerPolicyNos.Contains(c.CustomerPolicyNo))
+                .ToListAsync();
+
+            List<SummaryViewModel> SummaryViewModels = new List<SummaryViewModel>();
+
+            foreach (var customer in loanCustomers)
+            {
+                var summaryViewModel = new SummaryViewModel
+                {
+                    BranchName = branch?.Branch_name,
+                    Fullname = customer.FullName,
+                    CusPolicyNo = customer.CustomerPolicyNo,
+                    Compensationvalue = customer.CompenstaionValue,
+                    value = customer.Value,
+                    Comment = customer.Comment,
+                    Date = customer.Date,
+                    Requirement = customer.Requirement,
+                };
+
+                SummaryViewModels.Add(summaryViewModel);
+            }
+
+            return SummaryViewModels;
+        }
+
     }
 }

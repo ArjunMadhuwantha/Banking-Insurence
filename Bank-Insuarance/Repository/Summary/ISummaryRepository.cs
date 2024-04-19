@@ -45,7 +45,7 @@ namespace Bank_Insurance.Repository.Summary
         Task<List<SummaryViewModel>> GetAllLoanBranchPaymentList(string Bid,string Type);
         Task<List<SummaryViewModel>> GetAllLoanCustomerPaymentList(string PolicyNo);
 
-
+        Task<List<SummaryViewModel>> GetAllLoanBranchCompensationList(string Bid, string Type);
 
     }
 }
