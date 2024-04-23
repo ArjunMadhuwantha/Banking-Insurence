@@ -48,5 +48,8 @@
 
         public DateOnly? StartDate { get; set; }
         public DateOnly? EndDateDate { get; set; }
+
+        //compensation
+        public string? Requirement { get; set; }
     }
 }

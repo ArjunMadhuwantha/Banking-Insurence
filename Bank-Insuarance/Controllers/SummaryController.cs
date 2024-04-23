@@ -365,5 +365,34 @@ namespace Bank_Insurance.Controllers
 
             return View(viewModel);
         }
+
+
+        //Loan Compensation Summary
+
+        public async Task<IActionResult> LoanCompensationSummary(string id, string type)
+        {
+            var branches = await _summaryRepository.GetAllBranches();
+            ViewBag.Branchs = new SelectList(branches, "BranchId", "Branch_name");
+
+            var customer = await _summaryRepository.GetAllLoanBranchCompensationList(id, type);
+
+            var viewModel = new CompositeSummaryViewModel
+            {
+                CollectionSummaryModel = customer
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> LoanCompensationSummary(CompositeSummaryViewModel req)
+        {
+            SummaryViewModel inputs = req.SummaryViewModel;
+
+            var Branchid = inputs.BranchId;
+            var Type = inputs.Type;
+
+            return RedirectToAction("LoanCompensationSummary", new { id = Branchid, type = Type });
+        }
     }
 }
