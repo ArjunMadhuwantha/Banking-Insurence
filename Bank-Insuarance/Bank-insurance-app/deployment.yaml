@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "bank-insurance-app.fullname" . }}
+  labels:
+    app: {{ include "bank-insurance-app.name" . }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ include "bank-insurance-app.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "bank-insurance-app.name" . }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: {{ .Values.service.port }}
