@@ -17,423 +17,423 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Bank_Insuarance
 build_property.RootNamespace = Bank_Insuarance
-build_property.ProjectDir = C:\Users\sajit\OneDrive\Documents\Asp.net\Git-PC\Arjuna\Banking-Insurence\Bank-Insuarance\
+build_property.ProjectDir = G:\Nanosoft Global\NS\Banking\Banking_Nano\Bank-_Insurance02\Banking-Insurence\Bank-Insuarance\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\sajit\OneDrive\Documents\Asp.net\Git-PC\Arjuna\Banking-Insurence\Bank-Insuarance
+build_property.MSBuildProjectDirectory = G:\Nanosoft Global\NS\Banking\Banking_Nano\Bank-_Insurance02\Banking-Insurence\Bank-Insuarance
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/DetailsManage.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/DetailsManage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxEZXRhaWxzTWFuYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Lockout.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Login.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Logout.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ShowPersonalData.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ShowPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1BlcnNvbmFsRGF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Register.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ResetpasswordNew.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/ResetpasswordNew.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldHBhc3N3b3JkTmV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Error.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/_ViewImports.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/_ViewStart.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Abiprerana/AddDivisaranaAbiprerana.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Abiprerana/AddDivisaranaAbiprerana.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJpcHJlcmFuYVxBZGREaXZpc2FyYW5hQWJpcHJlcmFuYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Abiprerana/DivisaranaAbipreranaView.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Abiprerana/DivisaranaAbipreranaView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJpcHJlcmFuYVxEaXZpc2FyYW5hQWJpcHJlcmFuYVZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/AppRole/Create.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/AppRole/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/AppRole/Edit.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/AppRole/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwUm9sZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/AppRole/Index.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/AppRole/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Branch/AddBranch.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Branch/AddBranch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEFkZEJyYW5jaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Branch/Branch.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Branch/Branch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEJyYW5jaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Branch/EditBranch.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Branch/EditBranch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEVkaXRCcmFuY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddBankingCompensation.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddBankingCompensation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGVuc2F0aW9uXEFkZEJhbmtpbmdDb21wZW5zYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddBuildingCompensation.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddBuildingCompensation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGVuc2F0aW9uXEFkZEJ1aWxkaW5nQ29tcGVuc2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddHealthCompensation.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddHealthCompensation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGVuc2F0aW9uXEFkZEhlYWx0aENvbXBlbnNhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddSavingReilef.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddSavingReilef.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGVuc2F0aW9uXEFkZFNhdmluZ1JlaWxlZi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddTreasuraryCompensation.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Compensation/AddTreasuraryCompensation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGVuc2F0aW9uXEFkZFRyZWFzdXJhcnlDb21wZW5zYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Compensation/BranchSelect.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Compensation/BranchSelect.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGVuc2F0aW9uXEJyYW5jaFNlbGVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Divisarana/AddDivisarana.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Divisarana/AddDivisarana.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNhcmFuYVxBZGREaXZpc2FyYW5hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Divisarana/AddSuccssor.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Divisarana/AddSuccssor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNhcmFuYVxBZGRTdWNjc3Nvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Divisarana/DivisaranaCompensation.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Divisarana/DivisaranaCompensation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNhcmFuYVxEaXZpc2FyYW5hQ29tcGVuc2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Divisarana/DiviSaranaHome.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Divisarana/DiviSaranaHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNhcmFuYVxEaXZpU2FyYW5hSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Divisarana/Payment.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Divisarana/Payment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNhcmFuYVxQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Home/Index.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Home/Privacy.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/InsuarancePayment/Add.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/InsuarancePayment/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdWFyYW5jZVBheW1lbnRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/InsuarancePayment/TrasuaryView.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/InsuarancePayment/TrasuaryView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdWFyYW5jZVBheW1lbnRcVHJhc3VhcnlWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/InsuarancePayment/Treasurayes.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/InsuarancePayment/Treasurayes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdWFyYW5jZVBheW1lbnRcVHJlYXN1cmF5ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Loan/AddHouseLoanInsurance.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Loan/AddHouseLoanInsurance.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxBZGRIb3VzZUxvYW5JbnN1cmFuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Loan/AddLoanInsurance.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Loan/AddLoanInsurance.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxBZGRMb2FuSW5zdXJhbmNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Loan/HouseLoanCompentionce.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Loan/HouseLoanCompentionce.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxIb3VzZUxvYW5Db21wZW50aW9uY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Loan/LoanCompentionce.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Loan/LoanCompentionce.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxMb2FuQ29tcGVudGlvbmNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Loan/LoanHome.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Loan/LoanHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hblxMb2FuSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Parithoshitha/AddDivisaranaParithoshitha.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Parithoshitha/AddDivisaranaParithoshitha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRob3NoaXRoYVxBZGREaXZpc2FyYW5hUGFyaXRob3NoaXRoYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Parithoshitha/AddSavingReliefParithoshitha.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Parithoshitha/AddSavingReliefParithoshitha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRob3NoaXRoYVxBZGRTYXZpbmdSZWxpZWZQYXJpdGhvc2hpdGhhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Parithoshitha/DivisaranaParithoshithaView.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Parithoshitha/DivisaranaParithoshithaView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRob3NoaXRoYVxEaXZpc2FyYW5hUGFyaXRob3NoaXRoYVZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Parithoshitha/SavingReliefParithoshithaView.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Parithoshitha/SavingReliefParithoshithaView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRob3NoaXRoYVxTYXZpbmdSZWxpZWZQYXJpdGhvc2hpdGhhVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Shared/Error.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Shared/_LoginPartial.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Shared/_ValidationScriptsPartial.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/BankCompensationSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/BankCompensationSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxCYW5rQ29tcGVuc2F0aW9uU3VtbWFyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/BankSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/BankSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxCYW5rU3VtbWFyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/BuildingCompensationSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/BuildingCompensationSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxCdWlsZGluZ0NvbXBlbnNhdGlvblN1bW1hcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/BuildingSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/BuildingSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxCdWlsZGluZ1N1bW1hcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/CustomerpaymentSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/CustomerpaymentSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxDdXN0b21lcnBheW1lbnRTdW1tYXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/CustomerSuccsoursSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/CustomerSuccsoursSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxDdXN0b21lclN1Y2Nzb3Vyc1N1bW1hcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/DivisaranaCustomerDetails.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/DivisaranaCustomerDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxEaXZpc2FyYW5hQ3VzdG9tZXJEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/DivisaranaSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/DivisaranaSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxEaXZpc2FyYW5hU3VtbWFyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/DivisaranUserDetails.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/DivisaranUserDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxEaXZpc2FyYW5Vc2VyRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/HealthCompensationSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/HealthCompensationSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxIZWFsdGhDb21wZW5zYXRpb25TdW1tYXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/HealthSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/HealthSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxIZWFsdGhTdW1tYXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/LoanBranchSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/LoanBranchSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxMb2FuQnJhbmNoU3VtbWFyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/LoanCompensationSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/LoanCompensationSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxMb2FuQ29tcGVuc2F0aW9uU3VtbWFyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/LoanCustomerPayment.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/LoanCustomerPayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxMb2FuQ3VzdG9tZXJQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/SavingRelifCompensationSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/SavingRelifCompensationSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxTYXZpbmdSZWxpZkNvbXBlbnNhdGlvblN1bW1hcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/SavingRelifSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/SavingRelifSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxTYXZpbmdSZWxpZlN1bW1hcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/TreasharyCompensationSummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/TreasharyCompensationSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxUcmVhc2hhcnlDb21wZW5zYXRpb25TdW1tYXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Summary/TreasharySummary.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Summary/TreasharySummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VtbWFyeVxUcmVhc2hhcnlTdW1tYXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Zone/AddZone.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Zone/AddZone.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9uZVxBZGRab25lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Zone/EditZone.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Zone/EditZone.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9uZVxFZGl0Wm9uZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Zone/Zone.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Zone/Zone.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9uZVxab25lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/_ViewImports.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/_ViewStart.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sajit/OneDrive/Documents/Asp.net/Git-PC/Arjuna/Banking-Insurence/Bank-Insuarance/Views/Shared/_Layout.cshtml]
+[G:/Nanosoft Global/NS/Banking/Banking_Nano/Bank-_Insurance02/Banking-Insurence/Bank-Insuarance/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dtn0augp86
