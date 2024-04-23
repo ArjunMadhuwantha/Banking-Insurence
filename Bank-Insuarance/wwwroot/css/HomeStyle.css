@@ -689,7 +689,7 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top:-3%;
+    margin-top:-1%;
 }
 
 .Divisaana_Div, .Loan_Div, .Other_Div {
@@ -724,16 +724,18 @@ a {
 
 .InsuranceLogo1 {
     margin-top: -25%;
+    margin-left: -6%;
     padding-top: 85px;
 }
 
 .InsuranceLogo2 {
     margin-top: -19%;
+    margin-left: -6%;
     padding-top: 85px;
 }
 
 .InsuranceLogo3 {
-    width: 80%;
+    width: 90%;
     margin-top: -10%;
     padding-top: 85px;
 }
