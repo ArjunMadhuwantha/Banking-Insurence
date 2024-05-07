@@ -61,5 +61,13 @@ namespace Bank_Insurance.Repository.Loan
 
         Task DivisaranaPaymentUpdate(DivisaranaViewModel payment);
 
+
+
+
+
+
+        //divisarana NIC number check
+        Task<bool> IsNicNumberUnique(string nicNumber);
+
     }
 }

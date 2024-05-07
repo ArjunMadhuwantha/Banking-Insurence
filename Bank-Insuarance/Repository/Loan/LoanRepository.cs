@@ -501,6 +501,16 @@ namespace Bank_Insurance.Repository.Loan
             await _dbContext.SaveChangesAsync();
         }
 
-        
+
+
+
+
+        //Check NIC number
+        public async Task<bool> IsNicNumberUnique(string nicNumber)
+        {
+            bool nicExists = await _dbContext.DivisaranaDatas.AnyAsync(d => d.ID == nicNumber);
+            return !nicExists;
+        }
+
     }
 }

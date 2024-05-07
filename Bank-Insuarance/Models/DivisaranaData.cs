@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace Bank_Insurance.Models
 {
@@ -10,6 +11,8 @@ namespace Bank_Insurance.Models
 
         public string? Address { get; set; }
 
+        [Required(ErrorMessage = "NIC number is required")]
+        [Remote("IsNicNumberAvailable", "Divisarana", HttpMethod = "POST", ErrorMessage = "NIC number already exists")]
         public string? ID { get; set; }
 
         public string? BankMemberNo { get; set; }

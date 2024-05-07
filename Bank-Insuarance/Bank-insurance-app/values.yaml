@@ -1,0 +1,6 @@
+image:
+  repository: your-docker-registry/bank-insurance-app
+  tag: latest
+
+service:
+  port: 8080
