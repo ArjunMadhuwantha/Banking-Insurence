@@ -1,0 +1,4 @@
+apiVersion: v2
+name: bank-insurance-app
+description: A Helm chart for deploying the Bank Insurance application
+version: 0.1.0

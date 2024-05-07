@@ -1,0 +1,11 @@
+mysql:
+  image:
+    repository: mysql
+    tag: latest
+  rootPassword: "123"
+  database: "bankdb"
+  username: "admin"
+  password: "1998"
+
+service:
+  port: 3306
