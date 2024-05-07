@@ -28,28 +28,66 @@ namespace Bank_Insurance.Controllers
             return View();
         }
 
+        //[HttpPost]
+        //public async Task<IActionResult> AddDivisarana(DivisaranaViewModel model)
+        //{
+        //    bool IdcheckBranch = await _loanRepository.CheckBranchInsuaranceIDDivisarana(model);
+        //    bool IdcheckCustomer = await _loanRepository.CheckCustomerIDDivisarana(model);
+
+
+
+
+        //    if (IdcheckBranch == false)
+        //    {
+        //        await _loanRepository.AddDivisaranaToInsurance(model);
+        //        await _loanRepository.AddDivisarana(model);
+
+        //    }
+        //    else
+        //    {
+        //        await _loanRepository.AddDivisarana(model);
+        //    }
+
+        //    return RedirectToAction("AddDivisarana", "Divisarana");
+        //    //return RedirectToAction("AddSuccssor", new { Id = Nic });
+        //}
+
+
+        //nic cheker add
+
         [HttpPost]
         public async Task<IActionResult> AddDivisarana(DivisaranaViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                var branches = await _loanRepository.GetAllBranches();
+                ViewBag.Branchs = new SelectList(branches, "BranchId", "Branch_name");
+                return View(model);
+            }
+
+            // Check if NIC number already exists
+            bool isNicUnique = await _loanRepository.IsNicNumberUnique(model.ID);
+            if (!isNicUnique)
+            {
+                ModelState.AddModelError(nameof(model.ID), "NIC number already exists");
+                var branches = await _loanRepository.GetAllBranches();
+                ViewBag.Branchs = new SelectList(branches, "BranchId", "Branch_name");
+                return View(model);
+            }
+
+            // Proceed with adding divisarana if NIC number is unique
             bool IdcheckBranch = await _loanRepository.CheckBranchInsuaranceIDDivisarana(model);
-            bool IdcheckCustomer = await _loanRepository.CheckCustomerIDDivisarana(model);
-
-           
-            
-
-            if (IdcheckBranch == false)
+            if (!IdcheckBranch)
             {
                 await _loanRepository.AddDivisaranaToInsurance(model);
                 await _loanRepository.AddDivisarana(model);
-                
             }
             else
             {
                 await _loanRepository.AddDivisarana(model);
             }
 
-            return RedirectToAction("AddDivisarana", "Divisarana");
-            //return RedirectToAction("AddSuccssor", new { Id = Nic });
+            return RedirectToAction("AddDivisarana");
         }
 
 

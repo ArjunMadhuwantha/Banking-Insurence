@@ -13,6 +13,8 @@ namespace Bank_Insurance.Data
         {
         }
 
+        public static object Divisarana { get; internal set; }
+
         //user
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
 

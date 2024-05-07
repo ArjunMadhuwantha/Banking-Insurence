@@ -7,7 +7,7 @@
 <ul class="MiddleUl2">
     <li class="MiddleLi2 Bar"><a class="Middleactive2 @ManageNavPages.ShowPersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./ShowPersonalData">Show Personal Data</a></li>
     <li class="MiddleLi2 Bar"><a class="Middleactive2 @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Add Phone Number</a></li>
-    <li class="MiddleLi2 Bar"><a class="Middleactive2 @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
+    @* <li class="MiddleLi2 Bar"><a class="Middleactive2 @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li> *@
     <li class="MiddleLi2 Bar"><a class="Middleactive2 @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a></li>
     @if (hasExternalLogins)
     {
