@@ -1,7 +1,6 @@
 body {
     font-family: "Roboto Condensed";
     font-size: 14px;
-
 }
 
 a {
@@ -145,7 +144,6 @@ a {
     height: 150%;
     margin-left: 15%;
     margin-top: 8%;
-    
 }
 
 
@@ -158,7 +156,7 @@ a {
 .content_div2 {
     width: 90%;
     margin-left: 4%;
-    margin-top:5%
+    margin-top: 5%
 }
 
 .H_div {
@@ -201,7 +199,15 @@ a {
 }
 
 
-
+.Allert {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -3%;
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+}
 
 .button_div {
     display: flex;
