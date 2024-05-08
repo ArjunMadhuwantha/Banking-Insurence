@@ -1,12 +1,14 @@
-using Bank_Insuarance.Models;
-using Bank_Insurance.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Bank_Insuarance.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Bank_Insurance.Areas.Identity.Pages.Account
 {
@@ -29,12 +31,9 @@ namespace Bank_Insurance.Areas.Identity.Pages.Account
 
         public List<SelectListItem> UserSelectList { get; set; }
 
-
         public async Task<IActionResult> OnGetAsync()
         {
-            // Populate the select list with all user IDs
-            var users = await _userManager.Users.ToListAsync();
-            UserSelectList = users.Select(u => new SelectListItem { Value = u.Id, Text = u.UserName }).ToList();
+            await PopulateUserListAsync();
             return Page();
         }
 
@@ -42,122 +41,51 @@ namespace Bank_Insurance.Areas.Identity.Pages.Account
         {
             if (!ModelState.IsValid)
             {
+                await PopulateUserListAsync();
                 return Page();
             }
 
             var user = await _userManager.FindByIdAsync(SelectedUserId);
             if (user == null)
             {
-                // Handle invalid user ID
-                return NotFound();
+                ModelState.AddModelError(string.Empty, "User not found.");
+                await PopulateUserListAsync();
+                return Page();
             }
 
-            var result = await _userManager.ResetPasswordAsync(user, await _userManager.GeneratePasswordResetTokenAsync(user), NewPassword);
+            var passwordValidator = new PasswordValidator<ApplicationUser>();
+            var result = await passwordValidator.ValidateAsync(_userManager, null, NewPassword);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                await PopulateUserListAsync();
+                return Page();
+            }
+
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            result = await _userManager.ResetPasswordAsync(user, token, NewPassword);
             if (result.Succeeded)
             {
-                // Password reset successful
-                return RedirectToPage("/Home/Index"); // Redirect to a suitable page
+                return RedirectToPage("/Home/Index");
             }
             else
             {
-                // Password reset failed, handle errors
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError("", error.Description);
+                    ModelState.AddModelError(string.Empty, error.Description);
                 }
-                return Page(); // Return the page with error messages
+                await PopulateUserListAsync();
+                return Page();
             }
+        }
+
+        private async Task PopulateUserListAsync()
+        {
+            var users = await _userManager.Users.ToListAsync();
+            UserSelectList = users.Select(u => new SelectListItem { Value = u.Id, Text = u.UserName }).ToList();
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //public async Task<IActionResult> OnPostAsync()
-    //{
-    //    if (ModelState.IsValid)
-    //    {
-    //        var user = await _userManager.FindByIdAsync(SelectedUserId);
-    //        if (user == null)
-    //        {
-    //            ModelState.AddModelError(string.Empty, "User not found");
-    //            return Page();
-    //        }
-
-    //        var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-    //        var result = await _userManager.ResetPasswordAsync(user, token, NewPassword);
-    //        if (result.Succeeded)
-    //        {
-    //            return RedirectToPage("ResetPasswordConfirmation");
-    //        }
-
-    //        foreach (var error in result.Errors)
-    //        {
-    //            ModelState.AddModelError(string.Empty, error.Description);
-    //        }
-    //    }
-
-    //    return Page();
-    //}
-
-    //public async Task OnGetAsync()
-    //{
-    //    var users = await _userManager.Users.ToListAsync();
-    //    UserSelectList = users.Select(u => new SelectListItem
-    //    {
-    //        Value = u.Id,
-    //        Text = u.Email
-    //    }).ToList();
-    //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //public void OnGet()
-    //{
-
-    //}
-        
-  
-
