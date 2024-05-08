@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml",
               "ToolTip": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAwwL4AAAAAAAAA",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAwwMMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-08T17:29:15.635Z",
               "EditorCaption": ""
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml.cs",
               "ToolTip": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAswFsAAAAAAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAswFUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T17:29:08.219Z",
               "EditorCaption": ""
@@ -84,8 +84,7 @@
               "RelativeToolTip": "Controllers\\LoanController.cs",
               "ViewState": "AQIAAIYAAAAAAAAAAAAAACUAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T17:46:08.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T17:46:08.692Z"
             },
             {
               "$type": "Document",

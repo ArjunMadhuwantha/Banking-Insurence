@@ -82,6 +82,8 @@ namespace Bank_Insurance.Areas.Identity.Pages.Account
             }
         }
 
+
+
         private async Task PopulateUserListAsync()
         {
             var users = await _userManager.Users.ToListAsync();
