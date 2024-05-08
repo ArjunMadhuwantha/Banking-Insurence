@@ -68,6 +68,7 @@ namespace Bank_Insurance.Repository.Loan
 
         //divisarana NIC number check
         Task<bool> IsNicNumberUnique(string nicNumber);
+       
 
     }
 }

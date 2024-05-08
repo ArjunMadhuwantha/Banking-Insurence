@@ -177,7 +177,7 @@ namespace Bank_Insurance.Repository.Loan
             return idExists;
         }
 
-                            //Loan Insurance check customer policy no
+        //Loan Insurance check customer policy no
         public async Task<bool> CheckCustomerID(LoanViewModel payment)
         {
             var customerpolicy = "Loan-" + payment.ID;
@@ -424,7 +424,7 @@ namespace Bank_Insurance.Repository.Loan
             var customerpolicy = "Divi-" + divisarana.ID;
             bool idExists = await _dbContext.LoanCustomers.AnyAsync(p => p.CustomerPolicyNo == customerpolicy);
             return idExists;
-            throw new NotImplementedException();
+            
         }
 
 
@@ -512,5 +512,22 @@ namespace Bank_Insurance.Repository.Loan
             return !nicExists;
         }
 
+        public async Task<bool> IsNicNumberUniqueLoan(string nicNumber)
+        {
+            bool nicExists = await _dbContext.LoanCustomers.AnyAsync(d => d.ID == nicNumber);
+            return !nicExists;
+        }
+
+        public async Task<bool> IsNicNumberUniqueHouse(string nicNumber)
+        {
+
+            bool nicExists = await _dbContext.LoanCustomers.AnyAsync(d => d.ID == nicNumber);
+            return !nicExists;
+        }
+
+        public Task AddHouseLoanInsurance(object model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

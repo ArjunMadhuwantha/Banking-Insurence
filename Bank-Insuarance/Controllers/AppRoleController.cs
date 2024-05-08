@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using System.Data;
 using Bank_Insurance.Repository.AppRole;
+using System.ComponentModel.DataAnnotations;
 
 namespace Bank_Insurance.Controllers
 {
@@ -38,8 +39,10 @@ namespace Bank_Insurance.Controllers
         }
 
         // POST: /Role/Create
+        
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
+        
         public async Task<IActionResult> Create([Bind("Id,Name")] IdentityRole role)
         {
             if (ModelState.IsValid)

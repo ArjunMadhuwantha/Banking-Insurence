@@ -3,6 +3,7 @@ using Bank_Insurance.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Bank_Insurance.Controllers
 {
@@ -31,13 +32,13 @@ namespace Bank_Insurance.Controllers
             bool IdcheckBranch = await _loanRepository.CheckBranchInsuaranceID(model);
             bool IdcheckCustomer = await _loanRepository.CheckCustomerID(model);
 
-            if(IdcheckBranch == false)
+            if (IdcheckBranch == false)
             {
                 await _loanRepository.AddBranchToInsuranceLoan(model);
                 await _loanRepository.AddLoanInsurance(model);
                 await _loanRepository.AddPaymentLoan(model);
             }
-            else if(IdcheckCustomer == false)
+            else if (IdcheckCustomer == false)
             {
                 await _loanRepository.AddLoanInsurance(model);
                 await _loanRepository.AddPaymentLoan(model);
@@ -51,6 +52,10 @@ namespace Bank_Insurance.Controllers
         }
 
 
+
+
+
+
         //House
         public async Task<IActionResult> AddHouseLoanInsurance()
         {
@@ -62,7 +67,7 @@ namespace Bank_Insurance.Controllers
         [HttpPost]
         public async Task<IActionResult> AddHouseLoanInsurance(LoanViewModel house)
         {
-            
+
             bool IdcheckBranch = await _loanRepository.CheckBranchInsuaranceIDHouse(house);
             bool IdcheckCustomer = await _loanRepository.CheckCustomerIDHouse(house);
 
@@ -94,6 +99,9 @@ namespace Bank_Insurance.Controllers
             ViewBag.Member = new SelectList(Members, "CustomerPolicyNo", "CustomerName");
             return View();
         }
+
+
+
 
         [HttpPost]
         public async Task<IActionResult> HouseLoanCompentionce(LoanViewModel compensation)
