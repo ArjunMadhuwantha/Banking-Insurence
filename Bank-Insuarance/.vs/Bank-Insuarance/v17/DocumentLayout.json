@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C63F30CF-CD3E-434C-9B7D-A5468BCC97E3}|Bank-Insuarance.csproj|d:\\programming languages\\c#\\company\\2024-04-22\\banking-insurence\\bank-insuarance\\areas\\identity\\pages\\account\\resetpasswordnew.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C63F30CF-CD3E-434C-9B7D-A5468BCC97E3}|Bank-Insuarance.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpasswordnew.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C63F30CF-CD3E-434C-9B7D-A5468BCC97E3}|Bank-Insuarance.csproj|d:\\programming languages\\c#\\company\\2024-04-22\\banking-insurence\\bank-insuarance\\areas\\identity\\pages\\account\\resetpasswordnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C63F30CF-CD3E-434C-9B7D-A5468BCC97E3}|Bank-Insuarance.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpasswordnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C63F30CF-CD3E-434C-9B7D-A5468BCC97E3}|Bank-Insuarance.csproj|d:\\programming languages\\c#\\company\\2024-04-22\\banking-insurence\\bank-insuarance\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C63F30CF-CD3E-434C-9B7D-A5468BCC97E3}|Bank-Insuarance.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -46,11 +54,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "ResetpasswordNew.cshtml.cs",
+              "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml.cs",
+              "ToolTip": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAswFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:02:03.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResetpasswordNew.cshtml",
+              "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml",
+              "ToolTip": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetpasswordNew.cshtml",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAwwL4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T19:01:49.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ILoanRepository.cs",
               "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Repository\\Loan\\ILoanRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Loan\\ILoanRepository.cs",
@@ -62,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoanRepository.cs",
               "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Repository\\Loan\\LoanRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Loan\\LoanRepository.cs",
@@ -70,12 +104,11 @@
               "RelativeToolTip": "Repository\\Loan\\LoanRepository.cs",
               "ViewState": "AQIAAPIBAAAAAAAAAAAIwPgBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T16:05:47.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-26T16:05:47.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -87,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DivisaranaController.cs",
               "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Controllers\\DivisaranaController.cs",
               "RelativeDocumentMoniker": "Controllers\\DivisaranaController.cs",
@@ -95,12 +128,11 @@
               "RelativeToolTip": "Controllers\\DivisaranaController.cs",
               "ViewState": "AQIAANEAAAAAAAAAAAAAAEcAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T15:56:31.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-26T15:56:31.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AddDivisarana.cshtml",
               "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Views\\Divisarana\\AddDivisarana.cshtml",
               "RelativeDocumentMoniker": "Views\\Divisarana\\AddDivisarana.cshtml",
@@ -112,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DivisaranaData.cs",
               "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Models\\DivisaranaData.cs",
               "RelativeDocumentMoniker": "Models\\DivisaranaData.cs",
@@ -124,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AccountStyle.css",
               "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\AccountStyle.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\AccountStyle.css",
@@ -136,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -149,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "_ManageNav.cshtml",
               "DocumentMoniker": "D:\\programming languages\\C#\\company\\2024-04-22\\Banking-Insurence\\Bank-Insuarance\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
@@ -157,8 +189,7 @@
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-02T07:16:00.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T07:16:00.955Z"
             }
           ]
         }
