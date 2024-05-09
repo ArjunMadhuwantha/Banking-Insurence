@@ -590,16 +590,7 @@ h1, h3 {
     margin-left: 3%;
 }
 
-.Allert_div {
-}
 
-.Allert {
-    position: absolute;
-    margin-left: 5%;
-    color: #ff0000;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 
 .tablediv {
@@ -764,6 +755,31 @@ tr:hover {
     height: 35px;
     margin-left: 5%;
     margin-top: -2.8%;
+}
+
+.Allert_div {
+}
+
+.Allert, .Allert2, .Allert3, .Allert4 {
+    position: absolute;
+    margin-left: 5%;
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Allert2 {
+    margin-left: 9%;
+    margin-top: -3%;
+}
+
+.Allert3 {
+    margin-left: 5%;
+    margin-top: -3%;
+}
+
+.Allert4 {
+    margin-left: 3%;
 }
 
 .dangerAllert {
