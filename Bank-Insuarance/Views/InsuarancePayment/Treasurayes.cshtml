@@ -89,7 +89,7 @@
                                 <tbody>
                                     @if (Model != null)
                                     {
-                                        @* var branchIdToShow = ViewBag.BranchIdToShow; *@
+                                        
                                       
                                         @foreach (var tr in Model.CollectionModel)
                                         {
@@ -116,7 +116,7 @@
 
 
                     </div>
-                    @* <label class="copyright">Copyright 2023  NanosoftGlobel PVT.LTD All Rights Reserved</label> *@
+                   
                 </div>
             </div>
 
@@ -128,30 +128,30 @@
 
     <script>
         $(document).ready(function () {
-            // Get branch names from ViewBag and convert them to an array
+            
             var branches = @Html.Raw(Json.Serialize(ViewBag.Branchs));
 
-            // Modify branches to remove dots
+            
             var branchNamesWithoutDots = branches.map(function (branch) {
-                return branch.text.replace('.', ''); // Remove dot from each branch name
+                return branch.text.replace('.', ''); 
             });
 
-            // Initialize autocomplete on the input field
+            
             $("#branchInput").autocomplete({
-                source: branchNamesWithoutDots, // Provide the modified array of branch names as the source of suggestions
-                minLength: 1, // Minimum characters to trigger autocomplete
+                source: branchNamesWithoutDots, 
+                minLength: 1, 
                 messages: {
                     noResults: '',
                     results: function () { }
                 },
                 select: function (event, ui) {
-                    // Find the corresponding branch object based on the selected branch name
+                   
                     var selectedBranch = branches.find(function (b) { return b.text === ui.item.value; });
 
-                    // Set the selected branch's ID in the hidden field
+                    
                     $("#branchId").val(selectedBranch.value);
 
-                    return true; // Allow default behavior of the input field (form submission)
+                    return true; 
                 }
             }).autocomplete("instance")._renderMenu = function (ul, items) {
                 var that = this;

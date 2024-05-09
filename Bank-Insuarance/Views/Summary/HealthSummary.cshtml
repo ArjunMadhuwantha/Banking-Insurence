@@ -44,7 +44,7 @@
 
 
                                 <div class="V_div">
-                                    @*  <label class="Branch_lbl">Branch</label> *@
+                                   
                                     <input class="Branch_txt" type="text" id="branchInput" placeholder="Search Branch">
                                     <img class="BranchSearchImage" src="~/images/search.png">
                                     <input type="hidden" id="branchId" name="SummaryViewModel.BranchId">
@@ -52,9 +52,7 @@
 
                             </div>
 
-                            @* <div class="button_div">
-                                <div class="Add_div"><button type="submit" class="Add" onclick="ShowTable()">Search</button></div>
-                            </div> *@
+                            
                         </form>
 
 
@@ -138,19 +136,7 @@
                     $("#BR1").submit();
 
 
-                    /*
-                    $.ajax({
-                        url: "yourEndpointUrl",
-                        method: "POST",
-                        data: { branchId: selectedBranch.value },
-                        success: function (response) {
-                            // Handle success
-                        },
-                        error: function (xhr, status, error) {
-                            // Handle error
-                        }
-                    });
-                    */
+                   
 
                     return true;
                 }
