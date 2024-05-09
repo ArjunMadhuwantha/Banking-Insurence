@@ -100,7 +100,7 @@
                         {
                             var user = await UserManager.GetUserAsync(User);
                             <label class="NameLbl">Welcome, @user.FullName!</label>
-                            @* <p>Welcome, @user.FullName!</p> *@
+                            
                         }
                         </div>
         
@@ -195,8 +195,7 @@
     });
 
     document.getElementById("confirmLogOut").addEventListener("click", function () {
-        // Add your save functionality here
-        // Placeholder for actual save operation
+        
         document.getElementById("confirmationModalLogOut").style.display = "none";
     });
     

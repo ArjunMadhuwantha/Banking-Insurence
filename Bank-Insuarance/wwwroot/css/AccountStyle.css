@@ -760,12 +760,12 @@ tr:hover {
 .Allert_div {
 }
 
-.Allert, .Allert2, .Allert3, .Allert4 {
+.Allert, .Allert2, .Allert3, .Allert4, .Allert5 {
     position: absolute;
     margin-left: 5%;
     color: #ff0000;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 .Allert2 {
@@ -780,6 +780,11 @@ tr:hover {
 
 .Allert4 {
     margin-left: 3%;
+}
+
+.Allert5 {
+    margin-top: -4%;
+    margin-left: 0%;
 }
 
 .dangerAllert {

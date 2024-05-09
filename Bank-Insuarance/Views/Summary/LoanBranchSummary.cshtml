@@ -44,7 +44,7 @@
                             <div class="V_div01">
 
                                 <div class="V_div">
-                                    @* <label class="Reason_lbl">Type</label> *@
+                                   
                                     <select asp-for="SummaryViewModel.Type" class="TypeDropdown textbox" id="LoantypeInput" required>
                                         <option value="Loan/House" selected disabled>Select Loan Type</option>
                                         <option value="Loan" id="">Loan Insuarance</option>
@@ -54,7 +54,7 @@
                                 </div>
 
                                 <div class="V_div">
-                                    @*  <label class="Branch_lbl">Branch</label> *@
+                                    
                                     <input class="Branch_txt" type="text" id="branchInput" placeholder="Search Branch" required>
                                     <img class="BranchSearchImage" src="~/images/search.png">
                                     <input type="hidden" id="branchId" name="SummaryViewModel.BranchId">
@@ -64,9 +64,7 @@
 
                             </div>
 
-                            @* <div class="button_div">
-                                <div class="LoanSummryAdd_div"><button type="submit" class="Add" >Search</button></div>
-                            </div> *@
+                            
                         </form>
 
 
@@ -160,19 +158,7 @@
                     $("#BR1").submit();
 
 
-                    /*
-                    $.ajax({
-                        url: "yourEndpointUrl",
-                        method: "POST",
-                        data: { branchId: selectedBranch.value },
-                        success: function (response) {
-                            // Handle success
-                        },
-                        error: function (xhr, status, error) {
-                            // Handle error
-                        }
-                    });
-                    */
+                    
 
                     return true;
                 }

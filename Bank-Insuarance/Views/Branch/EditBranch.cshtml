@@ -31,7 +31,7 @@
                             <a class="active">@user.FullName!</a>
 
 
-                            @* <p>Welcome, @user.FullName!</p> *@
+                           
                         }
                     </li>
                     <li class="TopLi Li_4"><a class="active" href="#"><img src="~/images/account_circle.png" class="account_circle" onclick="togglePopup()"></a></li>
@@ -158,19 +158,19 @@
 
                                             <div class="left_div">
                                                 <label class="BranchID_label">Branch ID</label>
-                                                <div><input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchId" ><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchId" disabled><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="BranchName_label">Branch Name</label>
-                                                <div><input asp-for="Branch_name" class="BranchName_txt  textbox" type="text" name="Branch_name" ><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Branch_name" class="BranchName_txt  textbox" type="text" name="Branch_name" required><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="PhoneNumber_label">Phone Number</label>
-                                                <div><input asp-for="TpNo" class=" PhoneNumber_txt textbox" type="number" name="TpNo" ><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="TpNo" class=" PhoneNumber_txt textbox" type="number" name="TpNo" required><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="City_label">City</label>
-                                                <div><input asp-for="City" class="City_txt  textbox" type="text" name="City" ><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="City" class="City_txt  textbox" type="text" name="City" required><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="Address_label">Address</label>
-                                                <div><input asp-for="Address" class="Address_txt  textbox" type="text" name="Address" ><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Address" class="Address_txt  textbox" type="text" name="Address" required><img src="~/images/edit.png" class="edit_png"></div>
 
 
 
