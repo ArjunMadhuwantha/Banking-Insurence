@@ -140,7 +140,8 @@
                                             
                                             <div class="DFeild">
                                                 <label class="labelP">Role Name</label>
-                                                <input asp-for="Name" class="txtP" required />
+                                                <input asp-for="Name" class="txtP" pattern="[A-Za-z]+" title="Please enter only letters" required />
+
 
                                                 
                                             </div>
