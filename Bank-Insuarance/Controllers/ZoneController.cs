@@ -10,10 +10,12 @@ namespace Bank_Insurance.Controllers
     public class ZoneController : Controller
     {
         private readonly IzoneRepository _zoneRepository;
+        private readonly ILogger<ZoneController> _logger;
 
-        public ZoneController(IzoneRepository zoneRepository)
+        public ZoneController(IzoneRepository zoneRepository, ILogger<ZoneController> logger)
         {
             _zoneRepository = zoneRepository;
+            _logger = logger;
         }
 
         public async Task<IActionResult> Zone()
@@ -33,18 +35,31 @@ namespace Bank_Insurance.Controllers
         [HttpPost]
         public async Task<IActionResult> AddZone(ZoneViewModel model)
         {
-
-            if (!ModelState.IsValid)
+            try
             {
+                var existId = await _zoneRepository.CheckZoneID(model.ZoneId);
+                if (existId == true)
+                {
+                    ModelState.AddModelError(nameof(model.ZoneId), "Zone Id already exists");
+                    return View(model);
+                }
+                else
+                {
+                    await _zoneRepository.AddAsync(model);
+                    return RedirectToAction("AddZone");
+                }
 
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while adding the branch. Please try again.");
                 return View(model);
             }
 
-                       
-            await _zoneRepository.AddAsync(model);
-
             
-            return RedirectToAction("AddZone");
+
+                       
+            
         }
 
 
@@ -58,18 +73,27 @@ namespace Bank_Insurance.Controllers
         [HttpPost]
         public async Task<IActionResult> EditZone(ZoneViewModel zone)
         {
-
-            if (ModelState.IsValid)
+            try
             {
+                var existId = await _zoneRepository.CheckZoneID(zone.ZoneId);
+                if (existId == true)
+                {
+                    ModelState.AddModelError(nameof(zone.ZoneId), "Zone Id already exists");
+                    return View(zone);
+                }
+                else
+                {
+                    await _zoneRepository.UpdateAsync(zone);
+                    return RedirectToAction("Zone", "Zone");
+                }
 
-                await _zoneRepository.UpdateAsync(zone);
-
-
-                return RedirectToAction("Zone", "Zone");
             }
-
-
-            return View(zone);
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while adding the branch. Please try again.");
+                return View(zone);
+            }
+           
         }
 
 
