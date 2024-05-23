@@ -33,6 +33,8 @@ namespace Bank_Insurance.Repository.Branch
             //throw new NotImplementedException();
         }
 
+        
+
         public async Task<List<BranchViewModel>> GetAllAsync()
         {
             var branchs = await _dbContext.Branches.ToListAsync();
@@ -98,5 +100,13 @@ namespace Bank_Insurance.Repository.Branch
             _dbContext.Branches.Update(branch);
             await _dbContext.SaveChangesAsync();
         }
+
+        public async Task<bool> CheckBranchID(string id)
+        {
+            bool idexist = await _dbContext.Branches.AnyAsync(bid => bid.BranchId == id);
+            return idexist;
+        }
+
+        
     }
 }

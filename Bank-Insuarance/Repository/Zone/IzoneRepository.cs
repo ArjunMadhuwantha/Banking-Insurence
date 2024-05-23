@@ -10,5 +10,7 @@ namespace Bank_Insurance.Repository.Zone
         Task<List<ZoneViewModel>> GetAllAsync();
 
         Task UpdateAsync(ZoneViewModel zone);
+
+        Task<bool> CheckZoneID(string id);
     }
 }

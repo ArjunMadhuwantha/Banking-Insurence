@@ -14,6 +14,8 @@ namespace Bank_Insurance.Repository.Branch
         Task<List<Models.Zone>> GetAllZones();
 
         Task<BranchViewModel> SelectZone(string zId);
-        //Task<List<BranchViewModel>> SelectZone(string zId);
+        Task<bool> CheckBranchID(string id);
+
+        
     }
 }
