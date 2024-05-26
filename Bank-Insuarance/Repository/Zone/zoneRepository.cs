@@ -74,5 +74,11 @@ namespace Bank_Insurance.Repository.Zone
 
             
         }
+
+        public async Task<bool> CheckZoneID(string id)
+        {
+            bool idexist = await _dbContext.Zones.AnyAsync(zid => zid.ZoneId == id);
+            return idexist;
+        }
     }
 }

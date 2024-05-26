@@ -14,10 +14,12 @@ namespace Bank_Insurance.Controllers
     {
 
         private readonly IbranchRepository _branchRepository;
+        private readonly ILogger<BranchController> _logger;
 
-        public BranchController(IbranchRepository branchRepository)
+        public BranchController(IbranchRepository branchRepository,ILogger<BranchController> logger)
         {
             _branchRepository = branchRepository;
+            _logger = logger;
         }
 
         public async Task<IActionResult> Branch()
@@ -38,17 +40,39 @@ namespace Bank_Insurance.Controllers
         [HttpPost]
         public async Task<IActionResult> AddBranch(BranchViewModel model)
         {
+            
 
             if (!ModelState.IsValid)
             {
                 return View(model); // Return to the form with validation errors
             }
 
-            //Insert data to the database           
-            await _branchRepository.AddAsync(model);
+            try
+            {
+                var existId = await _branchRepository.CheckBranchID(model.BranchId);
+                if(existId == true)
+                {
+                    ModelState.AddModelError(nameof(model.BranchId), "Branch Id already exists");
+                    return View(model);
+                }
+                else
+                {
+                    await _branchRepository.AddAsync(model);
+                    return RedirectToAction("Branch", "Branch");
+                }
 
-            // Redirect to List all department page
-            return RedirectToAction("Branch", "Branch");
+            }
+            catch(Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while adding the branch. Please try again.");
+                return View(model);
+            }
+
+            //Insert data to the database           
+            //await _branchRepository.AddAsync(model);
+
+            //// Redirect to List all department page
+            //return RedirectToAction("Branch", "Branch");
         }
 
       
@@ -65,17 +89,30 @@ namespace Bank_Insurance.Controllers
         [HttpPost]
         public async Task<IActionResult> EditBranch(BranchViewModel branch)
         {
-
-            if (ModelState.IsValid)
+            try
             {
-                //Update the database with modified details
-                await _branchRepository.UpdateAsync(branch);
+                var existId = await _branchRepository.CheckBranchID(branch.BranchId);
+                if (existId == true)
+                {
+                    ModelState.AddModelError(nameof(branch.BranchId), "Branch Id already exists");
+                    return View(branch);
+                }
+                else
+                {
+                    await _branchRepository.UpdateAsync(branch);
 
-                // Redirect to List all department page
-                return RedirectToAction("Branch", "Branch");
+                    
+                    return RedirectToAction("Branch", "Branch");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while adding the branch. Please try again.");
+                return View(branch);
             }
 
-            return View(branch);
+            
         }
 
         

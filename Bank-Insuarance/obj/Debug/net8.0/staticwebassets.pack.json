@@ -1,583 +1,583 @@
 {
   "Files": [
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bank-Insuarance.bundle.scp.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bank-Insuarance.bundle.scp.css",
       "PackagePath": "staticwebassets\\Bank-Insuarance.bundle.scp.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\AccountStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\AccountStyle.css",
       "PackagePath": "staticwebassets\\css\\AccountStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\AddBranchStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\AddBranchStyle.css",
       "PackagePath": "staticwebassets\\css\\AddBranchStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\AddTreasureStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\AddTreasureStyle.css",
       "PackagePath": "staticwebassets\\css\\AddTreasureStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\AddZoneStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\AddZoneStyle.css",
       "PackagePath": "staticwebassets\\css\\AddZoneStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\CompentionceStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\CompentionceStyle.css",
       "PackagePath": "staticwebassets\\css\\CompentionceStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\DiviSaranaHomeStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\DiviSaranaHomeStyle.css",
       "PackagePath": "staticwebassets\\css\\DiviSaranaHomeStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\DivisaranaAddStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\DivisaranaAddStyle.css",
       "PackagePath": "staticwebassets\\css\\DivisaranaAddStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\DivisaranaAddSuccStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\DivisaranaAddSuccStyle.css",
       "PackagePath": "staticwebassets\\css\\DivisaranaAddSuccStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\DivisaranaPaymentStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\DivisaranaPaymentStyle.css",
       "PackagePath": "staticwebassets\\css\\DivisaranaPaymentStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\EditAccountStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\EditAccountStyle.css",
       "PackagePath": "staticwebassets\\css\\EditAccountStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\EditBranchStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\EditBranchStyle.css",
       "PackagePath": "staticwebassets\\css\\EditBranchStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\EditZoneStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\EditZoneStyle.css",
       "PackagePath": "staticwebassets\\css\\EditZoneStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\HomeStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\HomeStyle.css",
       "PackagePath": "staticwebassets\\css\\HomeStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\LayoutStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\LayoutStyle.css",
       "PackagePath": "staticwebassets\\css\\LayoutStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\LoanHomeStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\LoanHomeStyle.css",
       "PackagePath": "staticwebassets\\css\\LoanHomeStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\LoanInsuranceStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\LoanInsuranceStyle.css",
       "PackagePath": "staticwebassets\\css\\LoanInsuranceStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\ParithoshithaStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\ParithoshithaStyle.css",
       "PackagePath": "staticwebassets\\css\\ParithoshithaStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\PaymentStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\PaymentStyle.css",
       "PackagePath": "staticwebassets\\css\\PaymentStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\PopUpStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\PopUpStyle.css",
       "PackagePath": "staticwebassets\\css\\PopUpStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\SummaryStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\SummaryStyle.css",
       "PackagePath": "staticwebassets\\css\\SummaryStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\UserLoginStyle.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\UserLoginStyle.css",
       "PackagePath": "staticwebassets\\css\\UserLoginStyle.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\temp.cs",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\css\\temp.cs",
       "PackagePath": "staticwebassets\\css\\temp.cs"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Account.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Account.png",
       "PackagePath": "staticwebassets\\images\\Account.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\AccountBlue.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\AccountBlue.png",
       "PackagePath": "staticwebassets\\images\\AccountBlue.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\AddUserbtn.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\AddUserbtn.png",
       "PackagePath": "staticwebassets\\images\\AddUserbtn.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\AddZone.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\AddZone.png",
       "PackagePath": "staticwebassets\\images\\AddZone.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\AddZonebtn.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\AddZonebtn.png",
       "PackagePath": "staticwebassets\\images\\AddZonebtn.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\BGLogo.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\BGLogo.png",
       "PackagePath": "staticwebassets\\images\\BGLogo.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Back.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Back.png",
       "PackagePath": "staticwebassets\\images\\Back.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Background.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Background.png",
       "PackagePath": "staticwebassets\\images\\Background.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Backpng.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Backpng.png",
       "PackagePath": "staticwebassets\\images\\Backpng.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Basic.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Basic.png",
       "PackagePath": "staticwebassets\\images\\Basic.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\BasicUser.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\BasicUser.png",
       "PackagePath": "staticwebassets\\images\\BasicUser.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\BranchBlue.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\BranchBlue.png",
       "PackagePath": "staticwebassets\\images\\BranchBlue.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Branch_png.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Branch_png.png",
       "PackagePath": "staticwebassets\\images\\Branch_png.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Delete.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Delete.png",
       "PackagePath": "staticwebassets\\images\\Delete.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Divisarana_Logo.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Divisarana_Logo.png",
       "PackagePath": "staticwebassets\\images\\Divisarana_Logo.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Doc.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Doc.png",
       "PackagePath": "staticwebassets\\images\\Doc.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Email.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Email.png",
       "PackagePath": "staticwebassets\\images\\Email.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\HomeLoan_Logo.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\HomeLoan_Logo.png",
       "PackagePath": "staticwebassets\\images\\HomeLoan_Logo.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Homelogo.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Homelogo.png",
       "PackagePath": "staticwebassets\\images\\Homelogo.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\IDpng.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\IDpng.png",
       "PackagePath": "staticwebassets\\images\\IDpng.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Line.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Line.png",
       "PackagePath": "staticwebassets\\images\\Line.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Live.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Live.png",
       "PackagePath": "staticwebassets\\images\\Live.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\LogOut.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\LogOut.png",
       "PackagePath": "staticwebassets\\images\\LogOut.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\NIC.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\NIC.png",
       "PackagePath": "staticwebassets\\images\\NIC.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Name.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Name.png",
       "PackagePath": "staticwebassets\\images\\Name.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Other_Logo.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Other_Logo.png",
       "PackagePath": "staticwebassets\\images\\Other_Logo.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\PasswordReset.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\PasswordReset.png",
       "PackagePath": "staticwebassets\\images\\PasswordReset.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Profession.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Profession.png",
       "PackagePath": "staticwebassets\\images\\Profession.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Role.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Role.png",
       "PackagePath": "staticwebassets\\images\\Role.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Security.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Security.png",
       "PackagePath": "staticwebassets\\images\\Security.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\UpdateZone.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\UpdateZone.png",
       "PackagePath": "staticwebassets\\images\\UpdateZone.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\UserDp.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\UserDp.png",
       "PackagePath": "staticwebassets\\images\\UserDp.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\UserPassword.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\UserPassword.png",
       "PackagePath": "staticwebassets\\images\\UserPassword.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Visible.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Visible.png",
       "PackagePath": "staticwebassets\\images\\Visible.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Zone.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\Zone.png",
       "PackagePath": "staticwebassets\\images\\Zone.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\ZoneMiddle.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\ZoneMiddle.png",
       "PackagePath": "staticwebassets\\images\\ZoneMiddle.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\ZoneWhite.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\ZoneWhite.png",
       "PackagePath": "staticwebassets\\images\\ZoneWhite.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\account_circle.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\account_circle.png",
       "PackagePath": "staticwebassets\\images\\account_circle.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\addBlack.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\addBlack.png",
       "PackagePath": "staticwebassets\\images\\addBlack.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\admin_loginBlack.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\admin_loginBlack.png",
       "PackagePath": "staticwebassets\\images\\admin_loginBlack.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\edit.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\edit.png",
       "PackagePath": "staticwebassets\\images\\edit.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\editWhite.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\editWhite.png",
       "PackagePath": "staticwebassets\\images\\editWhite.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\expandpng.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\expandpng.png",
       "PackagePath": "staticwebassets\\images\\expandpng.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\login_logo.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\login_logo.png",
       "PackagePath": "staticwebassets\\images\\login_logo.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\logout2.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\logout2.png",
       "PackagePath": "staticwebassets\\images\\logout2.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\logoutBlack.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\logoutBlack.png",
       "PackagePath": "staticwebassets\\images\\logoutBlack.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\manage_accountsBlack.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\manage_accountsBlack.png",
       "PackagePath": "staticwebassets\\images\\manage_accountsBlack.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\password.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\password.png",
       "PackagePath": "staticwebassets\\images\\password.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\search.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\search.png",
       "PackagePath": "staticwebassets\\images\\search.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\searchWhite.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\searchWhite.png",
       "PackagePath": "staticwebassets\\images\\searchWhite.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\settingsBlack.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\settingsBlack.png",
       "PackagePath": "staticwebassets\\images\\settingsBlack.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\user.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\user.png",
       "PackagePath": "staticwebassets\\images\\user.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\visibility.png",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\images\\visibility.png",
       "PackagePath": "staticwebassets\\images\\visibility.png"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\AddScript.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\AddScript.js",
       "PackagePath": "staticwebassets\\js\\AddScript.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\CompentionceScript.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\CompentionceScript.js",
       "PackagePath": "staticwebassets\\js\\CompentionceScript.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\DivisaranaAddSuccScript.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\DivisaranaAddSuccScript.js",
       "PackagePath": "staticwebassets\\js\\DivisaranaAddSuccScript.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\DivisaranaPaymentScript.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\DivisaranaPaymentScript.js",
       "PackagePath": "staticwebassets\\js\\DivisaranaPaymentScript.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\EditZoneScript.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\EditZoneScript.js",
       "PackagePath": "staticwebassets\\js\\EditZoneScript.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\HomeScript.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\HomeScript.js",
       "PackagePath": "staticwebassets\\js\\HomeScript.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\TextFeildFocus.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\TextFeildFocus.js",
       "PackagePath": "staticwebassets\\js\\TextFeildFocus.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\UserloginScript.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\UserloginScript.js",
       "PackagePath": "staticwebassets\\js\\UserloginScript.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\ValueSubmitScript.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\ValueSubmitScript.js",
       "PackagePath": "staticwebassets\\js\\ValueSubmitScript.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
