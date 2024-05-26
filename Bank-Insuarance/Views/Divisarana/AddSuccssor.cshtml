@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="~/css/DivisaranaAddSuccStyle.css">
     <script src="~/js/DivisaranaAddSuccScript.js"></script>
     <script src="~/js/TextFeildFocus.js"></script>
-    <title>Divisarana Insuarance</title>
+    <title>Divisarana Insuarance </title>
 </head>
 <body>
     <div class="MainDiv">
@@ -19,7 +19,7 @@
         <div class="frame" id="Home">
             <div class="NavBarTop_div">
                 <a asp-controller="Home" asp-action="Index"><img class="logo_img_Home" src="~/images/Homelogo.png"></a>
-                <label class="TopicDivisarana">Divisarana Insuarance</label>
+                <label class="TopicDivisarana">Divisarana Insuarance Add Successor</label>
 
             </div>
 
@@ -58,7 +58,7 @@
 
                                 <div class="V_div">
                                     <label class="DOB_lbl">D.O.B</label>
-                                    <input asp-for="DivisaranaViewModel.SuccssorDOB" class="DOB_txt" type="date">
+                                    <input asp-for="DivisaranaViewModel.SuccssorDOB" class="DOB_txt" type="date" id="date">
                                 </div>
 
                                 <div class="V_div">
@@ -129,3 +129,8 @@
 </body>
 
 
+<script>
+    // Set the max attribute to today's date
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').setAttribute('max', today);
+</script>

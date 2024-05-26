@@ -60,7 +60,7 @@
 
                                 <div class="V_div">
                                     <label class="Date_lbl">Date</label>
-                                    <input asp-for="Data" class="Date_txt textbox" type="date" required>
+                                    <input asp-for="Data" class="Date_txt textbox" id="date" type="date" required>
                                 </div>
 
                                 <div class="V_div">
@@ -105,6 +105,10 @@
         
         document.getElementById("confirmationModal").style.display = "none";
     });
+
+    // Set the max attribute to today's date
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').setAttribute('max', today);
 </script>
 
 @section Scripts {
