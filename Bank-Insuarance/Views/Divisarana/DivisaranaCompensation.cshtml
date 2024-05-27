@@ -85,7 +85,7 @@
 
                                 <div class="V_div Deth top" id="Deth2">
                                     <label id="" class="Date_lbl">Date of death</label>
-                                    <input asp-for="DeathDate" id="date" class="DateD_txt textbox" type="date">
+                                    <input asp-for="DeathDate" id="" class="DateD_txt textbox" type="date">
                                 </div>
 
                                 <div class="V_div Deth top" id="Deth3">
@@ -106,7 +106,7 @@
 
                                 <div class="V_div Hospitalization top2" id="Hospitalization3">
                                     <label id="" class="DateD_lbl">Discharge date</label>
-                                    <input asp-for="DischargeDate" id="date" class="DateD2_txt textbox" type="date">
+                                    <input asp-for="DischargeDate" id="" class="DateD2_txt textbox" type="date">
                                 </div>
 
                                 <div class="V_div Hospitalization top2" id="Hospitalization4">
@@ -166,10 +166,6 @@
         
         document.getElementById("confirmationModal").style.display = "none";
     });
-
-    // Set the max attribute to today's date
-    const today = new Date().toISOString().split('T')[0];
-    document.getElementById('date').setAttribute('max', today);
 </script>
 
 @section Scripts {
