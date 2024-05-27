@@ -158,10 +158,8 @@
 
                                             <div class="left_div">
                                                 <label class="BranchID_label">Branch ID</label>
-                                                <div><input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchId" required><img src="~/images/edit.png" class="edit_png"></div>
-                                                    
-                                                <div class="DFeild">
-                                                    <span class="Allert2" asp-validation-for="BranchId"> </span>
+                                                <div><input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchId" required ><img src="~/images/edit.png" class="edit_png">
+                                                    <span asp-validation-for="BranchId"> </span>
                                                 </div>
 
                                                 <label class="BranchName_label">Branch Name</label>

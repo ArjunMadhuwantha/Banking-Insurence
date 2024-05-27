@@ -54,7 +54,7 @@
 
                                 <div class="V_div">
                                     <label class="Date_lbl">Form Date</label>
-                                    <input asp-for="InsuarancePaymentViewModel.Date" class="Date_txt textbox" type="date" id="date">
+                                    <input asp-for="InsuarancePaymentViewModel.Date" class="Date_txt textbox" type="date">
                                 </div>
 
                                 <div class="V_div">
@@ -160,9 +160,5 @@
                 });
             };
         });
-
-        // Set the max attribute to today's date
-        const today = new Date().toISOString().split('T')[0];
-        document.getElementById('date').setAttribute('max', today);
     </script>
 }

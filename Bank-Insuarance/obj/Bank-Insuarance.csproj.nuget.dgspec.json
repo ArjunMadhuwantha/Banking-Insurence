@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\Bank-Insuarance.csproj": {}
+    "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\Bank-Insuarance.csproj": {}
   },
   "projects": {
-    "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\Bank-Insuarance.csproj": {
+    "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\Bank-Insuarance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\Bank-Insuarance.csproj",
+        "projectUniqueName": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\Bank-Insuarance.csproj",
         "projectName": "Bank-Insuarance",
-        "projectPath": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\Bank-Insuarance.csproj",
-        "packagesPath": "C:\\Users\\amar\\.nuget\\packages\\",
-        "outputPath": "G:\\Nanosoft Global\\NS\\Banking\\Banking_Nano\\Bank-_Insurance02\\Banking-Insurence\\Bank-Insuarance\\obj\\",
+        "projectPath": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\Bank-Insuarance.csproj",
+        "packagesPath": "C:\\Users\\sajit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sajit\\OneDrive\\Documents\\Asp.net\\Git-PC\\QA\\Banking-Insurence\\Bank-Insuarance\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\amar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\sajit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -111,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
