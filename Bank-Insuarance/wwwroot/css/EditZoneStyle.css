@@ -441,6 +441,21 @@ a {
         cursor: pointer;
     }
 
+.Allert_div {
+}
+
+.Allert, .Allert2 {
+    position: absolute;
+    margin-left: 5%;
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Allert2 {
+    margin-left: 15%;
+    margin-top: -3.3%;
+}
 
 .copyright {
     margin-left: 2%;
