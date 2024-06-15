@@ -347,7 +347,7 @@ namespace Bank_Insurance.Repository.Loan
             }
             else
             {
-                DueAmount = MathF.Abs((float)(payment.DueAmount - payment.Paymentvalue));
+                DueAmount = 600-MathF.Abs((float)(payment.DueAmount - payment.Paymentvalue));
             }
 
 

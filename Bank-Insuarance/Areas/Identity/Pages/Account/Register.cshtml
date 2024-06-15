@@ -156,7 +156,7 @@
 
                                                 <div class="DFeild">
                                                     <label class="labelP" asp-for="Input.DOB">DOB</label>
-                                                    <input asp-for="Input.DOB" class="txtP textbox" autocomplete="DOB" placeholder="Enter your DOB" min="1950-01-01" required />
+                                                    <input asp-for="Input.DOB" id="date" class="txtP textbox" autocomplete="DOB" placeholder="Enter your DOB" min="1950-01-01" required />
                                                 
                                                 
                                                 </div>
@@ -294,6 +294,10 @@
         // Placeholder for actual save operation
         document.getElementById("confirmationModalLogOut").style.display = "none";
     });
+
+    // Set the max attribute to today's date
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').setAttribute('max', today);
 </script>
 
 
