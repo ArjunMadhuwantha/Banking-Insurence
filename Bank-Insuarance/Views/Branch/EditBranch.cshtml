@@ -158,21 +158,22 @@
 
                                             <div class="left_div">
                                                 <label class="BranchID_label">Branch ID</label>
-                                                <div><input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchId" required ><img src="~/images/edit.png" class="edit_png">
+                                                <div>
+                                                    <input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchId" required oninput="validateInputStringsNumbers(event)"><img src="~/images/edit.png" class="edit_png">
                                                     <span asp-validation-for="BranchId"> </span>
                                                 </div>
 
                                                 <label class="BranchName_label">Branch Name</label>
-                                                <div><input asp-for="Branch_name" class="BranchName_txt  textbox" type="text" name="Branch_name" required><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Branch_name" class="BranchName_txt  textbox" type="text" name="Branch_name" required oninput="validateInputStringsNumbers(event)"><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="PhoneNumber_label">Phone Number</label>
                                                 <div><input asp-for="TpNo" class=" PhoneNumber_txt textbox" type="number" name="TpNo" required><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="City_label">City</label>
-                                                <div><input asp-for="City" class="City_txt  textbox" type="text" name="City" required><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="City" class="City_txt  textbox" type="text" name="City" required oninput="validateInputStrings(event)"><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="Address_label">Address</label>
-                                                <div><input asp-for="Address" class="Address_txt  textbox" type="text" name="Address" required><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Address" class="Address_txt  textbox" type="text" name="Address" required oninput="validateInputAddress(event)"><img src="~/images/edit.png" class="edit_png"></div>
 
 
 
@@ -235,4 +236,27 @@
         
         document.getElementById("confirmationModalLogOut").style.display = "none";
     });
+
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputAddress(event) {
+        const regex = /^[0-9a-zA-Z\/,\.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputStringsNumbers(event) {
+        const regex = /^[0-9a-zA-Z\s]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+
 </script>

@@ -48,12 +48,12 @@
 
                                 <div class="V_div">
                                     <label class="NIC_lbl">Member NIC</label>
-                                    <input asp-for="DivisaranaViewModel.ID" class="NIC_txt" type="text" required>
+                                    <input asp-for="DivisaranaViewModel.ID" class="NIC_txt" type="text" required oninput="validateInputID(event)">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Name_lbl">Name</label>
-                                    <input asp-for="DivisaranaViewModel.SuccssorName" class="Name_txt" type="text" required>
+                                    <input asp-for="DivisaranaViewModel.SuccssorName" class="Name_txt" type="text" required oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div">
@@ -63,12 +63,12 @@
 
                                 <div class="V_div">
                                     <label class="Age_lbl">Age</label>
-                                    <input asp-for="DivisaranaViewModel.Age" class="Age_txt" type="number" min="0" oninput="validity.valid||(value='');">
+                                    <input asp-for="DivisaranaViewModel.Age" class="Age_txt" type="number" min="0" oninput="validity.valid||(value='');" required>
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Relation_lbl">Relation</label>
-                                    <input asp-for="DivisaranaViewModel.Relation" class="Relation_txt" type="text">
+                                    <input asp-for="DivisaranaViewModel.Relation" class="Relation_txt" type="text" required oninput="validateInputStrings(event)">
                                 </div>
 
 
@@ -132,5 +132,34 @@
     // Set the max attribute to today's date
     const today = new Date().toISOString().split('T')[0];
     document.getElementById('date').setAttribute('max', today);
+
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputID(event) {
+        const regex = /^[0-9Vv]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputAddress(event) {
+        const regex = /^[0-9a-zA-Z\/,\.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputStringsNumbers(event) {
+        const regex = /^[0-9a-zA-Z\s]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
 </script>
 

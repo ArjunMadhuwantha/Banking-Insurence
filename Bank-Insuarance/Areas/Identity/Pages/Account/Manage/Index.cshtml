@@ -9,10 +9,10 @@
 
 <div class="">
     <div class="">
-        <form id="profile-form" method="post">
+        <form id="profile-form" method="post" onsubmit="return validatePhoneNumber()">
             <div asp-validation-summary="ModelOnly" class="Allert" role="alert"></div>
             <div class="left_div">
-                
+
                 <div>
                     <label asp-for="Username" class="labelA"></label>
                     <input asp-for="Username" class="txtA" placeholder="Please choose your username." disabled />
@@ -20,18 +20,17 @@
 
                 <div>
                     <label asp-for="Input.PhoneNumber" class="labelA"></label>
-                    <input asp-for="Input.PhoneNumber" class="txtA" placeholder="Please enter your phone number." required />
+                    <input asp-for="Input.PhoneNumber" class="txtA" placeholder="Please enter your phone number." id="TPNo" required oninput="validateInputNumbers(event)" />
                     <span asp-validation-for="Input.PhoneNumber" class="Allert3"></span>
-                    <partial name="_StatusMessage" for="StatusMessage" />
+                    
                 </div>
 
                 <div class="Save_divA">
                     <button id="update-profile-button" type="submit" class="SaveA">Save</button>
                 </div>
             </div>
-            
-            
         </form>
+
     </div>
 </div>
 

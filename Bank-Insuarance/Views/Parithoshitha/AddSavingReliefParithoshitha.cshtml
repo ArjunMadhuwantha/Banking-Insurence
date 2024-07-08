@@ -58,12 +58,12 @@
 
                             <div class="V_div">
                                 <label class="Name_lbl">Name</label>
-                                    <input asp-for="SName" class="Name_txt textbox" type="text" required>
+                                    <input asp-for="SName" class="Name_txt textbox" type="text" required oninput="validateInputStrings(event)">
                             </div>
 
                             <div class="V_div">
                                 <label class="MemberNo_lbl">Member No</label>
-                                    <input asp-for="SMemberNo" class="MemberNo_txt textbox" type="text" required>
+                                    <input asp-for="SMemberNo" class="MemberNo_txt textbox" type="text" required oninput="validateInputStringsNumbers(event)">
                             </div>
 
                             <div class="V_div">
@@ -115,6 +115,22 @@
         
         document.getElementById("confirmationModal").style.display = "none";
     });
+
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+
+    function validateInputStringsNumbers(event) {
+        const regex = /^[0-9a-zA-Z\s]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
 </script>
 
 @section Scripts {

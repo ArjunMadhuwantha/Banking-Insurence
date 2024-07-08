@@ -65,23 +65,23 @@
 
                                 <div class="V_div">
                                     <label class="Name_lbl">Member Name</label>
-                                    <input asp-for="MemberName" class="NameSR_txt textbox" type="text" required>
+                                    <input asp-for="MemberName" class="NameSR_txt textbox" type="text" required oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Address_lbl">Address</label>
-                                    <input asp-for="MemberAddress" class="AddressSR_txt textbox" type="text">
+                                    <input asp-for="MemberAddress" class="AddressSR_txt textbox" type="text" oninput="validateInputAddress(event)">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="DeceasedName_lbl">Name of </label>
                                     <label id="person" class="DeceasedName_lbl">deceased person</label>
-                                    <input asp-for="DeathpersonName" class="DeceasedNameSR_txt textbox" type="text">
+                                    <input asp-for="DeathpersonName" class="DeceasedNameSR_txt textbox" type="text" oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div top2">
                                     <label class="Relation_lbl">Relation</label>
-                                    <input asp-for="Relation" class="RelationSR_txt textbox" type="text">
+                                    <input asp-for="Relation" class="RelationSR_txt textbox" type="text" oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div">
@@ -103,7 +103,7 @@
 
                                 <div class="V_div hidden" id="UniversityName_Div">
                                     <label id="Name_lbl" class="Name_lbl">University Name</label> 
-                                    <input class="Name_txt textbox" type="text">
+                                    <input asp-for ="Universityname" class="Name_txt textbox" type="text" oninput="validateInputStrings(event)">
                                 </div>
 
                                 <label class="Comment_txt hidden" type="text" id="Comment_txt"></label>
@@ -148,7 +148,21 @@
     const today = new Date().toISOString().split('T')[0];
     document.getElementById('Date').setAttribute('max', today);
 
-    //To Add
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+
+    function validateInputAddress(event) {
+        const regex = /^[0-9a-zA-Z\/,\.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
 </script>
 
 @section Scripts {

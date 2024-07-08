@@ -178,6 +178,23 @@
         // Placeholder for actual save operation
         document.getElementById("confirmationModalLogOut").style.display = "none";
     });
+
+    // Function to allow only numeric input
+    function validateInputNumbers(event) {
+        const input = event.target;
+        input.value = input.value.replace(/\D/g, ''); // Replace non-digits with an empty string
+    }
+
+    // Function to validate phone number length
+    function validatePhoneNumber() {
+        const phoneNumber = document.getElementById('TPNo').value;
+        if (phoneNumber.length !== 10) {
+            alert("Please enter a valid 10-digit phone number.");
+            return false; // Prevent form submission
+        }
+        return true; // Allow form submission
+    }
+
 </script>
 
 
