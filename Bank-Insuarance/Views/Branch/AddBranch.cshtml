@@ -155,22 +155,28 @@
 
                                             <div class="left_div">
                                                 <label class="BranchID_label">Branch ID</label>
-                                                <div><input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchID" value="" placeholder="Branch ID" required>
+                                                <div>
+                                                    <input asp-for="BranchId" class="BranchID_txt textbox" type="text" name="BranchID" value="" placeholder="Branch ID" required oninput="validateInputStringsNumbers(event)">
                                                     <img src="~/images/edit.png" class="edit_png">
-                                                    <span asp-validation-for="BranchId"> </span>
-                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="DFeild">
+                                                    <span class="Allert2" asp-validation-for="BranchId"> </span>
+                                                </div>
 
                                                 <label class="BranchName_label">Branch Name</label>
-                                                <div><input asp-for="Branch_name" class="BranchName_txt  textbox" type="text" name="Branch_name" value="" placeholder="  Branch Name" required><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Branch_name" class="BranchName_txt  textbox" type="text" name="Branch_name" value="" placeholder="  Branch Name" required oninput="validateInputStringsNumbers(event)"><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="PhoneNumber_label">Phone Number</label>
-                                                <div><input asp-for="TpNo" class="PhoneNumber_txt  textbox" type="number" name="TpNo" value="" placeholder="  Phone Number"><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="TpNo" class="PhoneNumber_txt  textbox" type="number" id="TPNo" name="TpNo" value="" placeholder="  Phone Number"><img src="~/images/edit.png" class="edit_png"></div>
+                                                
 
                                                 <label class="City_label">City</label>
-                                                <div><input asp-for="City" class="City_txt  textbox" type="text" name="City" value="" placeholder="  City"><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="City" class="City_txt  textbox" type="text" name="City" value="" placeholder="  City" oninput="validateInputStrings(event)"><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="Address_label">Address</label>
-                                                <div><input asp-for="Address" class="Address_txt  textbox" type="text" name="Address" value="" placeholder="  Address"><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Address" class="Address_txt  textbox" type="text" name="Address" value="" placeholder="  Address" oninput="validateInputAddress(event)"><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="ZoneName_label">Zone</label>
                                                 <div><select asp-for="ZoneId" asp-items="ViewBag.Zones" class="ZoneDropDown textbox"></select></div>
@@ -185,7 +191,7 @@
                                             <div class="modal-content">
                                                 
                                                 <p>Are you sure you want to Add?</p>
-                                                <button class="PopUpYes" type="submit" id="confirmSave">Yes</button>
+                                                <button class="PopUpYes" type="submit" id="confirmSave" onclick="validatePhoneNumber()">Yes</button>
                                                 <button class="PopUpNo" type="button" id="cancelSave">No</button>
                                             </div>
                                         </div>
@@ -236,4 +242,27 @@
         
         document.getElementById("confirmationModalLogOut").style.display = "none";
     });
+
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputAddress(event) {
+        const regex = /^[0-9a-zA-Z\/,\.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputStringsNumbers(event) {
+        const regex = /^[0-9a-zA-Z\s]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+
 </script>

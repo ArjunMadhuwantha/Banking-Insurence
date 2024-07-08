@@ -157,12 +157,17 @@
 
                                             <div class="left_div">
                                                 <label class="ZoneID_label">Zone ID</label>
-                                                <div><input asp-for="ZoneId" class="ZoneID_txt textbox" type="text" name="ZoneId" value="" placeholder="Zone ID" required><img src="~/images/edit.png" class="edit_png">
-                                                    <span asp-validation-for="ZoneId"> </span>
+                                                <div>
+                                                    <input asp-for="ZoneId" class="ZoneID_txt textbox" type="text" name="ZoneId" value="" placeholder="Zone ID" required oninput="validateInputStringsNumbers(event)"><img src="~/images/edit.png" class="edit_png">
+                                                   
+                                                </div>
+
+                                                <div class="DFeild">
+                                                    <span class="Allert2" asp-validation-for="ZoneId"> </span>
                                                 </div>
 
                                                 <label class="ZoneName_label">Zone Name</label>
-                                                <div><input asp-for="Zone_name" class="ZoneName_txt  textbox" type="text" name="Zone_name" value="" placeholder="  Zone Name" required><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Zone_name" class="ZoneName_txt  textbox" type="text" name="Zone_name" value="" placeholder="  Zone Name" required oninput="validateInputStringsNumbers(event)"><img src="~/images/edit.png" class="edit_png"></div>
 
 
                                                 <label class="ZoneStatus_label">Zone Status</label>
@@ -229,4 +234,13 @@
         
         document.getElementById("confirmationModalLogOut").style.display = "none";
     });
+
+
+    function validateInputStringsNumbers(event) {
+        const regex = /^[0-9a-zA-Z\s]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
 </script>

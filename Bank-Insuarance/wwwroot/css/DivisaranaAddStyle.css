@@ -297,3 +297,16 @@ a {
     background-color: #82A0AD; /* Background color of selected item */
     color: #ffffff; /* Text color of selected item */
 }
+
+.error-message {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 640px;
+    font-weight: bold;
+    display: none;
+    color: red;
+}
+
+.invalid {
+    border: 2px solid red;
+}

@@ -57,7 +57,7 @@
                                 <div class="V_div Coman" id="Coman">
                                     <label class="NameD_lbl" id="NameB_lbl">Name of</label>
                                     <label class="NameD_lbl" id="NameB_lbl">beneficiary</label>
-                                    <input asp-for="Fullname" class="NameD_txt textbox" type="text" id="fullname" required>
+                                    <input asp-for="Fullname" class="NameD_txt textbox" type="text" id="fullname" required oninput="validateInputStrings(event)">
                                     <input asp-for="CusPolicyNo" type="hidden" class="" id="policyno">
                                 </div>
 
@@ -65,7 +65,7 @@
                                 <div class="V_div Coman" id="Coman">
                                     <label class="NumberD_lbl" id="number_lbl">Insurance</label>
                                     <label class="Number_lbl" id="number_lbl">number</label>
-                                    <input asp-for="DivisaranaNo" class="Number_txt textbox" type="text" required>
+                                    <input asp-for="DivisaranaNo" class="Number_txt textbox" type="text" required oninput="validateInputStringsNumbers(event)">
                                 </div>
 
                                 <div class="V_div Coman" id="Coman">
@@ -80,7 +80,7 @@
 
                                 <div class="V_div Deth" id="Deth1">
                                     <label id="" class="DeceasedName_lbl">Name of <br /><label id="Deth" class="DeceasedNameD_lbl">deceased person</label> </label>
-                                    <input asp-for="DeathPersonName" id="" class="DeceasedName_txt textbox Deth" type="text">
+                                    <input asp-for="DeathPersonName" id="" class="DeceasedName_txt textbox Deth" type="text" required oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div Deth top" id="Deth2">
@@ -90,18 +90,18 @@
 
                                 <div class="V_div Deth top" id="Deth3">
                                     <label id="" class="Relation_lbl">Relationship</label>
-                                    <input asp-for="Relation" id="" class="RelationD_txt textbox" type="text">
+                                    <input asp-for="Relation" id="" class="RelationD_txt textbox" type="text" required oninput="validateInputStrings(event)">
                                 </div>
                                 @* ///////////////////////////////////////////////////////////////////////////////////Hospitalization *@
 
                                 <div class="V_div Hospitalization top" id="Hospitalization1">
                                     <label id="" class="PersonD_lbl">Hospitalized <br /><label id="" class="Person_lbl">person</label></label>
-                                    <input asp-for="HospitalizedPerson" id="" class="Person_txt textbox" type="text">
+                                    <input asp-for="HospitalizedPerson" id="" class="Person_txt textbox" type="text" oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div Hospitalization top" id="Hospitalization2">
                                     <label id="" class="Hospital_lbl">Hospital name</label>
-                                    <input asp-for="Hospital" id="" class="Hospital_txt textbox" type="text">
+                                    <input asp-for="Hospital" id="" class="Hospital_txt textbox" type="text" oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div Hospitalization top2" id="Hospitalization3">
@@ -111,13 +111,13 @@
 
                                 <div class="V_div Hospitalization top2" id="Hospitalization4">
                                     <label id="" class="Disease_lbl">Disease</label>
-                                    <input asp-for="Disese" id="" class="Disease_txt textbox" type="text">
+                                    <input asp-for="Disese" id="" class="Disease_txt textbox" type="text" oninput="validateInputStrings(event)">
                                 </div>
                                 @* ///////////////////////////////////////////////////////////////////////////////////Surgery *@
 
                                 <div class="V_div Surgery top2" id="Surgery1">
                                     <label id="" class="Surgery_lbl">Type of surgery</label>
-                                    <input id="" asp-for="Surgery" class="Surgery_txt textbox" type="text">
+                                    <input id="" asp-for="Surgery" class="Surgery_txt textbox" type="text" oninput="validateInputStrings(event)">
                                 </div>
 
                                 @* /////////////////////////////////////////////////////////////////////////////////// *@
@@ -170,6 +170,22 @@
     // Set the max attribute to today's date
     const today = new Date().toISOString().split('T')[0];
     document.getElementById('date').setAttribute('max', today);
+
+
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputStringsNumbers(event) {
+        const regex = /^[0-9a-zA-Z\s]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
 </script>
 
 @section Scripts {

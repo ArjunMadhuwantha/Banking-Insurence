@@ -142,14 +142,14 @@
 
                                                 <div class="DFeild">
                                                     <label class="labelP" asp-for="Input.FullName">Name</label>
-                                                    <input asp-for="Input.FullName" class="txtP txtR textbox" autocomplete="Name"  placeholder="Enter Your Full Name" required/>
+                                                <input asp-for="Input.FullName" class="txtP txtR textbox" autocomplete="Name" placeholder="Enter Your Full Name" required oninput="validateInputStrings(event)" />
                                                 
                                                
                                                 </div>
 
                                                 <div class="DFeild">
                                                     <label class="labelP" asp-for="Input.Profession">Profession</label>
-                                                    <input asp-for="Input.Profession" class="txtP textbox" autocomplete="Profession" placeholder="Enter Your Profession" required />
+                                                <input asp-for="Input.Profession" class="txtP textbox" autocomplete="Profession" placeholder="Enter Your Profession" required oninput="validateInputStrings(event)" />
                                                 
                                                
                                                 </div>
@@ -163,14 +163,14 @@
 
                                                 <div class="DFeild">
                                                     <label class="labelP" asp-for="Input.NicNo">NicNo</label>
-                                                    <input asp-for="Input.NicNo" class="txtP textbox" autocomplete="NicNo" placeholder="Enter your NicNo" required />
+                                                <input asp-for="Input.NicNo" class="txtP textbox" autocomplete="NicNo" placeholder="Enter your NicNo" required oninput="validateInputID(event)" />
                                                 
                                                 
                                                 </div>
 
                                                 <div class="DFeild">
                                                     <label class="labelP" asp-for="Input.Address">Address</label>
-                                                    <input asp-for="Input.Address" class="txtP textbox" autocomplete="Address" placeholder="Enter your Address" required />
+                                                <input asp-for="Input.Address" class="txtP textbox" autocomplete="Address" placeholder="Enter your Address" required oninput="validateInputAddress(event)" />
                                                 
                                                
                                                 </div>
@@ -298,6 +298,29 @@
     // Set the max attribute to today's date
     const today = new Date().toISOString().split('T')[0];
     document.getElementById('date').setAttribute('max', today);
+
+
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputID(event) {
+        const regex = /^[0-9Vv]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputAddress(event) {
+        const regex = /^[0-9a-zA-Z\/,\.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
 </script>
 
 

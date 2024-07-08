@@ -156,10 +156,10 @@
 
                                             <div class="left_div">
                                                 <label class="ZoneID_label">Zone ID</label>
-                                                <div><input asp-for="ZoneId" class="ZoneID_txt textbox" type="text" name="ZoneId" required><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="ZoneId" class="ZoneID_txt textbox" type="text" name="ZoneId" required oninput="validateInputStringsNumbers(event)"><img src="~/images/edit.png" class="edit_png"></div>
 
                                                 <label class="ZoneName_label">Zone Name</label>
-                                                <div><input asp-for="Zone_name" class="ZoneName_txt  textbox" type="text" name="Zone_name" required><img src="~/images/edit.png" class="edit_png"></div>
+                                                <div><input asp-for="Zone_name" class="ZoneName_txt  textbox" type="text" name="Zone_name" required oninput="validateInputStringsNumbers(event)"><img src="~/images/edit.png" class="edit_png"></div>
 
 
                                                 <label class="ZoneStatus_label">Zone Status</label>
@@ -229,4 +229,12 @@
         
         document.getElementById("confirmationModalLogOut").style.display = "none";
     });
+
+    function validateInputStringsNumbers(event) {
+        const regex = /^[0-9a-zA-Z\s]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
 </script>

@@ -52,17 +52,17 @@
 
                                 <div class="V_div">
                                     <label class="Name_lbl">Full Name</label>
-                                    <input asp-for="Fullname" class="Name_txt textbox" type="text" required>
+                                    <input asp-for="Fullname" class="Name_txt textbox" type="text" required oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Address_lbl">Address</label>
-                                    <input asp-for="Address" class="Address_txt textbox" type="text">
+                                    <input asp-for="Address" class="Address_txt textbox" type="text" oninput="validateInputAddress(event)">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="NIC_lbl">NIC</label>
-                                    <input asp-for="ID" class="NIC_txt textbox" type="text" required>
+                                    <input asp-for="ID" class="NIC_txt textbox" type="text" required oninput="validateInputID(event)">
                                    
                                     <div class="DFeild">
                                         <span class="Allert" asp-validation-for="ID"></span>
@@ -80,17 +80,17 @@
 
                                 <div class="V_div">
                                     <label class="BMNumber_lbl">Bank Member No</label>
-                                    <input asp-for="BankMemberNo" class="BMNumber_txt textbox" type="text" required>
+                                    <input asp-for="BankMemberNo" class="BMNumber_txt textbox" type="text" required oninput="validateInputStringsNumbers(event)">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Job_lbl">Job</label>
-                                    <input asp-for="Job" class="Job_txt textbox" type="text">
+                                    <input asp-for="Job" class="Job_txt textbox" type="text" oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Successor_lbl">Successor</label>
-                                    <input asp-for="Succssor" class="Successor_txt textbox" type="text" required>
+                                    <input asp-for="Succssor" class="Successor_txt textbox" type="text" required oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div">
@@ -107,14 +107,17 @@
 
                                 <div class="V_div">
                                     <label class="Date_lbl">Start Date</label>
-                                    <input asp-for="StartDate" class="Date_txt textbox" type="date" required>
+                                    <input asp-for="StartDate" class="Date_txt textbox" id="start-date" type="date" required>
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Fee_lbl">Fee</label>
                                     <input asp-for="AddmissionFee" class="Fee_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
                                 </div>
-                                
+
+                                <span id="date-error" class="error-message">Start Date must be greater than DOB.</span>
+
+
                             </div>
 
                             
@@ -142,6 +145,7 @@
             </div>
 
         </div>
+    </div>
 </body>
 <script>
     document.getElementById("saveButton").addEventListener("click", function () {
@@ -161,6 +165,62 @@
     // Set the max attribute to today's date
     const today = new Date().toISOString().split('T')[0];
     document.getElementById('date').setAttribute('max', today);
+
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputID(event) {
+        const regex = /^[0-9Vv]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputAddress(event) {
+        const regex = /^[0-9a-zA-Z\/,\.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputStringsNumbers(event) {
+        const regex = /^[0-9a-zA-Z\s]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+
+    function validateDates() {
+        const dateInput = document.getElementById('date');
+        const startDateInput = document.getElementById('start-date');
+        const errorMessage = document.getElementById('date-error');
+
+        const date = new Date(dateInput.value);
+        const startDate = new Date(startDateInput.value);
+
+        if (startDate <= date) {
+            errorMessage.style.display = 'inline';
+            startDateInput.classList.add('invalid');
+            return;
+        } else {
+            errorMessage.style.display = 'none';
+            startDateInput.classList.remove('invalid');
+        }
+    }
+
+    document.getElementById('date').addEventListener('input', function () {
+        const dateInput = document.getElementById('date');
+        const startDateInput = document.getElementById('start-date');
+        startDateInput.min = dateInput.value;
+        validateDates();
+    });
+
+    document.getElementById('start-date').addEventListener('input', validateDates);
 </script>
 
 @section Scripts {

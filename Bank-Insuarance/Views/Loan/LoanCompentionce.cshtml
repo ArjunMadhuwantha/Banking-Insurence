@@ -48,7 +48,7 @@
 
                             <div class="V_div">
                                 <label class="Name_lbl">Name</label>
-                                    <input asp-for="Name" class="Name_txt textbox" type="text" id="fullname" required>
+                                    <input asp-for="Name" class="Name_txt textbox" type="text" id="fullname" required oninput="validateInputStrings(event)">
                             </div>
 
                             <div class="V_div hidden">
@@ -85,7 +85,7 @@
 
                             <div class="V_div D_div">
                                 <label class="Date_lbl">Incident Date</label>
-                                <input asp-for="Date" class="Date_txt textbox" type="date">
+                                <input asp-for="Date" class="Date_txt textbox" id="date" type="date">
                             </div>
                             
                         </div>
@@ -126,6 +126,18 @@
         
         document.getElementById("confirmationModal").style.display = "none";
     });
+
+    // Set the max attribute to today's date
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').setAttribute('max', today);
+
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
 </script>
 
 @section Scripts {

@@ -53,17 +53,17 @@
 
                                 <div class="V_div">
                                     <label class="Name_lbl">Name</label>
-                                    <input asp-for="Name" class="Name_txt textbox" type="text" required>
+                                    <input asp-for="Name" class="Name_txt textbox" type="text" required oninput="validateInputStrings(event)">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="ID_lbl">ID</label>
-                                    <input asp-for="ID" class="ID_txt textbox" type="text required">
+                                    <input asp-for="ID" class="ID_txt textbox" type="text" required oninput="validateInputID(event)">
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Address_lbl">Address</label>
-                                    <input asp-for="Address" class="Address_txt textbox" type="text">
+                                    <input asp-for="Address" class="Address_txt textbox" type="text" required oninput="validateInputAddress(event)">
                                 </div>
 
                                 <div class="V_div">
@@ -84,12 +84,12 @@
 
                                 <div class="V_div">
                                     <label class="Date_lbl">Loan Start Date</label>
-                                    <input asp-for="LoanIssueDate" class="Date_txt textbox" type="date" required>
+                                    <input asp-for="LoanIssueDate" class="Date_txt textbox" type="date" id="date" required>
                                 </div>
 
                                 <div class="V_div">
                                     <label class="Date_lbl">Loan End Date</label>
-                                    <input asp-for="LoanEndDate" class="Date_txt textbox" type="date">
+                                    <input asp-for="LoanEndDate" class="Date_txt textbox" id="end-date" type="date" required>
                                 </div>
 
                                 <div class="V_div">
@@ -99,7 +99,7 @@
 
                                 <div class="V_div">
                                     <label class="Date_lbl">Payment Date</label>
-                                    <input asp-for="Paymentdate" class="Date_txt textbox" type="date">
+                                    <input asp-for="Paymentdate" class="Date_txt textbox" type="date" id="payment-date" required>
                                 </div>
 
                                 <div class="V_div">
@@ -107,7 +107,7 @@
                                     <input asp-for="Payment" class="Value_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
                                 </div>
 
-
+                                <span id="date-error" class="error-message">Loan End Date must be greater than Loan Start Date.<br /> Payment Date must be between Loan Start Date and Loan End Date.</span>
 
                             </div>
 
@@ -152,6 +152,84 @@
         
         document.getElementById("confirmationModal").style.display = "none";
     });
+
+    // Set the max attribute to today's date
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').setAttribute('max', today);
+
+    function validateInputStrings(event) {
+        const regex = /^[a-zA-Z\s.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputID(event) {
+        const regex = /^[0-9Vv]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputAddress(event) {
+        const regex = /^[0-9a-zA-Z\/,\.]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+    function validateInputStringsNumbers(event) {
+        const regex = /^[0-9a-zA-Z\s]*$/;
+        const input = event.target.value;
+        if (!regex.test(input)) {
+            event.target.value = input.slice(0, -1);
+        }
+    }
+
+    function validateDates() {
+        const startDateInput = document.getElementById('date');
+        const endDateInput = document.getElementById('end-date');
+        const paymentDateInput = document.getElementById('payment-date');
+        const errorMessage = document.getElementById('date-error');
+
+        const startDate = new Date(startDateInput.value);
+        const endDate = new Date(endDateInput.value);
+        const paymentDate = new Date(paymentDateInput.value);
+
+        if (endDate <= startDate) {
+            errorMessage.style.display = 'inline';
+            endDateInput.classList.add('invalid');
+            return;
+        } else {
+            endDateInput.classList.remove('invalid');
+        }
+
+        if (paymentDate <= startDate || paymentDate >= endDate) {
+            errorMessage.style.display = 'inline';
+            paymentDateInput.classList.add('invalid');
+        } else {
+            errorMessage.style.display = 'none';
+            paymentDateInput.classList.remove('invalid');
+        }
+    }
+
+    document.getElementById('date').addEventListener('input', function () {
+        const startDateInput = document.getElementById('date');
+        const endDateInput = document.getElementById('end-date');
+        const paymentDateInput = document.getElementById('payment-date');
+        endDateInput.min = startDateInput.value;
+        paymentDateInput.min = startDateInput.value;
+        validateDates();
+    });
+
+    document.getElementById('end-date').addEventListener('input', function () {
+        const endDateInput = document.getElementById('end-date');
+        const paymentDateInput = document.getElementById('payment-date');
+        paymentDateInput.max = endDateInput.value;
+        validateDates();
+    });
+
+    document.getElementById('payment-date').addEventListener('input', validateDates);
 </script>
 
 
