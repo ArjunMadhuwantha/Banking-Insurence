@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'asia-southeast1-docker.pkg.dev/spend-wise-internal/bank-insuarance/bank:stage', '.' ]
+  args: [ 'build', '-t', 'asia-southeast1-docker.pkg.dev/smart-coop-servers/bank-insuarance/bank:stage', '.' ]
 images:
-- 'asia-southeast1-docker.pkg.dev/spend-wise-internal/bank-insuarance/bank:stage'
+- 'asia-southeast1-docker.pkg.dev/smart-coop-servers/bank-insuarance/bank:stage'
