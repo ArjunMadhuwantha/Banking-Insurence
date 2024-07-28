@@ -70,18 +70,18 @@
 
                                 <div class="V_div">
                                     <label class="Address_lbl">Address</label>
-                                    <input asp-for="MemberAddress" class="AddressSR_txt textbox" type="text" oninput="validateInputAddress(event)">
+                                    <input asp-for="MemberAddress" class="AddressSR_txt textbox" type="text" oninput="validateInputAddress(event)" required>
                                 </div>
 
                                 <div class="V_div">
                                     <label class="DeceasedName_lbl">Name of </label>
                                     <label id="person" class="DeceasedName_lbl">deceased person</label>
-                                    <input asp-for="DeathpersonName" class="DeceasedNameSR_txt textbox" type="text" oninput="validateInputStrings(event)">
+                                    <input asp-for="DeathpersonName" class="DeceasedNameSR_txt textbox" type="text" oninput="validateInputStrings(event)" required>
                                 </div>
 
                                 <div class="V_div top2">
                                     <label class="Relation_lbl">Relation</label>
-                                    <input asp-for="Relation" class="RelationSR_txt textbox" type="text" oninput="validateInputStrings(event)">
+                                    <input asp-for="Relation" class="RelationSR_txt textbox" type="text" oninput="validateInputStrings(event)" required>
                                 </div>
 
                                 <div class="V_div">
@@ -93,7 +93,7 @@
                                 <div class="V_div">
                                     <label class="balance_lbl">Remaining</label>
                                     <label class="balanceSR_lbl">balance</label>
-                                    <input asp-for="RemainingBalanece" class="balanceSR_txt textbox" type="number" min="0" oninput="validity.valid||(value='');">
+                                    <input asp-for="RemainingBalanece" class="balanceSR_txt textbox" type="number" min="0" oninput="validity.valid||(value='');" required>
                                 </div>
 
                                 <div class="V_div">
