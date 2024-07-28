@@ -73,27 +73,38 @@ namespace Bank_Insurance.Controllers
         [HttpPost]
         public async Task<IActionResult> EditZone(ZoneViewModel zone)
         {
+            //try
+            //{
+            //    var existId = await _zoneRepository.CheckZoneID(zone.ZoneId);
+            //    if (existId == true)
+            //    {
+            //        ModelState.AddModelError(nameof(zone.ZoneId), "Zone Id already exists");
+            //        return View(zone);
+            //    }
+            //    else
+            //    {
+            //        await _zoneRepository.UpdateAsync(zone);
+            //        return RedirectToAction("Zone", "Zone");
+            //    }
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    ModelState.AddModelError("", "An error occurred while adding the branch. Please try again.");
+            //    return View(zone);
+            //}
+
             try
             {
-                var existId = await _zoneRepository.CheckZoneID(zone.ZoneId);
-                if (existId == true)
-                {
-                    ModelState.AddModelError(nameof(zone.ZoneId), "Zone Id already exists");
-                    return View(zone);
-                }
-                else
-                {
-                    await _zoneRepository.UpdateAsync(zone);
-                    return RedirectToAction("Zone", "Zone");
-                }
-
+                await _zoneRepository.UpdateAsync(zone);
+                return RedirectToAction("Zone", "Zone");
             }
             catch (Exception ex)
             {
                 ModelState.AddModelError("", "An error occurred while adding the branch. Please try again.");
                 return View(zone);
             }
-           
+
         }
 
 

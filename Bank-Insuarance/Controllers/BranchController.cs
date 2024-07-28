@@ -42,17 +42,21 @@ namespace Bank_Insurance.Controllers
         {
             
 
-            if (!ModelState.IsValid)
-            {
-                return View(model); // Return to the form with validation errors
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return View(model); // Return to the form with validation errors
+            //}
 
             try
             {
                 var existId = await _branchRepository.CheckBranchID(model.BranchId);
                 if(existId == true)
                 {
+                    //ModelState.AddModelError(nameof(model.BranchId), "Branch Id already exists");
+                    //return View(model);
                     ModelState.AddModelError(nameof(model.BranchId), "Branch Id already exists");
+                    var zones = await _branchRepository.GetAllZones();
+                    ViewBag.Zones = new SelectList(zones, "ZoneId", "Zone_name");
                     return View(model);
                 }
                 else
@@ -89,30 +93,42 @@ namespace Bank_Insurance.Controllers
         [HttpPost]
         public async Task<IActionResult> EditBranch(BranchViewModel branch)
         {
+            //try
+            //{
+            //    var existId = await _branchRepository.CheckBranchID(branch.BranchId);
+            //    if (existId == true)
+            //    {
+            //        ModelState.AddModelError(nameof(branch.BranchId), "Branch Id already exists");
+            //        return View(branch);
+            //    }
+            //    else
+            //    {
+            //        await _branchRepository.UpdateAsync(branch);
+
+
+            //        return RedirectToAction("Branch", "Branch");
+            //    }
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    ModelState.AddModelError("", "An error occurred while adding the branch. Please try again.");
+            //    return View(branch);
+            //}
+
             try
             {
-                var existId = await _branchRepository.CheckBranchID(branch.BranchId);
-                if (existId == true)
-                {
-                    ModelState.AddModelError(nameof(branch.BranchId), "Branch Id already exists");
-                    return View(branch);
-                }
-                else
-                {
-                    await _branchRepository.UpdateAsync(branch);
-
-                    
-                    return RedirectToAction("Branch", "Branch");
-                }
-
+                await _branchRepository.UpdateAsync(branch);
+                return RedirectToAction("Branch", "Branch");
             }
+
             catch (Exception ex)
             {
                 ModelState.AddModelError("", "An error occurred while adding the branch. Please try again.");
                 return View(branch);
             }
 
-            
+
         }
 
         
