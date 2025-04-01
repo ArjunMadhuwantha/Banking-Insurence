@@ -3555,3 +3555,7 @@ C:\Users\sajit\OneDrive\Documents\Asp.net\Git-PC\QA\Banking-Insurence\Bank-Insua
 C:\Users\sajit\OneDrive\Documents\Asp.net\Git-PC\QA\Banking-Insurence\Bank-Insuarance\obj\Debug\net8.0\Bank-Insuarance.pdb
 C:\Users\sajit\OneDrive\Documents\Asp.net\Git-PC\QA\Banking-Insurence\Bank-Insuarance\obj\Debug\net8.0\Bank-Insuarance.genruntimeconfig.cache
 C:\Users\sajit\OneDrive\Documents\Asp.net\Git-PC\QA\Banking-Insurence\Bank-Insuarance\obj\Debug\net8.0\ref\Bank-Insuarance.dll
+D:\programming languages\C#\company\2024-04-22\Banking-Insurence\Bank-Insuarance\bin\Debug\net8.0\Bank-Insuarance.staticwebassets.endpoints.json
+D:\programming languages\C#\company\2024-04-22\Banking-Insurence\Bank-Insuarance\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\programming languages\C#\company\2024-04-22\Banking-Insurence\Bank-Insuarance\obj\Debug\net8.0\staticwebassets\msbuild.Bank-Insuarance.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\programming languages\C#\company\2024-04-22\Banking-Insurence\Bank-Insuarance\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
